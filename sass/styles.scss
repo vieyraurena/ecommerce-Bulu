@@ -1,5 +1,29 @@
-$heading-color: #00f;
+// Base
+@import 'library/normalize';
+@import 'library/type.scss';
 
-h1 {
-  color: $heading-color;
-}
+// Utilities
+@import 'utilities/functions';
+@import 'utilities/variables';
+
+/*
+Partials :
+En esta carpeta se agrega toda aquella propiedadad que se repita
+en alguna etiqueta por ejemplo a {text-decoration : none; }
+*/
+
+/*
+Layout :
+en  esta carpeta se agrega toda aquella parte que compone cada pages por ejemplo:
+header, navegation, footer, carrito...
+*/
+
+/*
+Components : en esta carpeta se agregan los componentes, por ejemplo :
+las cards, slider....
+*/
+
+// Pages
+@import 'pages/home';
+@import 'pages/products';
+@import 'pages/details';

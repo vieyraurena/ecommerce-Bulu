@@ -1,0 +1,69 @@
+// Wrapper
+$wrapper: 340px;
+
+// Typography
+$main-font: 'poppins';
+$secondary-font: 'ABeeZee';
+$complement-font: 'Arial, Helvetica, sans-serif';
+
+$titles: $main-font, $complement-font;
+$paragraf: $main-font, $complement-font;
+$links:$main-font, $complement-font;
+$bottons:$main-font, $complement-font;
+
+//=======================================//
+
+// Font-Size
+$small-size-movil: calculateRemMobile(12px);
+$main-size-movil: calculateRemMobile(16px);
+$medium-size-movil: calculateReMobile(18px);
+$large-size-movil: calculateRemMobile(20px);
+$maxim-size-movil: calculateRemMobile(25px);
+
+//=======================================//
+
+// Line-height
+$line-height-small-movil: calculateRemMobile(25px);
+$line-height-medium-movil: calculateRemMobile(35px);
+$line-height-large-movil: calculateRemMobile(40px);
+
+//=======================================//
+
+// Color
+$main-color: #352B2B;
+$secondary-color: #C54210;
+$third-color: #1EA422;
+$fourth-color:#FFFFFF;
+
+$titles-color: $main-color;
+$paragraf-color: $main-color;
+$links-color: $secondary-color;
+$navegation-color: $secondary-color;
+$cards-recepes: $third-color;
+$botton-logIn: $fourth-color;
+$price-cards: $secondary-color;
+$titles-card-products: $third-color;
+$titles-galery-details: $secondary-color;
+
+//=======================================//
+
+// Background
+$main-background: #F7F3F0;
+$secondary-background: #FFFFFF;
+$third-background: #F8DFB8;
+// $fourth-background: #1EA422;
+
+$frame-background: $main-background;
+$cards-background: $secondary-background;
+$sections-background: $third-background;
+
+//=======================================//
+
+// Padding (top y bottom)
+$padding-small: calculateRemMobile(10px);
+
+//=======================================//
+
+// Margin bottom
+$margin-large: calculateRemMobile(40px);
+
