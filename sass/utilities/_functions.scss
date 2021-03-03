@@ -7,3 +7,8 @@
   $remSize : $size / 10px;
   @return #{$remSize}rem;
 }
+
+
+html {
+  font-size: 10px;
+}

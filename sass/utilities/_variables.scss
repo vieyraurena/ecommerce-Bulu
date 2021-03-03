@@ -13,19 +13,21 @@ $bottons:$main-font, $complement-font;
 
 //=======================================//
 
+$size: 1rem;
+
 // Font-Size
-$small-size-movil: calculateRemMobile(12px);
-$main-size-movil: calculateRemMobile(16px);
-$medium-size-movil: calculateReMobile(18px);
-$large-size-movil: calculateRemMobile(20px);
-$maxim-size-movil: calculateRemMobile(25px);
+$small-size-movil: $size * 1.2;
+$main-size-movil: $size * 1.6;
+$medium-size-movil: $size * 1.8;
+$large-size-movil: $size * 2;
+$maxim-size-movil: $size * 2.5;
 
 //=======================================//
 
 // Line-height
-$line-height-small-movil: calculateRemMobile(25px);
-$line-height-medium-movil: calculateRemMobile(35px);
-$line-height-large-movil: calculateRemMobile(40px);
+$line-height-small-movil: $size * 2.5;
+$line-height-medium-movil: $size * 3.5;
+$line-height-large-movil: $size * 4;
 
 //=======================================//
 
@@ -60,10 +62,10 @@ $sections-background: $third-background;
 //=======================================//
 
 // Padding (top y bottom)
-$padding-small: calculateRemMobile(10px);
+$padding-small: $size;
 
 //=======================================//
 
 // Margin bottom
-$margin-large: calculateRemMobile(40px);
+$margin-large: $size * 4;
 
