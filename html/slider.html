@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider</title>
+    <link rel="stylesheet" href="../public/css/slider.css">
+</head>
+<body>
+    <!-- Slider container -->
+    <h1>Slider</h1>
+    <div class="slider-container">
+
+        <!-- content slider -->
+        <div class="slides animation">
+            <img class="slides-images" src="../img/honey.jpg" alt="Se muestran 2 productos derivados de la miel, totalmente naturales y listos para disfrutar">
+        </div>
+
+        <div class="slides animation">
+            <img class="slides-images" src="../img/super-food.jpg" alt="Se muestran 2 productos naturales y enriquecedores para tu cuerpo, los llamados súper alimentos">
+        </div>
+
+        <div class="slides animation">
+            <img  class="slides-images" src="../img/energy-products.jpg" alt="Que nunca te falte la energía con estos 2 productos derivados de la miel y totalmente naturales">
+        </div>
+
+        <!--back and advance buttons -->
+        <a class="back" onclick="moreSlides(-1)">&#10094;</a>
+        <a class="advance" onclick="moreSlides(1)">&#10095;</a>
+    </div>
+    <!-- circles -->
+    <div class="indicators">
+        <span class="slide-indicator" onclick="currentSlide(1)"></span>
+        <span class="slide-indicator" onclick="currentSlide(2)"></span>
+        <span class="slide-indicator" onclick="currentSlide(3)"></span>
+    </div>
+    <script src="../js/slider.js"></script>
+</body>
+</html>

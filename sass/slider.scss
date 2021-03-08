@@ -1,0 +1,86 @@
+h1 {
+  text-align: center;
+}
+/* Slider container */
+.slider-container {
+  width: 340px;
+  position: relative;
+  margin:0 auto;
+  margin-top: 150px;
+}
+
+.slides-images {
+  margin-left: 25%;
+  width: 50%;
+  border-radius: 20px;
+}
+
+.slides {
+  display: none;
+}
+
+/* back & advance buttons */
+.back, .advance {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.advance {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.back:hover, .advance:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* slider indicators */
+.indicators {
+  text-align: center;
+}
+.slide-indicator {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .slide-indicator:hover {
+  background-color: #717171;
+}
+
+/* animation */
+.animation {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/*Javascript classes*/
+.js-hidden {
+  display: none;
+}
