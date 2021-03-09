@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+// Typography
+$main-font: 'poppins';
+$complement-font: 'Arial, Helvetica, sans-serif';
+
+$paragraf: $main-font, $complement-font;
+
+// Color
+$secondary-color: #C54210;
+$links-hover-color: #a73001;
+$fourth-color:#FFFFFF;
+
+$links-color: $secondary-color;
+$links-hover: $links-hover-color;
+$botton-logIn: $fourth-color;
+
+//=======================================//
+$size: 1rem;
+
+// Font-Size
+$small-size-movil: $size * 1.4;
+
+// button
+$paddin-top-bottom: $size * 0.7;
+$paddin-right-left: $size * 1.5;
+
+html{
+  font-size: 10px;
+}
+
+button {
+  background-color: $links-color;
+  border: none;
+  border-radius: $size;
+  color: $botton-logIn;
+  font-size: $small-size-movil;
+  outline: 0;
+  padding: $paddin-top-bottom $paddin-right-left;
+  text-transform: capitalize;
+
+  &:active {
+    background-color: $links-hover;
+  }
+
+  @media (min-width: 970px) {
+    &:hover {
+      background-color: $links-hover;
+    }
+  }
+}
