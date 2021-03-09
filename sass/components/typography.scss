@@ -18,14 +18,13 @@ $fourth-color:#FFFFFF;
 
 $titles-color: $main-color;
 $paragraf-color: $main-color;
-$botton-logIn: $fourth-color;
 $titles-card-products: $third-color;
 $links-color: $secondary-color;
 $links-hover: $links-hover-color;
 
-$size: 1rem;
 
-//=================Font-Size======================
+//=================Font-Size mobile======================
+$size: 1rem;
 $small-size-movil: $size * 1.4;
 $main-size-movil: $size * 1.6;
 $medium-size-movil: $size * 1.8;
@@ -36,22 +35,15 @@ $maxim-size-movil: $size * 2.5;
 
 $line-height-medium-movil: $size * 3;
 
-//=================Font-Size======================
+//=================Font-Size Desktop======================
 $small-size-desk: $size * 1.4;
 $main-p-size-desk: $size * 1.6;
 $medium-h3-size-desk: $size * 2.4;
 $large-h2-size-desk: $size * 2.8;
 $maxim-h1-size-desk: $size * 3.6;
-// Background
-$main-background: #F7F3F0;
-$frame-background: $main-background;
 
 html {
   font-size: 10px;
-}
-
-body{
-  background-color: $frame-background;
 }
 
 h1{
