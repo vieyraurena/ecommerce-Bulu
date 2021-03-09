@@ -1,27 +1,36 @@
-let slideIndex = 1;
-appearSlides(slideIndex);
-
-// Next/previous controls
-function moreSlides(numberSlide) {
-    appearSlides(slideIndex += numberSlide);
-}
-
-// Thumbnail image controls
-function currentSlide(numberSlide) {
-    appearSlides(slideIndex = numberSlide);
-}
-
+// Globals variables
+let slideIndex = 0;
+const backButton = document.querySelector('.back');
+const advanceButton = document.querySelector('.advance');
+// This function will show the slides
 function appearSlides(numberSlide) {
-    let slides = document.querySelectorAll(".slides");
-    let indicatorSides = document.querySelectorAll(".slide-indicator");
-    if (numberSlide > slides.length) {slideIndex = 1}
-    if (numberSlide < 1) {slideIndex = slides.length}
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (let i = 0; i < indicatorSides.length; i++) {
-        indicatorSides[i].className = indicatorSides[i].className.replace("active", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    indicatorSides[slideIndex-1].className += " active";
+  const slides = document.querySelectorAll('.slides');
+  const indicatorSides = document.querySelectorAll('.slide-indicator');
+  if (numberSlide >= slides.length) {
+    slideIndex = 0;
+  }
+  if (numberSlide < 0) {
+    slideIndex = slides.length - 1;
+  }
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = 'none';
+    indicatorSides[i].classList.remove('js-active');
+  }
+  slides[slideIndex].style.display = 'block';
+  indicatorSides[slideIndex].classList.add('js-active');
 }
+appearSlides(slideIndex);
+// Event handler for these buttons, back and appear
+backButton.addEventListener('click', () => {
+  appearSlides(--slideIndex);
+});
+advanceButton.addEventListener('click', () => {
+  appearSlides(++slideIndex);
+});
+document.querySelectorAll('.slide-indicator').forEach((element) => {
+  element.addEventListener('click', function indicatorsBullets() {
+    const bullets = Array.prototype.slice.call(this.parentElement.children);
+    const bulletsIndex = bullets.indexOf(element);
+    appearSlides(slideIndex = bulletsIndex);
+  });
+});

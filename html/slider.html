@@ -4,13 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>slider</title>
-    <link rel="stylesheet" href="../public/css/slider.css">
+    <link rel="stylesheet" href="../public/css/components/slider.css">
 </head>
 <body>
     <!-- Slider container -->
-    <h1>Slider</h1>
     <div class="slider-container">
-
         <!-- content slider -->
         <div class="slides animation">
             <img class="slides-images" src="../img/honey.jpg" alt="Se muestran 2 productos derivados de la miel, totalmente naturales y listos para disfrutar">
@@ -25,14 +23,14 @@
         </div>
 
         <!--back and advance buttons -->
-        <a class="back" onclick="moreSlides(-1)">&#10094;</a>
-        <a class="advance" onclick="moreSlides(1)">&#10095;</a>
+        <a id="back" class="back">&#10094;</a>
+        <a id="advance" class="advance">&#10095;</a>
     </div>
     <!-- circles -->
     <div class="indicators">
-        <span class="slide-indicator" onclick="currentSlide(1)"></span>
-        <span class="slide-indicator" onclick="currentSlide(2)"></span>
-        <span class="slide-indicator" onclick="currentSlide(3)"></span>
+        <span class="slide-indicator"></span>
+        <span class="slide-indicator"></span>
+        <span class="slide-indicator"></span>
     </div>
     <script src="../js/slider.js"></script>
 </body>
