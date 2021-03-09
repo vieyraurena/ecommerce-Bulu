@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+
+// Typography
+$main-font: 'poppins';
+$secondary-font: 'ABeeZee';
+$complement-font: 'Arial, Helvetica, sans-serif';
+
+$titles: $secondary-font, $complement-font;
+$paragraf: $main-font, $complement-font;
+
+// Color
+$main-color: #352B2B;
+$secondary-color: #C54210;
+$links-hover-color: #8a300c;
+$third-color: #1EA422;
+$fourth-color:#FFFFFF;
+
+$titles-color: $main-color;
+$paragraf-color: $main-color;
+$botton-logIn: $fourth-color;
+$titles-card-products: $third-color;
+$links-color: $secondary-color;
+$links-hover: $links-hover-color;
+
+$size: 1rem;
+
+//=================Font-Size======================
+$small-size-movil: $size * 1.4;
+$main-size-movil: $size * 1.6;
+$medium-size-movil: $size * 1.8;
+$large-size-movil: $size * 2;
+$maxim-size-movil: $size * 2.5;
+
+//=================Line-height======================//
+
+$line-height-medium-movil: $size * 3;
+
+//=================Font-Size======================
+$small-size-desk: $size * 1.4;
+$main-p-size-desk: $size * 1.6;
+$medium-h3-size-desk: $size * 2.4;
+$large-h2-size-desk: $size * 2.8;
+$maxim-h1-size-desk: $size * 3.6;
+// Background
+$main-background: #F7F3F0;
+$frame-background: $main-background;
+
+html {
+  font-size: 10px;
+}
+
+body{
+  background-color: $frame-background;
+}
+
+h1{
+  color: $titles-color;
+  font-family: $titles;
+  font-size: $maxim-size-movil;
+  text-transform: capitalize;
+
+  @media (min-width: 970px) {
+    font-size: $maxim-h1-size-desk;
+  }
+}
+
+h2, h3 ,h4 {
+  font-family: $paragraf;
+  text-transform: capitalize;
+}
+
+h2 {
+  font-size: $large-size-movil;
+  color: $titles-color;
+
+  @media (min-width: 970px) {
+    font-size: $large-h2-size-desk;
+  }
+}
+
+h3 {
+  color: $titles-card-products;
+  font-size: $medium-size-movil;
+
+  @media (min-width: 970px) {
+    font-size: $medium-h3-size-desk;
+  }
+}
+
+h4 {
+  color: $titles-card-products;
+  font-size: $small-size-movil;
+}
+
+p {
+  font-family: $paragraf;
+  font-size: $small-size-movil;
+  line-height: $line-height-medium-movil;
+  @media (min-width: 970px) {
+    font-size: $main-p-size-desk;
+  }
+}
+
+a {
+  font-family: $paragraf;
+  text-decoration: none;
+  color: $links-color;
+  font-size: $small-size-movil;
+
+  @media (min-width: 970px) {
+    font-size: $main-p-size-desk;
+    &:hover {
+      color: $links-hover;
+    }
+  }
+}
+
+ul {
+  font-family: $paragraf;
+  font-size: $small-size-movil;
+  list-style: none;
+
+  @media (min-width: 970px) {
+    font-size: $main-p-size-desk;
+  }
+}
+
+
+
