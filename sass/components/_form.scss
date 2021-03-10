@@ -1,0 +1,71 @@
+h2 {
+  font-family: $titles;
+  font-size: $main-size-movil;
+  padding-top: 30px;
+  margin-bottom: 0;
+}
+
+/* icono / usuario */
+
+.icon-login {
+  border: none;
+  background-color: $fourth-color;
+  cursor: pointer;
+  outline: none;
+}
+
+.form-input {
+  border: $main-color solid 3px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  padding: 10px 10px;
+  outline: none;
+
+  @media (min-width: 500px) {
+    width: 80%;
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: auto;
+  background-color: $fourth-color;
+}
+
+.modal-content {
+  @media (min-width: 500px) {
+    padding: 30px;
+  }
+}
+
+.close {
+  color: $main-color;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover {
+  color: $secondary-color;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#login form {
+  input:focus {
+    border: $secondary-color solid 3px;
+  }
+
+  @media (min-width: 500px) {
+    margin-left: 30px;
+  }
+}
+
+.red {
+  border: red solid 3px;
+}

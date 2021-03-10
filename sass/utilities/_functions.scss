@@ -1,0 +1,9 @@
+@function calculateWidthMobile($actual) {
+  $widthSize: ($actual / 414px) * 100%;
+  @return #{$widthSize};
+}
+
+@function calculateRemMobile($size) {
+  $remSize: $size / 10px;
+  @return #{$remSize}rem;
+}
