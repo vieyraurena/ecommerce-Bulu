@@ -1,6 +1,7 @@
 // Acordeon
 
 const acordeon = document.querySelectorAll('.acordeon');
+
 for(let i = 0; i < acordeon.length; i += 1){
   acordeon[i].addEventListener('click', (event)=>{
     event.preventDefault();

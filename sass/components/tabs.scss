@@ -49,6 +49,10 @@ $maxim-size-movil: $size * 2.5;
     margin-top: 0;
     padding-left: 10%;
     padding-top: 0;
+    b{
+      float: right;
+      margin-right: 5%;
+    }
   }
   .acordeon-content{
     background-color: $fourth-color;

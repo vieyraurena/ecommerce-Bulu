@@ -20,6 +20,9 @@ html {
     margin-top: 0;
     padding-left: 10%;
     padding-top: 0; }
+    .acordeon b {
+      float: right;
+      margin-right: 5%; }
   .acordeon-content {
     background-color: #FFFFFF;
     display: none;
