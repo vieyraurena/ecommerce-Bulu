@@ -1,0 +1,132 @@
+/*Variables*/
+$third-background: #F8DFB8;
+$secondary-color: #C54210;
+$main-color: #352B2B;
+$wrapper: 340px;
+$size: 1rem;
+$margin-large: $size * 4;
+
+/*Globals*/
+body {
+  background-color: $third-background;
+}
+
+html {
+  font-size: 10px;
+}
+
+/* Slider container */
+.slider-container {
+  width: $wrapper;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: $size;
+}
+
+.slides-images {
+  margin-left: 25%;
+  width: 50%;
+  border-radius: 20px;
+}
+
+.slides {
+  display: none;
+}
+
+/* back & advance buttons */
+.back,
+.advance {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: $main-color;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.advance {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.back:hover,
+.advance:hover {
+  background-color: $secondary-color;
+  color: white;
+}
+
+/* slider indicators */
+.indicators {
+  text-align: center;
+}
+
+.slide-indicator {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.js-active,
+.slide-indicator:hover {
+  background-color: $secondary-color;
+}
+
+/* animation */
+.animation {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@media(min-width:500px) {
+  .slider-container {
+    width: 500px;
+  }
+
+  .slides-images {
+    width: 50%;
+  }
+}
+
+@media(min-width:1080px) {
+  .slider-container {
+    width: 600px;
+  }
+
+  .slides-images {
+    width: 50%;
+  }
+}
+
+//esto es un comentario

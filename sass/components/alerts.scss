@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+
+$secondary-font: 'ABeeZee';
+$paragraf: $secondary-font;
+$alert-color: #960500;
+
+$size: 1rem;
+$small-size-movil: $size * 1.2;
+$main-background: #F7F3F0;
+
+html {
+  font-size: 10px;
+  background-color: $main-background;
+}
+
+
+.text-alert {
+  font-family: $paragraf;
+  font-size: $small-size-movil;
+  ;
+  color: $alert-color;
+  font-weight: 600;
+}

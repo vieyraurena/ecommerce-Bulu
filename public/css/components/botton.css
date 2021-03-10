@@ -1,18 +1,1 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
-html {
-  font-size: 10px; }
-
-button {
-  background-color: #C54210;
-  border: none;
-  border-radius: 1rem;
-  color: #FFFFFF;
-  font-size: 1.4rem;
-  outline: 0;
-  padding: 0.7rem 1.5rem;
-  text-transform: capitalize; }
-  button:active {
-    background-color: #a73001; }
-  @media (min-width: 970px) {
-    button:hover {
-      background-color: #a73001; } }
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");html{font-size:10px}button{background-color:#C54210;border:none;border-radius:1rem;color:#fff;font-size:1.4rem;outline:0;padding:.7rem 1.5rem;text-transform:capitalize}button:active{background-color:#a73001}@media (min-width: 970px){button:hover{background-color:#a73001}}
