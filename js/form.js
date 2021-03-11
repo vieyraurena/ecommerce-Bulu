@@ -1,7 +1,7 @@
 // Se declaran las constantes del DOM y se realizan las funciones para abrir y cerrar modal
 const modal = document.getElementById('modal');
 const openModal = document.getElementById('icon-login');
-const closeModal = document.getElementsByClassName('close')[0];
+const closeModal = document.getElementsByClassName('close-js')[0];
 
 openModal.onclick = () => {
   modal.style.display = 'block';

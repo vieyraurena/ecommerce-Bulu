@@ -1,1 +1,56 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");@import url("https://fonts.googleapis.com/css2?family=ABeeZee&display=swap");html{color:#352B2B;font-family:"ABeeZee";line-height:2}h2{font-family:"poppins";font-size:1.6rem;padding-top:30px;margin-bottom:0}.icon-login{border:none;background-color:#fff;cursor:pointer;outline:none}.form-input{border:#352B2B solid 3px;border-radius:15px;margin-bottom:10px;padding:10px 10px;outline:none}@media (min-width: 500px){.form-input{width:80%}}.modal{display:none;position:fixed;z-index:1;top:40%;left:50%;transform:translate(-50%, -50%);overflow:auto;background-color:#fff}@media (min-width: 500px){.modal-content{padding:30px}}.close{color:#352B2B;float:right;font-size:28px;font-weight:bold}.close:hover{color:#C54210;text-decoration:none;cursor:pointer}#login form input:focus{border:#C54210 solid 3px}@media (min-width: 500px){#login form{margin-left:30px}}.red{border:red solid 3px}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&display=swap");
+html {
+  line-height: 2; }
+
+/* icono / usuario */
+.icon-login {
+  border: none;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  outline: none; }
+
+.form-input {
+  border: #352B2B solid 3px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  padding: 10px 10px;
+  outline: none; }
+  @media (min-width: 500px) {
+    .form-input {
+      width: 80%; } }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: auto;
+  background-color: #FFFFFF; }
+
+@media (min-width: 500px) {
+  .modal-content {
+    padding: 30px; } }
+
+.close-js {
+  color: #352B2B;
+  float: right;
+  font-size: 28px;
+  font-weight: bold; }
+
+.close-js:hover {
+  color: #C54210;
+  text-decoration: none;
+  cursor: pointer; }
+
+#login form input:focus {
+  border: #C54210 solid 3px; }
+
+@media (min-width: 500px) {
+  #login form {
+    margin-left: 30px; } }
+
+.red {
+  border: red solid 3px; }

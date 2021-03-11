@@ -15,16 +15,7 @@ $size: 1rem;
 $main-size-movil: $size * 1.6;
 
 html {
-  color: $main-color;
-  font-family: $paragraf;
   line-height: 2;
-}
-
-h2 {
-  font-family: $titles;
-  font-size: $main-size-movil;
-  padding-top: 30px;
-  margin-bottom: 0;
 }
 
 /* icono / usuario */
@@ -65,14 +56,14 @@ h2 {
   }
 }
 
-.close {
+.close-js {
   color: $main-color;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
 
-.close:hover {
+.close-js:hover {
   color: $secondary-color;
   text-decoration: none;
   cursor: pointer;

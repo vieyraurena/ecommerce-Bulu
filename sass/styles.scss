@@ -18,5 +18,21 @@
 
 
 // Components
-@import 'components/drawer.scss'
+@import 'components/drawer.scss';
 
+.components-visual {
+  width: 60%;
+}
+
+.components-code {
+  width: 40%;
+}
+
+body {
+  padding: 30px;
+}
+
+.border-botton-internal {
+  border-bottom: 1px solid black;
+  margin-top: 15px;
+}
