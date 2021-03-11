@@ -1,52 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drawer Component</title>
-    <link rel="stylesheet" href="../public/css/styles.css">
-  </head>
 
-  <body>
-    <!--reference: it's not part the component-->
-    <svg class="bag" width="37" height="45" viewBox="0 0 37 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M15.429 13.7817C15.429 13.0116 15.7526 12.2732 16.3285 11.7287C16.9044 11.1842 17.6855 10.8783 18.5 10.8783C19.3145 10.8783 20.0956 11.1842 20.6715 11.7287C21.2474 12.2732 21.571 13.0116 21.571 13.7817V15.8182H22.5V13.7817C22.5 12.7787 22.0786 11.8168 21.3284 11.1076C20.5783 10.3984 19.5609 10 18.5 10C17.4391 10 16.4217 10.3984 15.6716 11.1076C14.9214 11.8168 14.5 12.7787 14.5 13.7817V15.8182H15.429V13.7817Z" fill="#D3A863"/>
-      <path d="M24.4038 34.8182H12.5962C12.2541 34.8187 11.9152 34.7542 11.5991 34.6283C11.2831 34.5024 10.9961 34.3177 10.7548 34.0847C10.5135 33.8517 10.3226 33.5752 10.1931 33.271C10.0636 32.9668 9.99814 32.641 10.0004 32.3124L24.4038 34.8182ZM24.4038 34.8182C24.7459 34.8187 25.0848 34.7542 25.4009 34.6283M24.4038 34.8182L25.4009 34.6283M25.4009 34.6283C25.7169 34.5024 26.0039 34.3177 26.2452 34.0847M25.4009 34.6283L26.2452 34.0847M26.2452 34.0847C26.4865 33.8517 26.6774 33.5752 26.8069 33.271M26.2452 34.0847L26.8069 33.271M26.8069 33.271C26.9364 32.9668 27.0019 32.641 26.9996 32.3124L26.8069 33.271ZM26.4996 17.3183L26.4996 32.3124L26.4996 32.3159C26.5014 32.5756 26.4497 32.8336 26.3469 33.0752C26.244 33.3168 26.0918 33.5378 25.8979 33.725C25.704 33.9121 25.4724 34.0616 25.2158 34.1638C24.9592 34.266 24.6835 34.3186 24.4046 34.3182H24.4038H12.5962H12.5954C12.3165 34.3186 12.0408 34.266 11.7842 34.1638C11.5276 34.0616 11.296 33.9121 11.1021 33.725C10.9082 33.5378 10.756 33.3168 10.6531 33.0752C10.5503 32.8336 10.4986 32.5756 10.5004 32.3159H10.5004V32.3124V17.3183H14.0406V22.7506V23.2506H14.5406H15.4908H15.9908V22.7506V17.3183H21.2731V22.7506V23.2506H21.7731H22.7234H23.2234V22.7506V17.3183H26.4996Z" fill="#D3A863" stroke="#D3A863"/>
-    </svg>
-    <div class="products">
-      <ul class="products-items">
-        <li>product1</li>
-        <li>product2</li>
-        <li>product3</li>
-      </ul>
-    </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drawer Component</title>
+  <link rel="stylesheet" href="../public/css/styles.css">
+</head>
 
-    <!--Here start the component-->
-    <!--This class is the container-box the drawer-->
-    <div class="drawer-main-container">
+<body>
+  <!--reference: it's not part the component-->
+  <svg class="bag" width="37" height="45" viewBox="0 0 37 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M15.429 13.7817C15.429 13.0116 15.7526 12.2732 16.3285 11.7287C16.9044 11.1842 17.6855 10.8783 18.5 10.8783C19.3145 10.8783 20.0956 11.1842 20.6715 11.7287C21.2474 12.2732 21.571 13.0116 21.571 13.7817V15.8182H22.5V13.7817C22.5 12.7787 22.0786 11.8168 21.3284 11.1076C20.5783 10.3984 19.5609 10 18.5 10C17.4391 10 16.4217 10.3984 15.6716 11.1076C14.9214 11.8168 14.5 12.7787 14.5 13.7817V15.8182H15.429V13.7817Z"
+      fill="#D3A863" />
+    <path
+      d="M24.4038 34.8182H12.5962C12.2541 34.8187 11.9152 34.7542 11.5991 34.6283C11.2831 34.5024 10.9961 34.3177 10.7548 34.0847C10.5135 33.8517 10.3226 33.5752 10.1931 33.271C10.0636 32.9668 9.99814 32.641 10.0004 32.3124L24.4038 34.8182ZM24.4038 34.8182C24.7459 34.8187 25.0848 34.7542 25.4009 34.6283M24.4038 34.8182L25.4009 34.6283M25.4009 34.6283C25.7169 34.5024 26.0039 34.3177 26.2452 34.0847M25.4009 34.6283L26.2452 34.0847M26.2452 34.0847C26.4865 33.8517 26.6774 33.5752 26.8069 33.271M26.2452 34.0847L26.8069 33.271M26.8069 33.271C26.9364 32.9668 27.0019 32.641 26.9996 32.3124L26.8069 33.271ZM26.4996 17.3183L26.4996 32.3124L26.4996 32.3159C26.5014 32.5756 26.4497 32.8336 26.3469 33.0752C26.244 33.3168 26.0918 33.5378 25.8979 33.725C25.704 33.9121 25.4724 34.0616 25.2158 34.1638C24.9592 34.266 24.6835 34.3186 24.4046 34.3182H24.4038H12.5962H12.5954C12.3165 34.3186 12.0408 34.266 11.7842 34.1638C11.5276 34.0616 11.296 33.9121 11.1021 33.725C10.9082 33.5378 10.756 33.3168 10.6531 33.0752C10.5503 32.8336 10.4986 32.5756 10.5004 32.3159H10.5004V32.3124V17.3183H14.0406V22.7506V23.2506H14.5406H15.4908H15.9908V22.7506V17.3183H21.2731V22.7506V23.2506H21.7731H22.7234H23.2234V22.7506V17.3183H26.4996Z"
+      fill="#D3A863" stroke="#D3A863" />
+  </svg>
+  <div class="products">
+    <ul class="products-items">
+      <li>product1</li>
+      <li>product2</li>
+      <li>product3</li>
+    </ul>
+  </div>
 
-      <!--this class is for the wrapper(width:container) that drawer-->
-      <div class="drawer-wrapper">
+  <!--Here start the component-->
+  <!--This class is the container-box the drawer-->
+  <div class="drawer-main-container">
 
-        <!--header del drawer-->
-        <div class="drawer-header">
-          <h2>Mini-Card</h2>
-          <button>X</button>
-        </div>
+    <!--this class is for the wrapper(width:container) that drawer-->
+    <div class="drawer-wrapper">
 
-        <!--product list. Are loaded with JS-->
-        <div class="drawer-container-products line-botton">
+      <!--header del drawer-->
+      <div class="drawer-header">
+        <h2>Mini-Card</h2>
+        <button>X</button>
+      </div>
 
-        </div>
-
-        <!-- send ancore for redirect to check-out-->
-        <div class="btns-drawer flex">
-          <a href="">Comprar</a>
-        </div>
+      <!--product list. Are loaded with JS-->
+      <div class="drawer-container-products line-botton">
 
       </div>
-    </div>
 
-    <script src="../js/drawer.js"></script>
-  </body>
+      <!-- send ancore for redirect to check-out-->
+      <div class="btns-drawer flex">
+        <a href="">Comprar</a>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="../js/drawer.js"></script>
+</body>
+
 </html>

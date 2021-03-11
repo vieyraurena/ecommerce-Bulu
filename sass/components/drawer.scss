@@ -7,10 +7,14 @@ $main-font: 'poppins';
 $secondary-font: 'ABeeZee';
 $complement-font: 'Arial, Helvetica, sans-serif';
 
-$titles: $secondary-font, $complement-font;
-$paragraf: $main-font, $complement-font;
-$links:$main-font, $complement-font;
-$bottons:$main-font, $complement-font;
+$titles: $secondary-font,
+$complement-font;
+$paragraf: $main-font,
+$complement-font;
+$links:$main-font,
+$complement-font;
+$bottons:$main-font,
+$complement-font;
 
 // Background
 $main-background: #F7F3F0;
@@ -72,9 +76,10 @@ ul {
   height: 100vh;
   flex-direction: column;
   position: fixed;
-  right: -360px;
+  right: -100%;
   top: 0;
   font-size: $main-size-movil;
+  transition: right 0.8s;
 
   @media (min-width: 700px) {
     right: -550px;
@@ -134,6 +139,7 @@ ul {
 
 .drawer-content {
   padding: $size 2rem;
+
   h3 {
     font-size: $main-size-movil;
     margin-bottom: $size;

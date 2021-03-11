@@ -1,13 +1,1 @@
-@import url("https://fonts.googleapis.com/css2?family=ABeeZee&display=swap");
-html {
-  font-size: 10px;
-  background-color: #F7F3F0; }
-
-.text-alert {
-  font-family: "ABeeZee";
-  font-size: 1.2rem;
-  color: #960500;
-  font-weight: 600; }
-
-.alert-js {
-  color: #960500; }
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&display=swap");html{font-size:10px;background-color:#F7F3F0}.text-alert{font-family:"ABeeZee";font-size:1.2rem;color:#960500;font-weight:600}.alert-js{color:#960500}

@@ -9,35 +9,27 @@ const drawerItems = document.querySelector('.drawer-container-products');
 // ============= DRAWER ================== //
 
 const callDrawer = () => {
-  let right = -550;
-  const animation = setInterval(() => {
-    if (right < 0) {
-      right += 5;
-      drawer.style.right = `${right}px`;
-    } else {
-      clearInterval(animation);
-    }
-  }, 5);
+  // const right = -550;
+
+  drawer.style.right = '0px';
+  // const animation = setInterval(() => {
+  //  if (right < 0) {
+  //    right += 5;
+  //    drawer.style.right = `${right}px`;
+  //  } else {
+  //    clearInterval(animation);
+  //  }
+  // }, 5);
 };
 
 const closeDrawer = () => {
-  const right = 0;
-  if (right === 0) {
-    drawer.style.transition = 'all .8s';
-    drawer.style.right = `${-550}px`;
-  } else {
-    callDrawer();
-  }
+  drawer.style.right = '-100%';
 };
 
 // Events
-bag.addEventListener('click', () => {
-  callDrawer();
-});
+bag.addEventListener('click', callDrawer);
 
-btn.addEventListener('click', () => {
-  closeDrawer();
-});
+btn.addEventListener('click', closeDrawer);
 
 // ============= POST ================== //
 
@@ -109,5 +101,5 @@ const addProductDrawer = (phone, nameProd, descriptionProd, priceProd) => {
 listProducts.addEventListener('click', (event) => {
   const target = event.target.tagName;
   addProductDrawer(target);
-  callDrawer();
+  // callDrawer();
 });

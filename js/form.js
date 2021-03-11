@@ -3,13 +3,21 @@ const modal = document.getElementById('modal');
 const openModal = document.getElementById('icon-login');
 const closeModal = document.getElementsByClassName('close-js')[0];
 
-openModal.onclick = () => {
-  modal.style.display = 'block';
-};
+//openModal.onclick = () => {
+//modal.style.display = 'block';
+//};
 
-closeModal.onclick = () => {
+openModal.addEventListener('click', () => {
+  modal.style.display = 'block';
+})
+
+//closeModal.onclick = () => {
+//modal.style.display = 'none';
+//};
+
+closeModal.addEventListener('click', () => {
   modal.style.display = 'none';
-};
+})
 
 // Se inicia con la validación del login del modal
 
