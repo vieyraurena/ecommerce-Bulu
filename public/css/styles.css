@@ -395,9 +395,9 @@ ul {
   justify-content: flex-end; }
 
 .text-alert {
+  color: #960500;
   font-family: "ABeeZee", "Arial, Helvetica, sans-serif";
   font-size: 1.2rem;
-  color: #960500;
   font-weight: 600; }
 
 button {
@@ -415,72 +415,60 @@ button {
     button:hover {
       background-color: #a73001; } }
 
-.text-filter {
+.filter__select {
+  border-color: #FFFFFF;
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+
+.filter__text {
   font-family: "ABeeZee", "Arial, Helvetica, sans-serif";
   font-size: 1.6rem; }
 
-.style-select {
-  border-radius: 0.5rem;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-color: #FFFFFF; }
-
-h2 {
-  font-family: "poppins", "Arial, Helvetica, sans-serif";
-  font-size: 1.6rem;
-  padding-top: 30px;
-  margin-bottom: 0; }
-
-/* icono / usuario */
-.icon-login {
+/* icon user */
+.login__icon {
   border: none;
   background-color: #FFFFFF;
   cursor: pointer;
   outline: none; }
 
-.form-input {
-  border: #352B2B solid 3px;
-  border-radius: 15px;
-  margin-bottom: 10px;
-  padding: 10px 10px;
-  outline: none; }
-  @media (min-width: 500px) {
-    .form-input {
-      width: 80%; } }
-
 .modal {
+  background-color: #FFFFFF;
   display: none;
-  position: fixed;
-  z-index: 1;
-  top: 40%;
   left: 50%;
-  transform: translate(-50%, -50%);
   overflow: auto;
-  background-color: #FFFFFF; }
+  position: fixed;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  z-index: 1; }
+  @media (min-width: 500px) {
+    .modal {
+      width: 80%; } }
+  .modal form input:focus {
+    border: #C54210 solid 3px; }
+  @media (min-width: 500px) {
+    .modal form {
+      margin-left: 30px; } }
 
-@media (min-width: 500px) {
-  .modal-content {
-    padding: 30px; } }
-
-.close {
+.modal__close {
   color: #352B2B;
   float: right;
   font-size: 28px;
   font-weight: bold; }
-
-.close:hover {
-  color: #C54210;
-  text-decoration: none;
-  cursor: pointer; }
-
-#login form input:focus {
-  border: #C54210 solid 3px; }
+  .modal__close :hover {
+    color: #C54210;
+    cursor: pointer;
+    text-decoration: none; }
 
 @media (min-width: 500px) {
-  #login form {
-    margin-left: 30px; } }
+  .modal__content--padding {
+    padding: 30px; } }
 
-.red {
-  border: red solid 3px; }
+.modal__input {
+  border: #352B2B solid 3px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  outline: none;
+  padding: 10px 10px; }
 
 /*Globals*/
 body {
