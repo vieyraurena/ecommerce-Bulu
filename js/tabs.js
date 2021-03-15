@@ -1,6 +1,6 @@
 // Acordeon
 
-const acordeon = document.querySelectorAll('.acordeon');
+const acordeon = document.querySelectorAll('.acordeon__content--title');
 
 for(let i = 0; i < acordeon.length; i += 1){
   acordeon[i].addEventListener('click', (event)=>{
@@ -18,8 +18,8 @@ for(let i = 0; i < acordeon.length; i += 1){
 
 // TABS
 
-const tabs = document.querySelectorAll('.tabs-tablist-item');
-const content = document.querySelectorAll('.tabs-content-item');
+const tabs = document.querySelectorAll('.tabs__tablist--title');
+const content = document.querySelectorAll('.tabs__content--hiddenInformation');
 
 for (let i = 0; i < content.length; i++) {
     content[i].classList.add('js-content-hidden');

@@ -33,12 +33,12 @@ $large-size-movil: $size * 2;
 $maxim-size-movil: $size * 2.5;
 
 /* ============================================= */
-.acordeon-wrapper{
+.acordeon{
   display: none;
 }
 @media (max-width: 500px){
   /* ACORDEON */
-  .acordeon{
+  .acordeon__content--title{
     background-color: $secondary-color;
     border-radius: 0.2rem;
     color: $fourth-color;
@@ -54,7 +54,7 @@ $maxim-size-movil: $size * 2.5;
       margin-right: 5%;
     }
   }
-  .acordeon-content{
+  .acordeon__content--hiddenInformation{
     background-color: $fourth-color;
     display: none;
     font-size: $small-size-movil;
@@ -63,7 +63,7 @@ $maxim-size-movil: $size * 2.5;
     padding-left: 10%;
     padding-right: 10%;
   }
-  .acordeon-wrapper{
+  .acordeon{
     display: block;
   }
   body{
@@ -86,7 +86,7 @@ $maxim-size-movil: $size * 2.5;
 
   }
 
-  .tabs-tablist {
+  .tabs__tablist {
     color: $fourth-color;
     display: flex;
     font-family: $titles;
@@ -96,7 +96,7 @@ $maxim-size-movil: $size * 2.5;
     padding: 0;
   }
 
-  .tabs-tablist-item {
+  .tabs__tablist--title {
     background-color: $secondary-color;
     border: 1px solid $main-color;
     border-radius: 5px 5px 0 0;
@@ -108,7 +108,7 @@ $maxim-size-movil: $size * 2.5;
     text-decoration: none;
   }
 
-  .tabs-content {
+  .tabs__content {
     border: 1px solid $main-color;
     font-family: $paragraf;
     font-size: $small-size-movil;

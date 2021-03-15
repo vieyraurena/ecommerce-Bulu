@@ -4,12 +4,12 @@ html {
 /* VARIABLES */
 /* ============================================= */
 /* ============================================= */
-.acordeon-wrapper {
+.acordeon {
   display: none; }
 
 @media (max-width: 500px) {
   /* ACORDEON */
-  .acordeon {
+  .acordeon__content--title {
     background-color: #C54210;
     border-radius: 0.2rem;
     color: #FFFFFF;
@@ -20,10 +20,10 @@ html {
     margin-top: 0;
     padding-left: 10%;
     padding-top: 0; }
-    .acordeon b {
+    .acordeon__content--title b {
       float: right;
       margin-right: 5%; }
-  .acordeon-content {
+  .acordeon__content--hiddenInformation {
     background-color: #FFFFFF;
     display: none;
     font-size: 1.2rem;
@@ -31,7 +31,7 @@ html {
     margin-bottom: 10px;
     padding-left: 10%;
     padding-right: 10%; }
-  .acordeon-wrapper {
+  .acordeon {
     display: block; }
   body {
     margin: 0 auto;
@@ -46,7 +46,7 @@ html {
   .tabs {
     margin: 40px;
     max-width: 800px; }
-  .tabs-tablist {
+  .tabs__tablist {
     color: #FFFFFF;
     display: flex;
     font-family: "poppins", "Arial, Helvetica, sans-serif";
@@ -54,7 +54,7 @@ html {
     margin: 0;
     margin-bottom: -1px;
     padding: 0; }
-  .tabs-tablist-item {
+  .tabs__tablist--title {
     background-color: #C54210;
     border: 1px solid #352B2B;
     border-radius: 5px 5px 0 0;
@@ -64,7 +64,7 @@ html {
     font-weight: bold;
     padding: 10px 20px;
     text-decoration: none; }
-  .tabs-content {
+  .tabs__content {
     border: 1px solid #352B2B;
     font-family: "poppins", "Arial, Helvetica, sans-serif";
     font-size: 1.2rem;
