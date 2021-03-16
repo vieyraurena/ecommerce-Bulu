@@ -1,11 +1,44 @@
-.acordeon-wrapper {
+html{font-size: 10px;}
+
+/* VARIABLES */
+
+/* ============================================= */
+
+// COLOR
+
+$fourth-color:#FFFFFF;
+$main-color: #352B2B;
+$secondary-color: #C54210;
+$third-color: #1EA422;
+$wrapper: 340px;
+
+// Typography
+
+$complement-font: 'Arial, Helvetica, sans-serif';
+$main-font: 'poppins';
+$secondary-font: 'ABeeZee';
+
+$paragraf: $main-font, $complement-font;
+$titles: $main-font, $complement-font;
+$titles-color: $main-color;
+
+$size: 1rem;
+
+// FONT-SIZE
+
+$main-size-movil: $size * 1.6;
+$small-size-movil: $size * 1.2;
+$medium-size-movil: $size * 1.8;
+$large-size-movil: $size * 2;
+$maxim-size-movil: $size * 2.5;
+
+/* ============================================= */
+.acordeon{
   display: none;
 }
-
-@media (max-width: 500px) {
-
+@media (max-width: 500px){
   /* ACORDEON */
-  .acordeon {
+  .acordeon__content--title{
     background-color: $secondary-color;
     border-radius: 0.2rem;
     color: $fourth-color;
@@ -16,14 +49,12 @@
     margin-top: 0;
     padding-left: 10%;
     padding-top: 0;
-
-    b {
+    b{
       float: right;
       margin-right: 5%;
     }
   }
-
-  .acordeon-content {
+  .acordeon__content--hiddenInformation{
     background-color: $fourth-color;
     display: none;
     font-size: $small-size-movil;
@@ -32,35 +63,30 @@
     padding-left: 10%;
     padding-right: 10%;
   }
-
-  .acordeon-wrapper {
+  .acordeon{
     display: block;
   }
-
-  body {
+  body{
     margin: 0 auto;
     width: $wrapper;
   }
-
-  .tabs {
+  .tabs{
     display: none;
   }
 }
 
-@media (min-width:500px) {
-
+@media (min-width:500px){
   /*TABS*/
-  body {
+  body{
     margin: 0 auto;
   }
-
   .tabs {
     margin: 40px;
     max-width: 800px;
 
   }
 
-  .tabs-tablist {
+  .tabs__tablist {
     color: $fourth-color;
     display: flex;
     font-family: $titles;
@@ -70,7 +96,7 @@
     padding: 0;
   }
 
-  .tabs-tablist-item {
+  .tabs__tablist--title {
     background-color: $secondary-color;
     border: 1px solid $main-color;
     border-radius: 5px 5px 0 0;
@@ -82,23 +108,19 @@
     text-decoration: none;
   }
 
-  .tabs-content {
+  .tabs__content {
     border: 1px solid $main-color;
     font-family: $paragraf;
     font-size: $small-size-movil;
     padding: 20px;
   }
-
   /* Estado (clases asignadas por Javascript) */
   .js-active {
     background-color: #fff;
     border-bottom: 1px solid #fff;
-    color: $main-color;
+    color: $titles-color;
   }
-
   .js-content-hidden {
     display: none;
   }
 }
-
-// esto es un comentario
