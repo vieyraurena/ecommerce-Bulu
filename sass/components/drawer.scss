@@ -68,7 +68,7 @@ ul {
   display: flex;
 }
 
-.drawer-main-container {
+.drawer {
   background-color: $cards-background;
   border-bottom-left-radius: $size;
   border-top-left-radius: $size;
@@ -86,7 +86,7 @@ ul {
   }
 }
 
-.drawer-wrapper {
+.drawer__wrapper {
   width: 340px;
   margin: 0 auto;
 
@@ -95,7 +95,7 @@ ul {
   }
 }
 
-.drawer-header {
+.drawer__header {
   border-bottom: 0.2rem solid $frame-background;
   padding: $size 2rem;
 
@@ -108,11 +108,9 @@ ul {
   }
 
   button {
-    background-color: $cards-background;
     border: none;
     cursor: pointer;
     font-family: $bottons;
-    outline: none;
     position: absolute;
     right: 3rem;
     top: 3rem;
@@ -125,19 +123,25 @@ ul {
   }
 }
 
-.drawer-container-products {
+.drawer__container--products {
   color: $paragraf-color;
   font-family: $paragraf;
   font-size: $small-size-movil;
   margin-bottom: 3rem;
 }
 
-.line-botton {
+.drawer__line--botton {
   border-bottom: 0.2rem solid $frame-background;
   width: 100%;
 }
 
-.drawer-content {
+.drawer__btn--close {
+  padding: $size 3rem $size 2rem;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.js__drawer--items {
   padding: $size 2rem;
 
   h3 {
@@ -160,14 +164,8 @@ ul {
   }
 }
 
-.drawer-delete {
+.js__drawer--delete {
   outline: none;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-
-.btns-drawer {
-  padding: $size 3rem $size 2rem;
   flex-direction: row;
   justify-content: flex-end;
 }

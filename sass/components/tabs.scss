@@ -37,55 +37,10 @@ $large-size-movil: $size * 2;
 $maxim-size-movil: $size * 2.5;
 
 /* ============================================= */
-.acordeon-wrapper {
-  display: none;
-}
-
-
-
-/* ACORDEON */
-.acordeon {
-  background-color: $secondary-color;
-  border-radius: 0.2rem;
-  color: $fourth-color;
-  cursor: pointer;
-  font-size: $main-size-movil;
-  font-family: $titles;
-  margin-bottom: 5px;
-  margin-top: 0;
-  padding-left: 10%;
-  padding-top: 0;
-
-  b {
-    float: right;
-    margin-right: 5%;
-  }
-}
-
-.acordeon-content {
-  background-color: $fourth-color;
-  display: none;
-  font-size: $small-size-movil;
-  font-family: $paragraf;
-  margin-bottom: 10px;
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
-.acordeon-wrapper {
-  display: block;
-}
-
-
-/* .tabs {
-  display: none;
-} */
-
-
-
-
 /*TABS*/
-
+body {
+  margin: 0 auto;
+}
 
 .tabs {
   margin: 40px;
@@ -93,7 +48,7 @@ $maxim-size-movil: $size * 2.5;
 
 }
 
-.tabs-tablist {
+.tabs__tablist {
   color: $fourth-color;
   display: flex;
   font-family: $titles;
@@ -103,7 +58,7 @@ $maxim-size-movil: $size * 2.5;
   padding: 0;
 }
 
-.tabs-tablist-item {
+.tabs__tablist--title {
   background-color: $secondary-color;
   border: 1px solid $main-color;
   border-radius: 5px 5px 0 0;
@@ -115,7 +70,7 @@ $maxim-size-movil: $size * 2.5;
   text-decoration: none;
 }
 
-.tabs-content {
+.tabs__content {
   border: 1px solid $main-color;
   font-family: $paragraf;
   font-size: $small-size-movil;
@@ -132,6 +87,3 @@ $maxim-size-movil: $size * 2.5;
 .js-content-hidden {
   display: none;
 }
-
-
-// esto es un comentario

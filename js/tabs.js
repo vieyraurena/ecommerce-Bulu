@@ -1,12 +1,13 @@
 // Acordeon
 
-const acordeon = document.querySelectorAll('.acordeon');
+const acordeon = document.querySelectorAll('.acordeon__content--title');
 
 for (let i = 0; i < acordeon.length; i += 1) {
   acordeon[i].addEventListener('click', (event) => {
     event.preventDefault();
     const elemento = event.currentTarget;
     const info = elemento.nextElementSibling;
+
     if (info.style.display === 'block') {
       info.style.display = 'none';
     } else {
@@ -17,8 +18,8 @@ for (let i = 0; i < acordeon.length; i += 1) {
 
 // TABS
 
-const tabs = document.querySelectorAll('.tabs-tablist-item');
-const content = document.querySelectorAll('.tabs-content-item');
+const tabs = document.querySelectorAll('.tabs__tablist--title');
+const content = document.querySelectorAll('.tabs__content--hidden-information');
 
 for (let i = 0; i < content.length; i++) {
   content[i].classList.add('js-content-hidden');
@@ -31,14 +32,14 @@ for (let i = 0; i < tabs.length; i++) {
   tabs[i].addEventListener('click', (event) => {
     event.preventDefault();
     const id = event.currentTarget.getAttribute('href').substring(1);
-    for (let e = 0; e < content.length; e += 1) {
+    for (let e = 0; e < content.length; e++) {
       content[e].classList.add('js-content-hidden');
       if (content[e].getAttribute('id') === id) {
         content[e].classList.remove('js-content-hidden');
       }
     }
-    for (let j = 0; j < tabs.length; j += 1) {
-      tabs[j].classList.remove('js-active');
+    for (let f = 0; i < tabs.length; f++) {
+      tabs[f].classList.remove('js-active');
     }
     event.currentTarget.classList.add('js-active');
   });

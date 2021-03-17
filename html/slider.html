@@ -1,37 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>slider</title>
-    <link rel="stylesheet" href="../public/css/components/slider.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>slider</title>
+  <link rel="stylesheet" href="../public/css/components/slider.css">
 </head>
+
 <body>
-    <!-- Slider container -->
-    <div class="slider-container">
-        <!-- content slider -->
-        <div class="slides animation">
-            <img class="slides-images" src="../img/honey.jpg" alt="Se muestran 2 productos derivados de la miel, totalmente naturales y listos para disfrutar">
-        </div>
-
-        <div class="slides animation">
-            <img class="slides-images" src="../img/super-food.jpg" alt="Se muestran 2 productos naturales y enriquecedores para tu cuerpo, los llamados súper alimentos">
-        </div>
-
-        <div class="slides animation">
-            <img  class="slides-images" src="../img/energy-products.jpg" alt="Que nunca te falte la energía con estos 2 productos derivados de la miel y totalmente naturales">
-        </div>
-
-        <!--back and advance buttons -->
-        <a id="back" class="back">&#10094;</a>
-        <a id="advance" class="advance">&#10095;</a>
+  <!-- Slider container -->
+  <div class="slider">
+    <!-- content slider -->
+    <div class="slider__cards slider__images--animation">
+      <img class="slider__images" src="../img/honey.jpg"
+        alt="Se muestran 2 productos derivados de la miel, totalmente naturales y listos para disfrutar">
     </div>
-    <!-- circles -->
-    <div class="indicators">
-        <span class="slide-indicator"></span>
-        <span class="slide-indicator"></span>
-        <span class="slide-indicator"></span>
+
+    <div class="slider__cards slider__images--animation">
+      <img class="slider__images" src="../img/super-food.jpg"
+        alt="Se muestran 2 productos naturales y enriquecedores para tu cuerpo, los llamados súper alimentos">
     </div>
-    <script src="../js/slider.js"></script>
+
+    <div class="slider__cards  slider__images--animation">
+      <img class="slider__images" src="../img/energy-products.jpg"
+        alt="Que nunca te falte la energía con estos 2 productos derivados de la miel y totalmente naturales">
+    </div>
+
+    <!--back and advance buttons -->
+    <a id="back" class="slider__btn-back">&#10094;</a>
+    <a id="advance" class="slider__btn-advance">&#10095;</a>
+  </div>
+  <!-- circles -->
+  <div class="slider__circles-indicators">
+    <span class="slider__circles-indicators-items"></span>
+    <span class="slider__circles-indicators-items"></span>
+    <span class="slider__circles-indicators-items"></span>
+  </div>
+  <script src="../js/slider.js"></script>
 </body>
+
 </html>

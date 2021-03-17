@@ -10,36 +10,53 @@
 </head>
 
 <body>
-  <div id="login">
-    <button type="button" id="icon-login" class="icon-login">
-      <svg width="47" height="57" viewBox="0 0 47 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M23.5 23.5815C27.0899 23.5815 30 20.6714 30 17.0815C30 13.4917 27.0899 10.5815 23.5 10.5815C19.9101 10.5815 17 13.4917 17 17.0815C17 20.6714 19.9101 23.5815 23.5 23.5815Z"
-          fill="#D3A863" />
-        <path
-          d="M37 35.4634C37 30.0103 32.4389 25.5815 26.8885 25.5815H20.1115C14.5611 25.5815 10 30.0103 10 35.4634V46.5815H37V35.4634Z"
-          fill="#D3A863" />
-      </svg>
-    </button>
-    <div id="modal" class="modal">
-      <div id="content" class="modal-content">
-        <span class="close-js">&times;</span>
+  <!DOCTYPE html>
+  <html lang="es">
 
-        <form action="">
-          <h2>Iniciar sesión</h2>
-          <div class="line">
-            <label for="email">Correo</label>
-            <input id="email" class="form-input requerido" autocomplete="off">
-          </div>
-          <div class="line">
-            <label for="password">Contraseña</label>
-            <input id="password" class="form-input requerido" type="password" autocomplete="off">
-          </div>
-          <button class="button" type="submit" value="Enviar">Iniciar</button>
-        </form>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/components/form.css">
+    <title>Login</title>
+  </head>
+
+  <body>
+    <div id="login">
+      <button type="button" id="login__icon" class="login__icon">
+        <svg width="47" height="57" viewBox="0 0 47 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M23.5 23.5815C27.0899 23.5815 30 20.6714 30 17.0815C30 13.4917 27.0899 10.5815 23.5 10.5815C19.9101 10.5815 17 13.4917 17 17.0815C17 20.6714 19.9101 23.5815 23.5 23.5815Z"
+            fill="#D3A863" />
+          <path
+            d="M37 35.4634C37 30.0103 32.4389 25.5815 26.8885 25.5815H20.1115C14.5611 25.5815 10 30.0103 10 35.4634V46.5815H37V35.4634Z"
+            fill="#D3A863" />
+        </svg>
+      </button>
+      <div id="modal" class="modal">
+        <div id="content" class="modal__content--padding">
+          <span class="modal__close ">&times;</span>
+
+          <form action="">
+            <h2>Iniciar sesión</h2>
+            <div class="line">
+              <label for="email">Correo</label>
+              <input id="email" class="modal__input requerido" autocomplete="off">
+            </div>
+            <div class="line">
+              <label for="password">Contraseña</label>
+              <input id="password" class="modal__input requerido" type="password" autocomplete="off">
+            </div>
+            <button class="" type="submit" value="Enviar">Iniciar</button>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
+
+    <script src="../js/form.js"></script>
+  </body>
+
+  </html>
 
   <script src="../js/form.js"></script>
 </body>

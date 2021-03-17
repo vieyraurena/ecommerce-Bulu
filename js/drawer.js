@@ -1,25 +1,15 @@
 // constants
 const apiURL = 'https://60410f23f34cf600173c967c.mockapi.io/api/products';
 const bag = document.querySelector('.bag');
-const btn = document.querySelector('button');
-const drawer = document.querySelector('.drawer-main-container');
+const btn = document.querySelector('.drawer__header--botton');
+const drawer = document.querySelector('.drawer');
 const listProducts = document.querySelector('.products');
-const drawerItems = document.querySelector('.drawer-container-products');
+const drawerItems = document.querySelector('.drawer__container--products');
 
 // ============= DRAWER ================== //
 
 const callDrawer = () => {
-  // const right = -550;
-
   drawer.style.right = '0px';
-  // const animation = setInterval(() => {
-  //  if (right < 0) {
-  //    right += 5;
-  //    drawer.style.right = `${right}px`;
-  //  } else {
-  //    clearInterval(animation);
-  //  }
-  // }, 5);
 };
 
 const closeDrawer = () => {
@@ -35,13 +25,13 @@ btn.addEventListener('click', closeDrawer);
 
 const createInfo = (element) => {
   const content = `
-  <ul class="drawer-content">
-    <li class="drawer-product">
+  <ul class="js__drawer--items">
+    <li class="js__drawer--items">
       <div data-id="${element.id}">
         <h3>${element.name}</h3>
         <p>${element.description}</p>
         <span>₡${element.price}</span>
-        <button class="drawer-delete">X</button>
+        <button class="js__drawer--delete">X</button>
       </div>
     </li>
   </ul>

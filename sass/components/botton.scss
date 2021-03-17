@@ -4,7 +4,8 @@
 $main-font: 'poppins';
 $complement-font: 'Arial, Helvetica, sans-serif';
 
-$paragraf: $main-font, $complement-font;
+$paragraf: $main-font,
+$complement-font;
 
 // Color
 $secondary-color: #C54210;
@@ -25,7 +26,7 @@ $small-size-movil: $size * 1.4;
 $paddin-top-bottom: $size * 0.7;
 $paddin-right-left: $size * 1.5;
 
-html{
+html {
   font-size: 10px;
 }
 
@@ -34,8 +35,9 @@ button {
   border: none;
   border-radius: $size;
   color: $botton-logIn;
+  font-family: $paragraf;
   font-size: $small-size-movil;
-  outline: 0;
+  outline-color: $links-color;
   padding: $paddin-top-bottom $paddin-right-left;
   text-transform: capitalize;
 

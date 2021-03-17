@@ -1,9 +1,23 @@
+/* $alert-color: #960500;
+
+.red-js {
+  border: $alert-color solid 1px;
+}
+
+.alert__text {
+  font-family: $paragraf;
+  font-size: $small-size-movil;
+  color: $alert-color;
+  font-weight: 600;
+} */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
 
 $main-color: #352B2B;
 $secondary-color: #C54210;
 $fourth-color:#FFFFFF;
+$alert-color: #960500;
 
 $main-font: 'poppins';
 $secondary-font: 'ABeeZee';
@@ -20,65 +34,64 @@ html {
 
 /* icono / usuario */
 
-.icon-login {
+.login__icon {
   border: none;
   background-color: $fourth-color;
   cursor: pointer;
-  outline: none;
 }
 
-.form-input {
-  border: $main-color solid 3px;
-  border-radius: 15px;
-  margin-bottom: 10px;
-  padding: 10px 10px;
-  outline: none;
+.modal {
+  background-color: $fourth-color;
+  display: none;
+  font-family: $paragraf;
+  left: 50%;
+  overflow: auto;
+  position: fixed;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 
   @media (min-width: 500px) {
     width: 80%;
   }
+
+  form {
+    input:focus {
+      border: $secondary-color solid 3px;
+    }
+
+    @media (min-width: 500px) {
+      margin-left: 30px;
+    }
+  }
 }
 
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  overflow: auto;
-  background-color: $fourth-color;
+.modal__close {
+  color: $main-color;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+
+  &:hover {
+    color: $secondary-color;
+    cursor: pointer;
+    text-decoration: none;
+  }
 }
 
-.modal-content {
+.modal__content--padding {
   @media (min-width: 500px) {
     padding: 30px;
   }
 }
 
-.close-js {
-  color: $main-color;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+.modal__input {
+  border: $main-color solid 3px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  padding: 10px 10px;
 }
 
-.close-js:hover {
-  color: $secondary-color;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-#login form {
-  input:focus {
-    border: $secondary-color solid 3px;
-  }
-
-  @media (min-width: 500px) {
-    margin-left: 30px;
-  }
-}
-
-.red {
-  border: red solid 3px;
+.red-js {
+  border: $alert-color solid 1px;
 }

@@ -1,11 +1,11 @@
 // Globals variables
 let slideIndex = 0;
-const backButton = document.querySelector('.back');
-const advanceButton = document.querySelector('.advance');
+const backButton = document.querySelector('.slider__btn-back');
+const advanceButton = document.querySelector('.slider__btn-advance');
 // This function will show the slides
 function appearSlides(numberSlide) {
-  const slides = document.querySelectorAll('.slides');
-  const indicatorSides = document.querySelectorAll('.slide-indicator');
+  const slides = document.querySelectorAll('.slider__cards');
+  const indicatorSides = document.querySelectorAll('.slider__circles-indicators-items');
   if (numberSlide >= slides.length) {
     slideIndex = 0;
   }
@@ -27,7 +27,7 @@ backButton.addEventListener('click', () => {
 advanceButton.addEventListener('click', () => {
   appearSlides(++slideIndex);
 });
-document.querySelectorAll('.slide-indicator').forEach((element) => {
+document.querySelectorAll('.slider__circles-indicators-items').forEach((element) => {
   element.addEventListener('click', function indicatorsBullets() {
     const bullets = Array.prototype.slice.call(this.parentElement.children);
     const bulletsIndex = bullets.indexOf(element);
