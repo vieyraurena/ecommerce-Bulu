@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 // constants
 const apiURL = 'https://60410f23f34cf600173c967c.mockapi.io/api/products';
 const bag = document.querySelector('.bag');

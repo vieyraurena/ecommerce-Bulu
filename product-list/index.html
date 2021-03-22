@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos</title>
+  <link rel="stylesheet" href="../public/css/styles.css">
+</head>
+
+<body>
+  <div class="product">
+    <div class="product__title">
+      <h1>Productos</h1>
+    </div>
+    <div class="product__filter filter-js">
+      <span class="filter__text">Filtrar precio por :</span>
+      <select name="filter" class="filter__text filter__select">
+        <option value="" class="filter__text">Ninguno</option>
+        <option value="" class="filter__text">Alto</option>
+        <option value="" class="filter__text">Bajo</option>
+      </select>
+    </div>
+    <div class="product__list list-js"></div>
+
+  </div>
+
+  <script src="../js/product-list.js"></script>
+</body>
+
+</html>
