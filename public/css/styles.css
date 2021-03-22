@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -305,6 +306,135 @@ html {
   font-size: 10px;
   font-family: "ABeeZee", "Arial, Helvetica, sans-serif";
   background-color: #F7F3F0; }
+
+html {
+  font-size: 10px; }
+
+/*Principal wrapper*/
+.wrapper {
+  width: 340px;
+  margin: 0 auto; }
+
+/*Footer*/
+.footer {
+  background-color: #F7F3F0;
+  background-image: url(../../img/bk.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: relative; }
+
+/* Form's label*/
+.footer__label {
+  font-family: "poppins";
+  font-size: 2rem;
+  line-height: 2.5rem; }
+
+/*Form's input*/
+.footer__input {
+  padding: 1rem 18.7rem 1rem 0;
+  display: block;
+  border: none;
+  border-radius: 10px;
+  margin: 10px 0 20px 0;
+  outline: none; }
+
+.footer__input:focus {
+  border: #C54210 solid 3px; }
+
+.footer__input::placeholder {
+  color: #1EA422; }
+
+/*Button for send the e-mail*/
+.footer__btn-offers {
+  margin-left: 30%;
+  margin-bottom: 93px; }
+
+/*Message's icon*/
+.footer__icon-message {
+  margin-left: 45%; }
+
+/*Paragraph's help*/
+.footer__paragraph-help {
+  background-color: #E7E0E0;
+  display: inline-block;
+  border-radius: 20px;
+  padding: 1rem 1.5rem;
+  margin-left: 40%;
+  margin-bottom: 393px; }
+
+/*Icon's Búlu*/
+.footer__icon-bulu {
+  position: absolute;
+  margin-left: 12%;
+  top: 450px; }
+
+/*Some options of the principal menu*/
+.footer__list {
+  position: absolute;
+  top: 500px; }
+
+.footer__list-nav {
+  color: #664007;
+  line-height: 2.5rem; }
+
+.footer__list-nav:hover {
+  text-decoration: underline;
+  color: #664007; }
+
+.footer__paragraph-desktop {
+  display: none; }
+
+/*Section about social media of Búlu*/
+.footer__social-media {
+  margin-left: 60%;
+  position: absolute;
+  top: 458px; }
+
+/*Breakpoint*/
+@media (min-width: 970px) {
+  .wrapper {
+    width: 1080px;
+    margin: 0 auto; }
+  .footer {
+    background-image: url(../../img/background-desktop.svg); }
+  .footer__label {
+    text-align: center;
+    display: block;
+    margin-bottom: 35px; }
+  .footer__input {
+    margin-left: 35%;
+    margin-bottom: 54px; }
+  .footer__btn-offers {
+    margin-left: 45%;
+    font-size: 1.6rem; }
+  .footer__icon-message {
+    margin-left: 80%; }
+  .footer__paragraph-help {
+    margin-left: 76%;
+    font-size: 1.6rem; }
+  .footer__icon-bulu {
+    position: absolute;
+    margin-left: 43%;
+    top: 585px; }
+  .footer__paragraph-desktop {
+    color: #352B2B;
+    position: absolute;
+    font-family: "ABeeZee";
+    font-size: 2.8rem;
+    left: 64%;
+    top: 561px;
+    display: block; }
+  .footer__list {
+    left: 10%;
+    top: 540px; }
+  .footer__list-media {
+    display: flex;
+    position: absolute;
+    top: 160px;
+    left: 20%;
+    right: -280px; }
+  .footer__list-social + .footer__list-social {
+    margin-left: 5%; } }
 
 .drawer {
   background-color: #FFFFFF;
