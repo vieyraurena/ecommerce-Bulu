@@ -87,6 +87,7 @@
 .header__collapsible--items {
   margin-top: 7rem;
   padding: 1rem;
+
   li {
     border-bottom: 1px solid $main-background;
     padding: 1rem;
@@ -101,7 +102,7 @@
 }
 
 // menu desktop
-.header__list{
+.header__list {
   display: none;
   margin-bottom: 4rem;
 
@@ -125,7 +126,7 @@
 }
 
 // SEARCH
-.search{
+.search {
   margin-top: 105px;
 
   @media (min-width: 1080px) {
@@ -158,7 +159,7 @@
 
 // COVER PAGE
 .coverpage {
-  img{
+  img {
     width: 100%;
   }
 }

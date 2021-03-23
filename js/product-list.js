@@ -1,7 +1,9 @@
+/* eslint-disable no-console */
+/* eslint-disable no-unused-vars */
 /* eslint-disable radix */
 
 const api = 'https://60410f23f34cf600173c967c.mockapi.io/api/products';
-const divProductList = document.querySelector('.list-js');
+const divProductList = document.querySelector('.js-list');
 let products = [];
 
 function loadProducts(p) {
@@ -77,13 +79,13 @@ function isDecimal(n) {
 
 function printPaginate(n) {
   let content = '';
-  const addPagination = document.getElementById('pagination-js');
+  const addPagination = document.getElementById('js-pagination');
   for (let i = 0; i < n; i += 1) {
     content += `
-      <button class="onclick-js btn" onclick="paginate(${i})">${i + 1}</button>
+      <button class="js-onclick btn" onclick="paginate(${i})">${i + 1}</button>
     `;
   }
-  /* const SelectButton = document.querySelectorAll('.onclick-js');
+  /* const SelectButton = document.querySelectorAll('.js-onclick');
     console.log(SelectButton); */
   addPagination.innerHTML = content;
 }
