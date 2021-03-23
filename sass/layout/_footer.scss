@@ -15,18 +15,18 @@ html {
   background-position: bottom;
   position: relative;
 }
-/* Form's label*/
-.footer__label {
-  font-family: $main-font;
-  font-size: $large-size-movil;
-  line-height: $line-height-small-movil;
+/*Button for send the e-mail*/
+.footer__btn-offers {
+  margin-left: 30%;
+  margin-bottom: 93px;
 }
+
 /*Form's input*/
 .footer__input {
-  padding:$padding-small 18.7rem $padding-small 0;
   display: block;
   border: none;
   border-radius: 10px;
+  padding:$padding-small 18.7rem $padding-small 0;
   margin: 10px 0 20px 0;
   outline: none;
 }
@@ -36,30 +36,31 @@ html {
 .footer__input::placeholder {
   color: $third-color;
 }
-/*Button for send the e-mail*/
-.footer__btn-offers {
-  margin-left: 30%;
-  margin-bottom: 93px;
-}
-/*Message's icon*/
-.footer__icon-message {
-  margin-left: 45%;
-}
-/*Paragraph's help*/
-.footer__paragraph-help {
-  background-color: #E7E0E0;
-  display: inline-block;
-  border-radius: 20px;
-  padding: $padding-small $paddin-right-left;
-  margin-left: 40%;
-  margin-bottom: 393px;
-}
+
 /*Icon's Búlu*/
 .footer__icon-bulu {
   position: absolute;
   margin-left: 12%;
   top: 450px;
 }
+
+/*Message's icon*/
+.footer__icon-message {
+  width: 50px;
+  margin-left: 45%;
+}
+
+.footer__img-social {
+  width: 35px;
+}
+
+/* Form's label*/
+.footer__label {
+  font-family: $main-font;
+  font-size: $large-size-movil;
+  line-height: $line-height-small-movil;
+}
+
 /*Some options of the principal menu*/
 .footer__list {
   position: absolute;
@@ -67,21 +68,41 @@ html {
 }
 .footer__list-nav {
   color: #664007;
-  line-height: $line-height-small-movil;
+  line-height: $line-height-medium-movil;
 }
-.footer__list-nav:hover{
-  text-decoration: underline;
+.footer__list-nav:hover {
   color: #664007;
+  text-decoration: underline;
 }
+
+.footer__list-social{
+  margin-bottom: 10px;
+}
+
+/*Paragraph's help*/
+.footer__paragraph-help {
+  display: inline-block;
+  border-radius: 20px;
+  padding: $padding-small $paddin-right-left;
+  margin-left: 40%;
+  margin-bottom: 393px;
+  background-color: #E7E0E0;
+}
+
+
 .footer__paragraph-desktop {
   display: none;
 }
+
 /*Section about social media of Búlu*/
 .footer__social-media {
-  margin-left: 60%;
   position: absolute;
   top: 458px;
+  margin-left: 60%;
 }
+
+
+
 /*Breakpoint*/
 @media (min-width:970px) {
   .wrapper {
@@ -90,41 +111,36 @@ html {
   }
   .footer {
     background-image: url(../../img/background-desktop.svg);
+    max-width: 100%;
   }
+
+  .footer__btn-offers {
+    font-size: $main-p-size-desk;
+    margin-left: 45%;
+  }
+
   .footer__label {
     text-align: center;
     display: block;
     margin-bottom: 35px;
   }
-  .footer__input {
-    margin-left: 35%;
-    margin-bottom: 54px;
-  }
-  .footer__btn-offers {
-    margin-left: 45%;
-    font-size: $main-p-size-desk;
-  }
-  .footer__icon-message {
-    margin-left: 80%;
-  }
-  .footer__paragraph-help {
-    margin-left: 76%;
-    font-size: $main-p-size-desk;
-  }
+
   .footer__icon-bulu {
     position: absolute;
     margin-left: 43%;
     top: 585px;
   }
-  .footer__paragraph-desktop {
-    color: $main-color;
-    position: absolute;
-    font-family: $secondary-font;
-    font-size: $large-h2-size-desk;
-    left: 64%;
-    top: 561px;
-    display: block;
+
+  .footer__icon-message {
+    width: 100px;
+    margin-left: 80%;
   }
+
+  .footer__input {
+    margin-left: 35%;
+    margin-bottom: 54px;
+  }
+
   .footer__list {
     left: 10%;
     top: 540px;
@@ -138,5 +154,20 @@ html {
   }
   .footer__list-social + .footer__list-social {
     margin-left: 5%;
+  }
+
+  .footer__paragraph-help {
+    margin-left: 76%;
+    font-size: $main-p-size-desk;
+  }
+
+  .footer__paragraph-desktop {
+    color: $main-color;
+    position: absolute;
+    font-family: $secondary-font;
+    font-size: $large-h2-size-desk;
+    left: 67%;
+    top: 561px;
+    display: block;
   }
 }
