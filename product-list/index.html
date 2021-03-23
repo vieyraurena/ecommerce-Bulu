@@ -10,19 +10,21 @@
 </head>
 
 <body>
+
   <div class="product">
     <div class="product__title">
       <h1>Productos</h1>
     </div>
-    <div class="product__filter filter-js">
+    <div class="product__filter">
       <span class="filter__text">Filtrar precio por :</span>
-      <select name="filter" class="filter__text filter__select">
-        <option value="" class="filter__text">Ninguno</option>
-        <option value="" class="filter__text">Alto</option>
-        <option value="" class="filter__text">Bajo</option>
+      <select id="filter" onchange="filter()" name="filter" class="filter__text filter__select filter-js">
+        <option value="none" class="filter__text">Ninguno</option>
+        <option value="high" class="filter__text">Alto</option>
+        <option value="low" class="filter__text">Bajo</option>
       </select>
     </div>
     <div class="product__list list-js"></div>
+    <div id="pagination-js"></div>
 
   </div>
 

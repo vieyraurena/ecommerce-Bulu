@@ -2,13 +2,24 @@
 
 const api = 'https://60410f23f34cf600173c967c.mockapi.io/api/products';
 const divProductList = document.querySelector('.list-js');
+let products = [];
 
 function loadProducts(p) {
+  divProductList.innerHTML = '';
+  const select = document.getElementById('filter');
   let contentData = '';
-  const product = p;
+  let product = p;
+
+  if (select.value === 'low') {
+    product = product.sort((a, b) => a.price - b.price);
+  } else if (select.value === 'high') {
+    product = product.sort((a, b) => b.price - a.price);
+  } else {
+    product = product.sort((a, b) => a.id - b.id);
+  }
 
   for (let i = 0; i < product.length; i += 1) {
-    if (i === 6) break;
+    if (i === 10) break;
     contentData += `
     <div data-id="${product[i].id}" class="product__card">
       <div class="product__card-img">
@@ -34,8 +45,58 @@ function loadProducts(p) {
   divProductList.innerHTML = contentData;
 }
 
-// ${product[i].qualification}
-// product = product.sort((a, b) => b.id - a.id);
+function filter() {
+  loadProducts(products);
+}
+
+function paginate(_paginate) {
+  let from = 0;
+  let to = 0;
+  const productsPaginate = [];
+
+  from = ((_paginate + 1) * 10) - 10;
+  to = ((_paginate + 1) * 10);
+
+  if (to > products.length) to = products.length;
+
+  while (from < to) {
+    productsPaginate.push(products[from]);
+    from += 1;
+  }
+
+  loadProducts(productsPaginate);
+}
+
+function isDecimal(n) {
+  const result = (n - Math.floor(n)) !== 0;
+  if (result) {
+    return true;
+  }
+  return false;
+}
+
+function printPaginate(n) {
+  let content = '';
+  const addPagination = document.getElementById('pagination-js');
+  for (let i = 0; i < n; i += 1) {
+    content += `
+      <button onclick="paginate(${i})">${i + 1}</button>
+    `;
+  }
+  addPagination.innerHTML = content;
+}
+
+function createPaginations(len) {
+  let numberPaginate = 0;
+  let _isDecimal = false;
+  numberPaginate = len / 10;
+  _isDecimal = isDecimal(numberPaginate);
+  if (_isDecimal === true) {
+    numberPaginate += 1;
+  }
+  numberPaginate = parseInt(numberPaginate);
+  printPaginate(numberPaginate);
+}
 
 fetch(api, {
   method: 'GET',
@@ -45,5 +106,7 @@ fetch(api, {
 }).then((res) => res.json())
   .catch((error) => console.error('Error:', error))
   .then((p) => {
-    loadProducts(p);
+    products = p;
+    createPaginations(products.length);
+    loadProducts(products);
   });
