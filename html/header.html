@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="stylesheet" href="../public/css/styles.css">
+  </head>
+
+  <body>
+    <!--HERE START MOBILE HEADER-->
+    <div class="header wrapper">
+      <div class="header__logo">
+        <svg width="98" height="41" viewBox="0 0 98 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17.48 25.6C19.1067 25.9467 20.4133 26.76 21.4 28.04C22.3867 29.2933 22.88 30.7333 22.88 32.36C22.88 34.7067 22.0533 36.5733 20.4 37.96C18.7733 39.32 16.4933 40 13.56 40H0.48V11.92H13.12C15.9733 11.92 18.2 12.5733 19.8 13.88C21.4267 15.1867 22.24 16.96 22.24 19.2C22.24 20.8533 21.8 22.2267 20.92 23.32C20.0667 24.4133 18.92 25.1733 17.48 25.6ZM7.32 23.28H11.8C12.92 23.28 13.7733 23.04 14.36 22.56C14.9733 22.0533 15.28 21.32 15.28 20.36C15.28 19.4 14.9733 18.6667 14.36 18.16C13.7733 17.6533 12.92 17.4 11.8 17.4H7.32V23.28ZM12.36 34.48C13.5067 34.48 14.3867 34.2267 15 33.72C15.64 33.1867 15.96 32.4267 15.96 31.44C15.96 30.4533 15.6267 29.68 14.96 29.12C14.32 28.56 13.4267 28.28 12.28 28.28H7.32V34.48H12.36ZM33.5672 11.92V28.72C33.5672 30.4 33.9805 31.6933 34.8072 32.6C35.6339 33.5067 36.8472 33.96 38.4472 33.96C40.0472 33.96 41.2739 33.5067 42.1272 32.6C42.9805 31.6933 43.4072 30.4 43.4072 28.72V11.92H50.2472V28.68C50.2472 31.1867 49.7139 33.3067 48.6472 35.04C47.5805 36.7733 46.1405 38.08 44.3272 38.96C42.5405 39.84 40.5405 40.28 38.3272 40.28C36.1139 40.28 34.1272 39.8533 32.3672 39C30.6339 38.12 29.2605 36.8133 28.2472 35.08C27.2339 33.32 26.7272 31.1867 26.7272 28.68V11.92H33.5672ZM43.1272 5.6V10.32L33.4872 6.28V0.959997L43.1272 5.6ZM61.8903 34.72H70.8503V40H55.0503V11.92H61.8903V34.72ZM80.8328 11.92V28.72C80.8328 30.4 81.2461 31.6933 82.0728 32.6C82.8995 33.5067 84.1128 33.96 85.7128 33.96C87.3128 33.96 88.5395 33.5067 89.3928 32.6C90.2461 31.6933 90.6728 30.4 90.6728 28.72V11.92H97.5128V28.68C97.5128 31.1867 96.9795 33.3067 95.9128 35.04C94.8461 36.7733 93.4061 38.08 91.5928 38.96C89.8061 39.84 87.8061 40.28 85.5928 40.28C83.3795 40.28 81.3928 39.8533 79.6328 39C77.8995 38.12 76.5261 36.8133 75.5128 35.08C74.4995 33.32 73.9928 31.1867 73.9928 28.68V11.92H80.8328Z" fill="#4BA035"/>
+        </svg>
+      </div>
+
+      <!--HAMBURGUER MENU-->
+      <div class="header__nav--hamburger js-header__nav--hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+
+      <!--START HERE COLLAPSIBLE NAV,
+      this nav only look when it is a mobile device-->
+      <nav class="header__collapsible">
+        <div class="header__collapsible--container">
+          <button class="header__btn--close js-header__btn--close btn__icon">&times;</button>
+          <ul class="header__collapsible--items">
+            <a href=""><li>Sobre Nosotros</li></a>
+            <a href=""><li>Productos</li></a>
+            <a href=""><li>Preguntas Frecuentes</li></a>
+            <a href=""><li>Blog</li></a>
+            <a href=""><li>Contactos</li></a>
+          </ul>
+        </div>
+      </nav>
+
+      <!--I applyed accessible buttons-->
+      <div class="header__icons">
+        <button class="header__icons--btns btn__icon js-header--login">
+          <span class="header__icon--user" aria-hidden="true">
+            <svg width="38" height="45" viewBox="0 0 38 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19 19.2222C21.3932 19.2222 23.3333 17.2012 23.3333 14.7083C23.3333 12.2153 21.3932 10.1944 19 10.1944C16.6068 10.1944 14.6667 12.2153 14.6667 14.7083C14.6667 17.2012 16.6068 19.2222 19 19.2222Z" fill="#D3A863"/>
+              <path d="M28 27.0846C28 23.2977 24.9593 20.2222 21.259 20.2222H16.741C13.0408 20.2222 10 23.2977 10 27.0846V34.8055H28V27.0846Z" fill="#D3A863"/>
+            </svg>
+          </span>
+          <span class="visually-hidden">registrarse</span>
+        </button>
+        <button class="header__icons--btns btn__icon js-header--bag">
+          <span class="header__icon--user" aria-hidden="true">
+            <svg width="37" height="45" viewBox="0 0 37 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.429 13.8725C15.429 13.1025 15.7526 12.364 16.3285 11.8196C16.9044 11.2751 17.6855 10.9692 18.5 10.9692C19.3145 10.9692 20.0956 11.2751 20.6715 11.8196C21.2474 12.364 21.571 13.1025 21.571 13.8725V15.9091H22.5V13.8725C22.5 12.8696 22.0786 11.9077 21.3284 11.1985C20.5783 10.4893 19.5609 10.0909 18.5 10.0909C17.4391 10.0909 16.4217 10.4893 15.6716 11.1985C14.9214 11.9077 14.5 12.8696 14.5 13.8725V15.9091H15.429V13.8725Z" fill="#D3A863"/>
+              <path d="M26.5508 16.9092H22.7234V22.8415H21.7731V16.9092H15.4908V22.8415H14.5406V16.9092H10.4494C10.3892 16.9079 10.3294 16.9185 10.2737 16.9404C10.2179 16.9623 10.1674 16.9949 10.1254 17.0362C10.0833 17.0776 10.0505 17.1268 10.029 17.1808C10.0075 17.2348 9.99777 17.2925 10.0004 17.3503V32.4033C9.99814 32.7319 10.0636 33.0577 10.1931 33.3619C10.3226 33.6661 10.5135 33.9426 10.7548 34.1756C10.9961 34.4085 11.2831 34.5933 11.5991 34.7192C11.9152 34.8451 12.2541 34.9096 12.5962 34.9091H24.4038C24.7459 34.9096 25.0848 34.8451 25.4009 34.7192C25.7169 34.5933 26.0039 34.4085 26.2452 34.1756C26.4865 33.9426 26.6774 33.6661 26.8069 33.3619C26.9364 33.0577 27.0019 32.7319 26.9996 32.4033V17.3503C27.0022 17.2925 26.9925 17.2349 26.971 17.1809C26.9496 17.1269 26.9168 17.0777 26.8747 17.0363C26.8327 16.995 26.7822 16.9624 26.7265 16.9405C26.6708 16.9186 26.611 16.9079 26.5508 16.9092Z" fill="#D3A863"/>
+            </svg>
+          </span>
+          <span class="visually-hidden">cart shopping</span>
+        </button>
+      </div>
+    </div>
+
+    <!--HERE START DESKTOP HEADER-->
+    <div class="white">
+      <div class="header__list">
+        <ul class="header__list--items">
+          <a href=""><li>Sobre Nosotros</li></a>
+          <a href=""><li>Productos</li></a>
+          <a href=""><li>Preguntas Frecuentes</li></a>
+          <a href=""><li>Blog</li></a>
+          <a href=""><li>Contactos</li></a>
+        </ul>
+      </div>
+    </div>
+
+
+
+    <!--HERE START DRAWER-->
+    <!--Here start the component-->
+    <!--This class is the container-box the drawer-->
+    <div class="drawer js-drawer">
+
+      <!--this class is for the wrapper(width:container) that drawer-->
+      <div class="drawer__wrapper">
+
+        <!--header del drawer-->
+        <div class="drawer__header">
+          <h2>Mini-Cart</h2>
+          <button class="drawer__header--button btn__icon js-drawer__header--button">&times;</button>
+        </div>
+
+        <!--product list. Are loaded with JS-->
+        <div class="drawer__container--products js-drawer__container--products drawer__line--button">
+
+        </div>
+
+        <!-- send ancore for redirect to check-out-->
+        <div class="drawer__btn--close flex">
+          <a class="btn__ancore" href="">Comprar</a>
+        </div>
+
+      </div>
+    </div>
+
+    <!--HERE START LOGIN-->
+
+    <!--modal back is for put a behing background-->
+    <div class="modal__back js-modal__back"></div>
+
+    <!--here start modal-->
+    <div id="modal" class="modal">
+      <div id="content" class="modal__content">
+
+        <button class="modal__close--btn btn__icon js-modal__close">&times;</button>
+
+        <!--form-->
+        <form action="">
+          <h2>Iniciar sesión</h2>
+          <div class="line">
+            <label for="email">Correo</label>
+            <input id="email" class="modal__form--input requerido" autocomplete="off">
+          </div>
+          <div class="line">
+            <label for="password">Contraseña</label>
+            <input id="password" class="modal__form--input requerido" type="password" autocomplete="off">
+          </div>
+          <button class="btn" type="submit" value="Enviar">Iniciar</button>
+        </form>
+
+      </div>
+    </div>
+
+    <!--HERE START SEARCH-->
+
+    <div class="search wrapper">
+      <form class="search__form" action="">
+        <input class="search__form--input" type="text">
+      </form>
+    </div>
+
+    <!--here start the cover page-->
+    <div class="coverpage">
+      <img src="../img/coverpage.svg" alt="">
+    </div>
+
+    <script src="../js/form.js"></script>
+    <script src="../js/drawer.js"></script>
+  </body>
+</html>

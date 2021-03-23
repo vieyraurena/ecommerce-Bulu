@@ -1,6 +1,9 @@
 // Wrapper
 $wrapper: 340px;
 
+//new variable
+$desktop-wrapper: 1080px;
+
 // Typography
 $main-font: 'poppins';
 $secondary-font: 'ABeeZee';
@@ -42,6 +45,9 @@ $third-color: #1EA422;
 $fourth-color:#FFFFFF;
 $alert-color: #960500;
 $links-hover-color: #a73001;
+
+// Nueva variable para el uso del hover y active en los botones que tienen imagenes
+$hover-buttons-img: #fff0eb;
 
 //=======================================//
 

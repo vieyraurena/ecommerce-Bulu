@@ -1,0 +1,9 @@
+/*create this classes, because are general and we will all use them */
+.wrapper {
+  width: 300px;
+  margin: 0 auto;
+
+  @media (min-width: 1080px) {
+    width: $desktop-wrapper;
+  }
+}
