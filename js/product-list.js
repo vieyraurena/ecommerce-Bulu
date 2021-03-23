@@ -1,4 +1,4 @@
-/* eslint-disable no-console */
+/* eslint-disable radix */
 
 const api = 'https://60410f23f34cf600173c967c.mockapi.io/api/products';
 const divProductList = document.querySelector('.list-js');
@@ -80,9 +80,11 @@ function printPaginate(n) {
   const addPagination = document.getElementById('pagination-js');
   for (let i = 0; i < n; i += 1) {
     content += `
-      <button onclick="paginate(${i})">${i + 1}</button>
+      <button class="onclick-js btn" onclick="paginate(${i})">${i + 1}</button>
     `;
   }
+  /* const SelectButton = document.querySelectorAll('.onclick-js');
+    console.log(SelectButton); */
   addPagination.innerHTML = content;
 }
 

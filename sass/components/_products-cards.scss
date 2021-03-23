@@ -14,7 +14,7 @@
   padding: 0px;
   position: relative;
   width: $wrapper;
-
+  z-index: -1;
 }
 
 .product__card-data {
@@ -69,9 +69,4 @@
 
 .product__filter {
   margin-bottom: $margin-large;
-}
-
-.product__list {
-  // background: $third-background;
-  position: static;
 }

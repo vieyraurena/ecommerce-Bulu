@@ -55,6 +55,10 @@ a {
   color: $secondary-color;
   font-size: $small-size-movil;
 
+  // &:focus {
+  //   border: $secondary-color solid 3px;
+  // }
+
   @media (min-width: 970px) {
     font-size: $main-p-size-desk;
 

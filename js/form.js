@@ -1,15 +1,18 @@
 // Se declaran las constantes del DOM y se realizan las funciones para abrir y cerrar modal
 const modal = document.getElementById('modal');
-const openModal = document.getElementById('icon-login');
-const closeModal = document.getElementsByClassName('close')[0];
+const openModal = document.querySelector('.js-header--login');
+const closeModal = document.querySelector('.js-modal__close');
+const overley = document.querySelector('.js-modal__back');
 
-openModal.onclick = () => {
+openModal.addEventListener('click', () => {
   modal.style.display = 'block';
-};
+  overley.style.display = 'block';
+});
 
-closeModal.onclick = () => {
+closeModal.addEventListener('click', () => {
   modal.style.display = 'none';
-};
+  overley.style.display = 'none';
+});
 
 // Se inicia con la validación del login del modal
 
@@ -22,7 +25,7 @@ const validation = () => {
 
   for (let i = 0; i < required.length; i += 1) {
     if (required[i].value === '') {
-      required[i].classList.add('red');
+      required[i].classList.add('js-red');
       const p = document.createElement('p');
       p.innerHTML = 'Error verificar campo';
       lines[i].appendChild(p);

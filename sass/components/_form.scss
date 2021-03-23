@@ -1,60 +1,63 @@
-/* icon user */
-
-.login__icon {
-  border: none;
-  background-color: $fourth-color;
-  cursor: pointer;
-  outline: none;
+.modal__back {
+  background-color: $main-background;
+  bottom: 0;
+  display: none;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
 }
 
 .modal {
   background-color: $fourth-color;
+  border-radius: 1rem;
   display: none;
+  position: fixed;
   left: 50%;
   overflow: auto;
-  position: fixed;
+  padding: 3rem;
   top: 40%;
   transform: translate(-50%, -50%);
   z-index: 1;
-
-  @media (min-width: 500px) {
-    width: 80%;
-  }
-
-  form {
-    input:focus {
-      border: $secondary-color solid 3px;
-    }
-
-    @media (min-width: 500px) {
-      margin-left: 30px;
-    }
-  }
 }
 
-.modal__close {
-  color: $main-color;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-
-  :hover {
-    color: $secondary-color;
-    cursor: pointer;
-    text-decoration: none;
-  }
-}
-
-.modal__content--padding {
+.modal__content {
   @media (min-width: 500px) {
     padding: 30px;
   }
 }
 
-.modal__input {
+.modal__close--btn {
+  color: $main-color;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+
+  @media (min-width: 500px) {
+    &:hover {
+      color: $secondary-color;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.modal__form--input {
   border: $main-color solid 3px;
   border-radius: 15px;
   margin-bottom: 10px;
-  outline: none;
   padding: 10px 10px;
+  outline: none;
+
+  input:focus {
+    border: $secondary-color solid 3px;
+  }
+
+  @media (min-width: 500px) {
+    width: 80%;
+  }
+}
+
+.js-red {
+  border: $alert-color solid 3px;
 }

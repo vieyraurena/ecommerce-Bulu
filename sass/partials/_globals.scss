@@ -3,3 +3,10 @@ html {
   font-family: $paragraf;
   background-color: $main-background;
 }
+
+
+button {
+  border-radius: $size;
+  font-family: $titles;
+  text-transform: capitalize;
+}

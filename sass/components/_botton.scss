@@ -1,10 +1,10 @@
-button {
+/*btn is for buttons that use terracota background*/
+.btn {
   background-color: $links-color;
   border: none;
   border-radius: $size;
   color: $botton-logIn;
   font-size: $small-size-movil;
-  outline: 0;
   padding: $paddin-top-bottom $paddin-right-left;
   text-transform: capitalize;
 
@@ -13,8 +13,70 @@ button {
   }
 
   @media (min-width: 970px) {
+    font-size:$main-p-size-desk;
     &:hover {
       background-color: $links-hover;
     }
+  }
+}
+
+/*btn__icon is for use buttons the has svg o any image*/
+.btn__icon {
+  background-color: transparent;
+  border: none;
+  border-radius: 1rem;
+
+  &:active, :focus {
+    background-color: $hover-buttons-img;
+  }
+
+  .visually-hidden {
+    visibility: hidden;
+  }
+
+  @media (min-width: 970px) {
+    &:hover {
+      background-color: $hover-buttons-img;
+    }
+  }
+}
+
+/*btn__ancore is for use buttons that are ancores, but it should same a button*/
+.btn__ancore {
+  background-color: $links-color;
+  border: none;
+  border-radius: $size;
+  color: $fourth-color;
+  font-size:$small-size-movil;
+  font-weight: bold;
+  padding: $paddin-top-bottom $paddin-right-left;
+  text-transform: capitalize;
+
+
+  @media (min-width: 970px) {
+    font-size:$main-p-size-desk;
+    font-weight: normal;
+  }
+
+  &:hover {
+    color: $fourth-color;
+    background-color: $links-hover-color;
+  }
+}
+
+/*btn__secondary is for use buttons that its funtionality is secondary*/
+
+.btn__secondary {
+  background-color: transparent;
+  border: 2px solid $secondary-color;;
+  border-radius: 1rem solid $secondary-color;
+  font-size: $small-size-movil;
+  font-weight: bold;
+  padding: 0.5rem  $paddin-right-left;
+
+
+  @media (min-width: 970px) {
+    font-size:$main-p-size-desk;
+    font-weight: normal;
   }
 }
