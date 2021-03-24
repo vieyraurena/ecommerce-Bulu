@@ -1,0 +1,87 @@
+@media (min-width: 20px) {
+  body {
+    background-color: #F7F3F0;
+    font-family: "poppins", "Arial, Helvetica, sans-serif";
+    margin: 0 auto;
+    width: 340px; }
+  .card-description__title {
+    color: #C54210;
+    font-size: 1.6rem;
+    text-transform: capitalize; }
+  #js-hiddenImages img {
+    border: 2px solid #C54210;
+    border-radius: 5px;
+    filter: grayscale(100%);
+    float: left;
+    height: auto;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    transition: 0.2s;
+    width: 20.6%; }
+  #js-hiddenImages img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1); }
+  #js-openImage img {
+    border: 2px solid #C54210;
+    border-radius: 8px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: auto;
+    width: 340px; }
+  .card-description__product-price {
+    color: #C54210;
+    font-size: 1.6rem; }
+  button {
+    background-color: #C54210;
+    border: none;
+    border-radius: 1rem;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    margin-left: 36px;
+    margin-top: 20px;
+    outline: 0;
+    padding: 0.7rem 1.5rem;
+    text-transform: capitalize; }
+    button:active {
+      background-color: #a73001; }
+  .card-description__comments--background {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    padding-top: 30px; }
+    .card-description__comments--background p {
+      margin-left: 5%;
+      margin-right: 5%; }
+    .card-description__comments--background img {
+      margin-left: 5%; }
+  /* Clase para resaltar la imagen activa manejada con JavaScript */
+  .active {
+    filter: grayscale(0%); } }
+
+@media (min-width: 380px) {
+  body {
+    width: 100%; }
+  .card-description {
+    margin: 0 auto;
+    width: 90%; }
+  .card-description__title {
+    font-size: 2.8rem; }
+  #js-hiddenImages {
+    width: 45%; }
+  #js-hiddenImages img {
+    height: auto;
+    width: 22%; }
+  #js-openImage {
+    margin-right: 1px;
+    width: 45%; }
+  #js-openImage img {
+    margin: 0 0;
+    margin-bottom: 10px;
+    padding: 0 0;
+    width: 100%; }
+  .card-description__image-gallery {
+    margin: 0 0;
+    float: left; } }
