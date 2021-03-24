@@ -79,7 +79,7 @@ function isDecimal(n) {
 
 function printPaginate(n) {
   let content = '';
-  const addPagination = document.getElementById('js-pagination');
+  const addPagination = document.getElementById('pagination');
   for (let i = 0; i < n; i += 1) {
     content += `
       <button class="js-onclick btn" onclick="paginate(${i})">${i + 1}</button>
