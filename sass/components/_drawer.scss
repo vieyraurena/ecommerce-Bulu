@@ -10,6 +10,7 @@
   right: -100%;
   top: 0;
   transition: right 0.8s;
+  z-index: 1000;
 }
 
 .drawer__wrapper {
@@ -88,4 +89,3 @@
   flex-direction: row;
   justify-content: flex-end;
 }
-

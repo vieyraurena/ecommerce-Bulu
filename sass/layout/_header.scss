@@ -9,6 +9,7 @@
   right: 0;
   top: 0;
   width: 100%;
+  z-index: 999;
 }
 
 .header__logo {
@@ -31,7 +32,7 @@
   padding-right: $maxim-size-movil;
   // width: calculateWidthMobile(80px);
 
-  .line {
+  .hamburger--line {
     background-color: #D3A863;
     border-radius: 2px;
     margin-bottom: 5px;
@@ -43,6 +44,7 @@
     display: none;
   }
 }
+
 
 .header__icons {
   order: 3;
@@ -58,6 +60,7 @@
   }
 }
 
+//MENU COLLAPSIBLE
 .header__collapsible {
   background-color: $secondary-background;
   border-bottom-right-radius: $size;
@@ -95,9 +98,13 @@
 }
 
 .white {
+  padding: 0.3rem;
+
   @media (min-width: 1080px) {
     background-color: $secondary-background;
     width: 100%;
+    position: fixed;
+    top: 0;
   }
 }
 
@@ -113,8 +120,8 @@
 
     .header__list--items {
       display: flex;
-      padding: 6rem 0rem 1rem 0rem;
-      width: 100%;
+      padding: 6rem 0rem 0rem 0rem;
+
 
       li {
         justify-content: space-between;
@@ -127,10 +134,12 @@
 
 // SEARCH
 .search {
+  display: flex;
+  justify-content: center;
   margin-top: 105px;
 
   @media (min-width: 1080px) {
-    margin-top: 40px;
+    margin-top: 180px;
   }
 }
 
@@ -146,14 +155,16 @@
   background-color: $secondary-background;
   background-image: url(../../img/search.svg);
   background-repeat: no-repeat;
-  background-position: 95%;
+  background-position: 90%;
   border: none;
-  border-radius: 1rem;
+  border-radius: $size;
   padding: 1.5rem 2rem;
-  width: 90%;
+  width: 85%;
+  padding-right: 45%;
 
   @media (min-width: 1080px) {
     background-position: 98%;
+    padding-right: 200px;
   }
 }
 

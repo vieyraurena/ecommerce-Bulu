@@ -25,7 +25,7 @@ const validation = () => {
 
   for (let i = 0; i < required.length; i += 1) {
     if (required[i].value === '') {
-      required[i].classList.add('js-red');
+      required[i].classList.add('js-input-alert');
       const p = document.createElement('p');
       p.innerHTML = 'Error verificar campo';
       lines[i].appendChild(p);

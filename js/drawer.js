@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 const apiURL = 'https://60410f23f34cf600173c967c.mockapi.io/api/products';
-const listProducts = document.querySelector('.js-products');
-
+const listProducts = document.querySelectorAll('.js-add__drawer');
+console.log(listProducts);
 // constants drawer
 const bag = document.querySelector('.js-header--bag');
 const btn = document.querySelector('.js-drawer__header--button');

@@ -13,7 +13,8 @@
   }
 
   @media (min-width: 970px) {
-    font-size:$main-p-size-desk;
+    font-size: $main-p-size-desk;
+
     &:hover {
       background-color: $links-hover;
     }
@@ -26,12 +27,9 @@
   border: none;
   border-radius: 1rem;
 
-  &:active, :focus {
+  &:active,
+  :focus {
     background-color: $hover-buttons-img;
-  }
-
-  .visually-hidden {
-    visibility: hidden;
   }
 
   @media (min-width: 970px) {
@@ -41,20 +39,26 @@
   }
 }
 
+.visually-hidden {
+  visibility: hidden;
+  font-size: 1px;
+}
+
+
 /*btn__ancore is for use buttons that are ancores, but it should same a button*/
 .btn__ancore {
   background-color: $links-color;
   border: none;
   border-radius: $size;
   color: $fourth-color;
-  font-size:$small-size-movil;
+  font-size: $small-size-movil;
   font-weight: bold;
   padding: $paddin-top-bottom $paddin-right-left;
   text-transform: capitalize;
 
 
   @media (min-width: 970px) {
-    font-size:$main-p-size-desk;
+    font-size: $main-p-size-desk;
     font-weight: normal;
   }
 
@@ -68,15 +72,16 @@
 
 .btn__secondary {
   background-color: transparent;
-  border: 2px solid $secondary-color;;
+  border: 2px solid $secondary-color;
+  ;
   border-radius: 1rem solid $secondary-color;
   font-size: $small-size-movil;
   font-weight: bold;
-  padding: 0.5rem  $paddin-right-left;
+  padding: 0.5rem $paddin-right-left;
 
 
   @media (min-width: 970px) {
-    font-size:$main-p-size-desk;
+    font-size: $main-p-size-desk;
     font-weight: normal;
   }
 }

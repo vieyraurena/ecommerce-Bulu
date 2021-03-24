@@ -1,177 +1,176 @@
-html {
-  font-size: 10px;
-}
-/*Principal wrapper*/
-.wrapper {
-  width: $wrapper;
-  margin: 0 auto;
-
-}
-/*Footer*/
 .footer {
   background-color: $main-background;
   background-image: url(../../img/bk.svg);
   background-repeat: no-repeat;
   background-position: bottom;
   position: relative;
-}
-/*Button for send the e-mail*/
-.footer__btn-offers {
-  margin-left: 30%;
-  margin-bottom: 93px;
-}
 
-/*Form's input*/
-.footer__input {
-  display: block;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  padding:$padding-small 18.7rem $padding-small 0;
-  margin: 10px 0 20px 0;
-  outline: none;
-}
-.footer__input:focus {
-  border: $secondary-color solid 3px;
-}
-.footer__input::placeholder {
-  color: $third-color;
-}
+  @media (min-width:400px) {
 
-/*Icon's Búlu*/
-.footer__icon-bulu {
-  position: absolute;
-  margin-left: 12%;
-  top: 450px;
-}
-
-/*Message's icon*/
-.footer__icon-message {
-  width: 50px;
-  margin-left: 45%;
-}
-
-.footer__img-social {
-  width: 35px;
-}
-
-/* Form's label*/
-.footer__label {
-  font-family: $main-font;
-  font-size: $large-size-movil;
-  line-height: $line-height-small-movil;
-}
-
-/*Some options of the principal menu*/
-.footer__list {
-  position: absolute;
-  top: 500px;
-}
-.footer__list-nav {
-  color: #664007;
-  line-height: $line-height-medium-movil;
-}
-.footer__list-nav:hover {
-  color: #664007;
-  text-decoration: underline;
-}
-
-.footer__list-social{
-  margin-bottom: 10px;
-}
-
-/*Paragraph's help*/
-.footer__paragraph-help {
-  display: inline-block;
-  border-radius: 20px;
-  padding: $padding-small $paddin-right-left;
-  margin-left: 40%;
-  margin-bottom: 393px;
-  background-color: #E7E0E0;
-}
-
-
-.footer__paragraph-desktop {
-  display: none;
-}
-
-/*Section about social media of Búlu*/
-.footer__social-media {
-  position: absolute;
-  top: 458px;
-  margin-left: 60%;
-}
-
-
-
-/*Breakpoint*/
-@media (min-width:970px) {
-  .wrapper {
-    width: 1080px;
-    margin: 0 auto;
-  }
-  .footer {
     background-image: url(../../img/background-desktop.svg);
-    max-width: 100%;
+
   }
 
+  /*Button for send the e-mail*/
   .footer__btn-offers {
-    font-size: $main-p-size-desk;
+    margin-left: 30%;
+    margin-bottom: 93px;
+  }
+
+  /*Form's input*/
+  .footer__input {
+    display: block;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: $padding-small 18.7rem $padding-small 0;
+    margin: 10px 0 20px 0;
+    outline: none;
+  }
+
+  .footer__input:focus {
+    border: $secondary-color solid 3px;
+  }
+
+  .footer__input::placeholder {
+    color: $third-color;
+  }
+
+  /*Icon's Búlu*/
+  .footer__icon-bulu {
+    position: absolute;
+    margin-left: 12%;
+    top: 450px;
+  }
+
+  /*Message's icon*/
+  .footer__icon-message {
+    width: 50px;
     margin-left: 45%;
   }
 
+  .footer__img-social {
+    width: 35px;
+  }
+
+  /* Form's label*/
   .footer__label {
-    text-align: center;
-    display: block;
-    margin-bottom: 35px;
+    font-family: $main-font;
+    font-size: $large-size-movil;
+    line-height: $line-height-small-movil;
   }
 
-  .footer__icon-bulu {
-    position: absolute;
-    margin-left: 43%;
-    top: 585px;
-  }
-
-  .footer__icon-message {
-    width: 100px;
-    margin-left: 80%;
-  }
-
-  .footer__input {
-    padding: $padding-small 25.7rem $padding-small 0;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-left: 35%;
-    margin-bottom: 54px;
-  }
-
+  /*Some options of the principal menu*/
   .footer__list {
-    left: 10%;
-    top: 540px;
-  }
-  .footer__list-media {
-    display: flex;
     position: absolute;
-    top: 160px;
-    left: 20%;
-    right: -280px;
-  }
-  .footer__list-social + .footer__list-social {
-    margin-left: 5%;
+    top: 500px;
   }
 
-  .footer__paragraph-help {
-    margin-bottom: 340px;
-    margin-left: 76%;
-    font-size: $main-p-size-desk;
+  .footer__list-nav {
+    color: #664007;
+    line-height: $line-height-medium-movil;
   }
+
+  .footer__list-nav:hover {
+    color: #664007;
+    text-decoration: underline;
+  }
+
+  .footer__list-social {
+    margin-bottom: 10px;
+  }
+
+  /*Paragraph's help*/
+  .footer__paragraph-help {
+    display: inline-block;
+    border-radius: 20px;
+    padding: $padding-small $paddin-right-left;
+    margin-left: 40%;
+    margin-bottom: 393px;
+    background-color: #E7E0E0;
+  }
+
 
   .footer__paragraph-desktop {
-    color: $main-color;
+    display: none;
+  }
+
+  /*Section about social media of Búlu*/
+  .footer__social-media {
     position: absolute;
-    font-family: $secondary-font;
-    font-size: $large-h2-size-desk;
-    left: 67%;
-    top: 561px;
-    display: block;
+    top: 458px;
+    margin-left: 60%;
+  }
+
+
+
+  /*Breakpoint*/
+  @media (min-width:970px) {
+    .wrapper {
+      width: 1080px;
+      margin: 0 auto;
+    }
+
+    .footer__btn-offers {
+      font-size: $main-p-size-desk;
+      margin-left: 45%;
+    }
+
+    .footer__label {
+      text-align: center;
+      display: block;
+      margin-bottom: 35px;
+    }
+
+    .footer__icon-bulu {
+      position: absolute;
+      margin-left: 43%;
+      top: 585px;
+    }
+
+    .footer__icon-message {
+      width: 100px;
+      margin-left: 80%;
+    }
+
+    .footer__input {
+      padding: $padding-small 25.7rem $padding-small 0;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      margin-left: 35%;
+      margin-bottom: 54px;
+    }
+
+    .footer__list {
+      left: 10%;
+      top: 540px;
+    }
+
+    .footer__list-media {
+      display: flex;
+      position: absolute;
+      top: 160px;
+      left: 20%;
+      right: -280px;
+    }
+
+    .footer__list-social+.footer__list-social {
+      margin-left: 5%;
+    }
+
+    .footer__paragraph-help {
+      margin-bottom: 340px;
+      margin-left: 76%;
+      font-size: $main-p-size-desk;
+    }
+
+    .footer__paragraph-desktop {
+      color: $main-color;
+      position: absolute;
+      font-family: $secondary-font;
+      font-size: $large-h2-size-desk;
+      left: 67%;
+      top: 561px;
+      display: block;
+    }
   }
 }
