@@ -1,0 +1,20 @@
+button {
+  background-color: $links-color;
+  border: none;
+  border-radius: $size;
+  color: $botton-logIn;
+  font-size: $small-size-movil;
+  outline: 0;
+  padding: $paddin-top-bottom $paddin-right-left;
+  text-transform: capitalize;
+
+  &:active {
+    background-color: $links-hover;
+  }
+
+  @media (min-width: 970px) {
+    &:hover {
+      background-color: $links-hover;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+/* icon user */
+
+.login__icon {
+  border: none;
+  background-color: $fourth-color;
+  cursor: pointer;
+  outline: none;
+}
+
+.modal {
+  background-color: $fourth-color;
+  display: none;
+  left: 50%;
+  overflow: auto;
+  position: fixed;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+
+  @media (min-width: 500px) {
+    width: 80%;
+  }
+
+  form {
+    input:focus {
+      border: $secondary-color solid 3px;
+    }
+
+    @media (min-width: 500px) {
+      margin-left: 30px;
+    }
+  }
+}
+
+.modal__close {
+  color: $main-color;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+
+  :hover {
+    color: $secondary-color;
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
+
+.modal__content--padding {
+  @media (min-width: 500px) {
+    padding: 30px;
+  }
+}
+
+.modal__input {
+  border: $main-color solid 3px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  outline: none;
+  padding: 10px 10px;
+}

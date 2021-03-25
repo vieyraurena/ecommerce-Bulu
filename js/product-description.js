@@ -1,7 +1,6 @@
 const bigImg = document.getElementById('js-openImage');
 const subImg = document.querySelectorAll('.card-description__image-gallery--hidden-image');
 
-
 for (let i = 0; i < subImg.length; i++) {
     subImg[i].addEventListener('click', (event) => {
         let src = event.currentTarget.getAttribute('src');
@@ -15,6 +14,8 @@ for (let i = 0; i < subImg.length; i++) {
         }
     });
 }
+
+// CONTENT WRAPPERS
 
 const productUrl = "https://60410f23f34cf600173c967c.mockapi.io/api/products";
 let productTitle = document.querySelector('.card-description__title');
