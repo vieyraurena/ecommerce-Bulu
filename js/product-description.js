@@ -18,7 +18,8 @@ for (let i = 0; i < subImg.length; i++) {
 // CONTENT WRAPPERS
 
 const productUrl = "https://60410f23f34cf600173c967c.mockapi.io/api/products";
-let productTitle = document.querySelector('.card-description__title');
+let productMobileTitle = document.querySelector('.card-description__mobile-title');
+let productDesktopTitle = document.querySelector('.card-description__desktop-title');
 let openImage = document.querySelector('.card-description__image-gallery--open-image');
 let productPrice = document.querySelector('.card-description__product-price');
 let productDescription = document.querySelector('.card-description__product-reference');
@@ -27,7 +28,8 @@ let userName = document.querySelector('.card-description__comments__username');
 
 
 function introducirProducto (data) {
-  productTitle.innerText = data[0].name;
+  productMobileTitle.innerText = data[0].name;
+  productDesktopTitle.innerText = data[0].name;
   openImage.setAttribute("src", `${data[0].avatar}`);
   subImg.forEach(element => {
     element.setAttribute("src", `${data[0].avatar}`);

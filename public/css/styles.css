@@ -678,8 +678,11 @@ ul {
     font-family: "poppins", "Arial, Helvetica, sans-serif";
     margin: 0 auto;
     width: 340px; }
-  .card-description__title {
+  .card-description__desktop-title {
+    display: none; }
+  .card-description__mobile-title {
     color: #C54210;
+    display: block;
     font-size: 1.6rem;
     text-transform: capitalize; }
   #js-hiddenImages img {
@@ -706,20 +709,26 @@ ul {
   .card-description__product-price {
     color: #C54210;
     font-size: 1.6rem; }
+  .card-description__product-description {
+    margin-left: 3%; }
   button {
-    background-color: #C54210;
+    background-color: #1EA422;
     border: none;
     border-radius: 1rem;
     color: #FFFFFF;
     font-size: 1.2rem;
-    margin-bottom: 40px;
-    margin-left: 36px;
+    margin-bottom: 20px;
+    margin-left: 15%;
     margin-top: 20px;
     outline: 0;
     padding: 0.7rem 1.5rem;
     text-transform: capitalize; }
     button:active {
       background-color: #a73001; }
+  .card-description__cart-button {
+    display: block;
+    margin-bottom: 20px;
+    margin-left: -10px; }
   .card-description__comments--background {
     background-color: #FFFFFF;
     border-radius: 20px;
@@ -727,8 +736,10 @@ ul {
     padding-bottom: 20px;
     padding-top: 30px; }
     .card-description__comments--background p {
+      font-size: 1.2rem;
       margin-left: 5%;
-      margin-right: 5%; }
+      margin-right: 5%;
+      text-align: justify; }
     .card-description__comments--background img {
       margin-left: 5%; }
   /* Clase para resaltar la imagen activa manejada con JavaScript */
@@ -741,8 +752,15 @@ ul {
   .card-description {
     margin: 0 auto;
     width: 90%; }
-  .card-description__title {
-    font-size: 2.8rem; }
+  .card-description__product-description {
+    margin-left: 0%; }
+  .card-description__mobile-title {
+    display: none; }
+  .card-description__desktop-title {
+    color: #C54210;
+    display: block;
+    font-size: 2.8rem;
+    text-transform: capitalize; }
   #js-hiddenImages {
     width: 45%; }
   #js-hiddenImages img {
@@ -756,6 +774,18 @@ ul {
     margin-bottom: 10px;
     padding: 0 0;
     width: 100%; }
+  button {
+    font-size: 1.6rem;
+    margin-bottom: 40px;
+    margin-left: 7.5%;
+    margin-top: 20px;
+    padding: 15px 30px; }
+  .card-description__cart-button {
+    display: none; }
   .card-description__image-gallery {
     margin: 0 0;
-    float: left; } }
+    float: left; }
+  .card-description__product-price {
+    font-size: 2.8rem; }
+  .card-description__product-reference {
+    font-size: 1.6rem; } }

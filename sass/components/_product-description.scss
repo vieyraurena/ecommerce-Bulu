@@ -6,8 +6,12 @@
     margin: 0 auto;
     width: 340px;
   }
-  .card-description__title {
+  .card-description__desktop-title {
+    display: none;
+  }
+  .card-description__mobile-title {
     color: $secondary-color;
+    display: block;
     font-size: $main-size-movil;
     text-transform: capitalize;
   }
@@ -41,15 +45,18 @@
     color: $secondary-color;
     font-size: $main-size-movil;
   }
+  .card-description__product-description{
+    margin-left: 3%;
+  }
 
   button {
-    background-color: $links-color;
+    background-color: $third-color;
     border: none;
     border-radius: $size;
     color: $botton-logIn;
     font-size: $small-size-movil;
-    margin-bottom: 40px;
-    margin-left: 36px;
+    margin-bottom: 20px;
+    margin-left: 15%;
     margin-top: 20px;
     outline: 0;
     padding: $paddin-top-bottom $paddin-right-left;
@@ -59,6 +66,11 @@
       background-color: $links-hover;
     }
   }
+  .card-description__cart-button{
+    display: block;
+    margin-bottom: 20px;
+    margin-left: -10px;
+  }
   .card-description__comments--background{
     background-color: $fourth-color;
     border-radius: 20px;
@@ -66,8 +78,10 @@
     padding-bottom: 20px;
     padding-top: 30px;
     p{
+      font-size: $small-size-movil;
       margin-left: 5%;
       margin-right: 5%;
+      text-align: justify;
     }
     img{
       margin-left: 5%;
@@ -88,8 +102,17 @@
     width: 90%;
 
   }
-  .card-description__title {
+  .card-description__product-description{
+    margin-left: 0%;
+  }
+  .card-description__mobile-title {
+    display: none;
+  }
+  .card-description__desktop-title {
+    color: $secondary-color;
+    display: block;
     font-size: $large-h2-size-desk;
+    text-transform: capitalize;
   }
   #js-hiddenImages{
     width: 45%;
@@ -108,8 +131,24 @@
     padding: 0 0;
     width: 100%;
   }
+  button {
+    font-size: $main-p-size-desk;
+    margin-bottom: 40px;
+    margin-left: 7.5%;
+    margin-top: 20px;
+    padding: 15px 30px;
+  }
+  .card-description__cart-button{
+    display: none;
+  }
   .card-description__image-gallery{
     margin: 0 0;
     float: left;
+  }
+  .card-description__product-price{
+    font-size: $large-h2-size-desk;
+  }
+  .card-description__product-reference{
+    font-size: $main-p-size-desk;
   }
 }
