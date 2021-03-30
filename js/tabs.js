@@ -2,45 +2,53 @@
 
 const acordeon = document.querySelectorAll('.acordeon__content--title');
 
-for(let i = 0; i < acordeon.length; i += 1){
-  acordeon[i].addEventListener('click', (event)=>{
-    event.preventDefault();
-    const elemento = event.currentTarget;
-    let info = elemento.nextElementSibling;
-    if (info.style.display == "block") {
-      info.style.display = "none";
-    } else {
-      info.style.display = "block";
-    }
+
+//
+// ACTUAL ACORDEON
+//
+
+const acordeonFunction = function() {
+  const elemento = event.currentTarget;
+  let info = elemento.nextElementSibling;
+  if (info.style.display === "block") {
+    info.style.display = "none";
+  } else {
+    info.style.display = "block";
   }
-  )
 }
+acordeon.forEach(element => {
+  element.addEventListener('click', acordeonFunction)
+});
 
 // TABS
 
 const tabs = document.querySelectorAll('.tabs__tablist--title');
 const content = document.querySelectorAll('.tabs__content--hiddenInformation');
 
-for (let i = 0; i < content.length; i++) {
-    content[i].classList.add('js-content-hidden');
+//
+// ACTUAL TABS
+//
+const tabsFunction = function() {
+  const id = event.currentTarget.getAttribute('href').substring(1);
+  content.forEach(element => {
+    element.classList.add('js-content-hidden');
+    if (element.getAttribute('id') === id) {
+      element.classList.remove('js-content-hidden');
+    }
+  });
+  tabs.forEach(element =>{
+    element.classList.remove('js-active');
+  })
+  event.currentTarget.classList.add('js-active');
 }
 
+content.forEach(element => {
+  element.classList.add('js-content-hidden');
+});
 content[0].classList.remove('js-content-hidden');
 tabs[0].classList.add('js-active');
 
-for (let i = 0; i < tabs.length; i++) {
-    tabs[i].addEventListener('click', (event) => {
-        event.preventDefault();
-        const id = event.currentTarget.getAttribute('href').substring(1);
-        for (let i = 0; i < content.length; i++) {
-            content[i].classList.add('js-content-hidden');
-            if (content[i].getAttribute('id') == id) {
-                content[i].classList.remove('js-content-hidden');
-            }
-        }
-        for (let i = 0; i < tabs.length; i++) {
-            tabs[i].classList.remove('js-active');
-        }
-        event.currentTarget.classList.add('js-active');
-    });
-}
+tabs.forEach(element => {
+  element.addEventListener('click', tabsFunction);
+});
+
