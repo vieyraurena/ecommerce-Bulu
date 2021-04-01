@@ -9,7 +9,7 @@
   right: 0;
   top: 0;
   width: 100%;
-  z-index: 999;
+  z-index: 1011;
 }
 
 .header__logo {
@@ -99,6 +99,7 @@
 
 .white {
   padding: 0.3rem;
+  z-index: 1010;
 
   @media (min-width: 1080px) {
     background-color: $secondary-background;
@@ -112,6 +113,7 @@
 .header__list {
   display: none;
   margin-bottom: 4rem;
+  z-index: 1010;
 
   @media (min-width: 1024px) {
     display: block;
