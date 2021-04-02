@@ -33,6 +33,7 @@
   }
 
   @media (min-width: 970px) {
+    cursor: pointer;
     &:hover {
       background-color: $hover-buttons-img;
     }
@@ -51,7 +52,7 @@
   border: none;
   border-radius: $size;
   color: $fourth-color;
-  font-size: $small-size-movil;
+  font-size: $main-size-movil;
   font-weight: bold;
   padding: $paddin-top-bottom $paddin-right-left;
   text-transform: capitalize;
