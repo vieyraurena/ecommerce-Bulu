@@ -1,8 +1,3 @@
-$main-color: #352B2B;
-$secondary-color: #C54210;
-$fourth-color:#FFFFFF;
-
-/* Slider */
 .slider {
   width: 300px;
   position: relative;
@@ -20,6 +15,7 @@ $fourth-color:#FFFFFF;
   width: 50%;
   border-radius: 20px;
 }
+
 .image-desktop {
   display: none;
 }
@@ -110,6 +106,7 @@ $fourth-color:#FFFFFF;
   .slider__images {
     width: 50%;
   }
+
   .js-info-desktop {
     margin-left: 37%;
   }
@@ -124,14 +121,16 @@ $fourth-color:#FFFFFF;
     width: 30%;
     margin-left: 15%;
   }
+
   .image-desktop {
     display: block;
     position: absolute;
     right: 5%;
     top: -1px;
     margin-right: 15%;
-}
-.js-info-desktop {
-  margin-left: 21%;
-}
+  }
+
+  .js-info-desktop {
+    margin-left: 21%;
+  }
 }
