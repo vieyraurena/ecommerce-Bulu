@@ -25,11 +25,11 @@ function loadProducts(p) {
     contentData += `
     <div data-id="${product[i].id}" class="product__card">
       <div class="product__card-img">
-        <img src="${product[i].avatar}" alt="Imagen del producto ${product[i].name}" border="0">
+        <a href="/product-description/index.html"> <img src="${product[i].avatar}" alt="Imagen del producto ${product[i].name}" border="0"></a>
       </div>
       <div class="product__card-data">
         <div class="product__card-price">
-          <p>&#x20a1 ${product[i].price}</p>
+          <a href="/product-description/index.html"><p>&#x20a1 ${product[i].price}</p><a href="/product-description/index.html"></a>
           <button class="btn__icon js-add__drawer">
             <span class="header__icon--user" aria-hidden="true">
               <svg width="19" height="24" viewBox="0 0 19 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -41,8 +41,8 @@ function loadProducts(p) {
             <span class="visually-hidden span-size">añadir</span>
           </button>
         </div>
-        <h3>${product[i].name}</h3>
-        <p>${product[i].description}</p>
+        <a href="/product-description/index.html"><h3>${product[i].name}</h3></a>
+        <a href="/product-description/index.html"><p>${product[i].description}</p></a>
       </div>
     </div>
     `;
@@ -117,3 +117,12 @@ fetch(api, {
     createPaginations(products.length);
     loadProducts(products);
   });
+
+function guardar_localStorage(){
+  document.addEventListener('click', (event) => {
+  const elementoClicleado = (((event.target).parentNode).parentNode).parentNode;
+  const idClicleado = elementoClicleado.getAttribute('data-id');
+  localStorage.setItem("click", idClicleado);
+  });
+}
+guardar_localStorage();

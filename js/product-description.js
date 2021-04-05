@@ -1,5 +1,8 @@
 const bigImg = document.getElementById('js-openImage');
 const subImg = document.querySelectorAll('.card-description__image-gallery--hidden-image');
+const idPresionado = localStorage.getItem("click");
+
+const id = idPresionado - 2;
 
 for (let i = 0; i < subImg.length; i++) {
     subImg[i].addEventListener('click', (event) => {
@@ -28,14 +31,14 @@ let userName = document.querySelector('.card-description__comments__username');
 
 
 function introducirProducto (data) {
-  productMobileTitle.innerText = data.id;
-  productDesktopTitle.innerText = data[0].id;
-  openImage.setAttribute("src", `${data[0].avatar}`);
+  productMobileTitle.innerText = data[id].name;
+  productDesktopTitle.innerText = data[id].name;
+  openImage.setAttribute("src", `${data[id].avatar}`);
   subImg.forEach(element => {
-    element.setAttribute("src", `${data[0].avatar}`);
+    element.setAttribute("src", `${data[id].avatar}`);
   });
-  productPrice.innerText = "$ " + data[0].price;
-  productDescription.innerText = data[0].description;
+  productPrice.innerText = "$ " + data[id].price;
+  productDescription.innerText = data[id].description;
 
   // COMMENTS
 
@@ -56,3 +59,4 @@ fetch(productUrl, {
 .catch((error) => {
   console.log("error", error);
 });
+
