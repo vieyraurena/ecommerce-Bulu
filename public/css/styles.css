@@ -391,17 +391,15 @@ ul {
   background-color: #FFFFFF;
   display: flex;
   justify-content: space-between;
-  left: 0;
-  padding: 1.8rem 3.5rem;
+  padding: 1.8rem 0.5rem;
   position: fixed;
-  right: 0;
   top: 0;
   width: 100%;
   z-index: 1011; }
 
 .header__logo {
   order: 2;
-  width: 67.63285%; }
+  width: 48.30918%; }
   .header__logo svg {
     max-width: 100%;
     width: 100%; }
@@ -424,13 +422,15 @@ ul {
       display: none; } }
 
 .header__icons {
-  order: 3; }
-  .header__icons .header__icons--btns {
-    height: 50px;
-    width: 36.23188%; }
+  order: 3;
+  display: flex;
+  width: 25%; }
   .header__icons svg {
     max-width: 100%;
     width: 100%; }
+  @media (min-width: 1080px) {
+    .header__icons {
+      width: 10%; } }
 
 .header__collapsible {
   background-color: #FFFFFF;
@@ -462,7 +462,7 @@ ul {
     padding: 1rem; }
 
 .white {
-  padding: 0.3rem;
+  padding: 1rem;
   z-index: 1010; }
   @media (min-width: 1080px) {
     .white {
@@ -474,6 +474,7 @@ ul {
 .header__list {
   display: none;
   margin-bottom: 4rem;
+  position: relative;
   z-index: 1010; }
   @media (min-width: 1024px) {
     .header__list {
@@ -482,10 +483,12 @@ ul {
       max-width: 1080px; }
       .header__list .header__list--items {
         display: flex;
-        padding: 6rem 0rem 0rem 0rem; }
+        padding-top: 6rem; }
         .header__list .header__list--items li {
           justify-content: space-between;
-          padding: 1rem 5rem; } }
+          padding: 1rem 5rem; }
+        .header__list .header__list--items a:hover, .header__list .header__list--items a:active {
+          border-bottom: 2px solid #C54210; } }
 
 .search {
   display: flex;
@@ -518,6 +521,9 @@ ul {
 
 .coverpage img {
   width: 100%; }
+
+.js-border {
+  border-bottom: 2px solid #C54210; }
 
 .footer {
   background-color: #F7F3F0;
@@ -803,7 +809,7 @@ ul {
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 1001; }
+  z-index: 1012; }
 
 .modal {
   background-color: #FFFFFF;
@@ -815,7 +821,7 @@ ul {
   padding: 3rem;
   top: 40%;
   transform: translate(-50%, -50%);
-  z-index: 1002; }
+  z-index: 1013; }
 
 @media (min-width: 500px) {
   .modal__content {
