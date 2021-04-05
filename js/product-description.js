@@ -28,8 +28,8 @@ let userName = document.querySelector('.card-description__comments__username');
 
 
 function introducirProducto (data) {
-  productMobileTitle.innerText = data[0].name;
-  productDesktopTitle.innerText = data[0].name;
+  productMobileTitle.innerText = data.id;
+  productDesktopTitle.innerText = data[0].id;
   openImage.setAttribute("src", `${data[0].avatar}`);
   subImg.forEach(element => {
     element.setAttribute("src", `${data[0].avatar}`);
