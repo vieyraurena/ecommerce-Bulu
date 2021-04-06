@@ -172,35 +172,33 @@
     </div>
   </div>
 
-  <!--HERE START SEARCH-->
-
-  <div class="search">
-    <form class="search__form" action="">
-      <input class="search__form--input" type="text">
-    </form>
-  </div>
-
-
-
-  <!--Product list-->
-
-  <div class="product">
-    <div class="product__title">
-      <h1>Productos</h1>
+  <div class="wrapper">
+    <!--HERE START SEARCH-->
+    <div class="search">
+      <form class="search__form" action="">
+        <input class="search__form--input" type="text">
+      </form>
     </div>
-    <div class="product__filter">
-      <span class="filter__text">Filtrar precio por :</span>
-      <select id="filter" onchange="filter()" name="filter" class="filter__text filter__select">
-        <option value="none" class="filter__text">Ninguno</option>
-        <option value="high" class="filter__text">Alto</option>
-        <option value="low" class="filter__text">Bajo</option>
-      </select>
-    </div>
-    <!--append products -->
-    <div class="product__list js-list">
 
+    <!--Product list-->
+    <div class="product">
+      <div class="product__title">
+        <h1>Productos</h1>
+      </div>
+      <div class="product__filter">
+        <span class="filter__text">Filtrar precio por :</span>
+        <select id="filter" onchange="filter()" name="filter" class="filter__text filter__select">
+          <option value="none" class="filter__text">Ninguno</option>
+          <option value="high" class="filter__text">Alto</option>
+          <option value="low" class="filter__text">Bajo</option>
+        </select>
+      </div>
+      <!--append products -->
+      <div class="product__list js-list">
+
+      </div>
+      <div id="pagination" class="product__pagination"></div>
     </div>
-    <div id="pagination" class="product__pagination"></div>
   </div>
 
 

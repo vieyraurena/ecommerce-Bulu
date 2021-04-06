@@ -1,0 +1,89 @@
+.image__container {
+  margin-bottom: $margin-medium;
+  img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  @media (min-width: 700px) {
+    margin-bottom: $margin-large;
+  }
+}
+
+.indicator {
+  align-items: center;
+  display: flex;
+  margin-bottom: $margin-medium;
+
+  @media (min-width: 700px) {
+    margin-bottom: $margin-large;
+  }
+}
+
+.indicator__link {
+  text-transform: capitalize;
+  padding-right: $size;
+}
+
+.indicator__arrow {
+  svg {
+    width: 70%;
+  }
+}
+
+.recepes {
+  display: flex;
+  overflow-x: scroll;
+  margin-bottom: $margin-large + 1;
+
+  @media (min-width: 700px) {
+    margin-bottom: $margin-large + 3;
+    overflow-x: hidden;
+  }
+}
+
+.recepe__container {
+  background-color: $secondary-background;
+  border-radius: $size;
+  margin-right: $size;
+  min-width: calculateWidthMobile(240px);
+
+  @media (min-width: 700px) {
+    min-width: 30%;
+    margin: 0 auto;
+  }
+}
+
+.recepe__img {
+  img {
+    border-top-left-radius: $size;
+    border-top-right-radius: $size;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.recepe__content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0rem $size + 2 0rem;
+  position: relative;
+
+  h3 {
+    margin-top: 0;
+  }
+
+  a {
+    position: absolute;
+    right: $main-size-movil;
+    bottom: $main-size-movil;
+  }
+}
+
+.benefics {
+  @media (min-width: 700px) {
+    margin-bottom: $margin-large + 3;
+  }
+}
+

@@ -1,5 +1,5 @@
 .product {
-  margin: 0 5% 0 5%;
+  // margin: 0 5% 0 5%;
 
   @media (min-width: 300px) {
     margin-top: 50px;
@@ -8,7 +8,7 @@
 
 .product__card {
   align-items: flex-start;
-  background-color: $main-background;
+  background-color: $secondary-background;
   border-color: $fourth-color;
   border-radius: $large-size-movil;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -17,7 +17,7 @@
   margin-bottom: $margin-large;
   padding: 0px;
   position: relative;
-  width: $wrapper;
+  // width: $wrapper;
   // z-index: -1;
 
   @media (min-width: 500px) {
@@ -28,25 +28,27 @@
 
 
 .product__card-data {
+  padding-left: $paddin-right-left;
   h3 {
-    font-size: $maxim-size-movil;
+    // delete font-size, because in typography it was already done
+    // font-size: $maxim-size-movil;
     margin: 0 0 15px 0;
   }
 
   p {
     line-height: $line-height-small-movil;
   }
-
-  padding-left: $paddin-right-left;
 }
 
 .product__card-img {
   img {
     border-radius: $large-size-movil 0px 0px $large-size-movil;
-    width: 110px;
+    display: block;
     height: auto;
+    width: 110px;
 
     @media (min-width: 500px) {
+      display: inline;
       width: 200px;
       height: 250px;
       border-radius: $large-size-movil $large-size-movil 0px 0px;
