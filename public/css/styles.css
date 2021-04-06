@@ -962,6 +962,9 @@ html {
 
 @media (max-width: 500px) {
   /* ACORDEON */
+  .acordeon {
+    margin-top: 30px;
+    margin-bottom: 30px; }
   .acordeon__content--title {
     background-color: #C54210;
     border-radius: 0.2rem;
@@ -969,10 +972,11 @@ html {
     cursor: pointer;
     font-size: 1.6rem;
     font-family: "poppins", "Arial, Helvetica, sans-serif";
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     margin-top: 0;
     padding-left: 10%;
-    padding-top: 0; }
+    padding-top: 10px;
+    padding-bottom: 10px; }
     .acordeon__content--title b {
       float: right;
       margin-right: 5%; }
@@ -1001,7 +1005,7 @@ html {
     margin: 0 auto;
   }*/
   .tabs {
-    margin: 40px;
+    margin: 60px;
     max-width: 800px; }
   .tabs__tablist {
     color: #FFFFFF;
@@ -1022,14 +1026,14 @@ html {
     padding: 10px 20px;
     text-decoration: none; }
   .tabs__content {
-    border: 1px solid #352B2B;
     font-family: "poppins", "Arial, Helvetica, sans-serif";
     font-size: 1.2rem;
-    padding: 20px; }
+    padding-top: 50px;
+    width: 1200px; }
   /* Estado (clases asignadas por Javascript) */
   .js-active {
-    background-color: #fff;
-    border-bottom: 1px solid #fff;
+    background-color: #F7F3F0;
+    border-bottom: 1px solid #F7F3F0;
     color: #352B2B; }
   .js-content-hidden {
     display: none; } }
@@ -1103,3 +1107,117 @@ html {
 .product__pagination {
   text-align: center;
   margin-bottom: 100px; }
+
+.card-description__desktop-title {
+  display: none; }
+
+.card-description__mobile-title {
+  color: #C54210;
+  display: block;
+  font-size: 1.6rem;
+  text-transform: capitalize; }
+
+#js-hiddenImages {
+  width: 340px; }
+
+#js-hiddenImages img {
+  border: 2px solid #C54210;
+  border-radius: 5px;
+  filter: grayscale(100%);
+  float: left;
+  height: auto;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  transition: 0.2s;
+  width: 20.6%; }
+
+#js-hiddenImages img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1); }
+
+#js-openImage img {
+  border: 2px solid #C54210;
+  border-radius: 8px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: auto;
+  width: 340px; }
+
+.card-description__product-price {
+  color: #C54210;
+  font-size: 1.6rem; }
+
+.card-description__product-description {
+  margin-left: 3%; }
+
+.card-description__cart-button {
+  margin-bottom: 20px;
+  margin-left: 0px; }
+
+.card-description__dropdown-buttons .card-description_btn {
+  margin-right: 15px;
+  margin-bottom: 40px; }
+
+.card-description__comments--background {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  padding-top: 30px; }
+  .card-description__comments--background p {
+    font-size: 1.2rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify; }
+  .card-description__comments--background img {
+    margin-left: 5%; }
+
+/* Clase para resaltar la imagen activa manejada con JavaScript */
+.active {
+  filter: grayscale(0%); }
+
+@media (min-width: 750px) {
+  .card-description {
+    display: flex;
+    margin: 0 auto;
+    width: 90%; }
+  .card-description__product-description {
+    margin-left: 10%;
+    margin-top: 30px;
+    width: 27%; }
+  .card-description__mobile-title {
+    display: none; }
+  .card-description__desktop-title {
+    color: #C54210;
+    display: block;
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    margin-top: 0;
+    text-transform: capitalize; }
+  #js-hiddenImages {
+    width: 500px; }
+  #js-hiddenImages img {
+    height: 100px;
+    width: 22%; }
+  #js-openImage {
+    display: inline-block;
+    margin-right: 1px; }
+  #js-openImage img {
+    height: 400px;
+    margin: 0 0;
+    margin-bottom: 10px;
+    padding: 0 0;
+    width: 100%; }
+  .card-description__dropdown-buttons .card-description_btn {
+    margin-right: 10%;
+    margin-bottom: 40px; }
+  .card-description__image-gallery {
+    margin: 0 0;
+    float: left;
+    max-width: 500px; }
+  .card-description__product-price {
+    font-size: 2.8rem; }
+  .card-description__product-reference {
+    font-size: 1.6rem;
+    margin-bottom: 50px; } }
