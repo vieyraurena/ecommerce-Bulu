@@ -27,10 +27,10 @@ function loadProducts(p) {
       <div class="product__card-img">
         <a href="../product-description/index.html"> <img src="${product[i].avatar}" alt="Imagen del producto ${product[i].name}" border="0"></a>
       </div>
-      <div class="product__card-data">
+      <div data-id="${product[i].id}" class="product__card-data">
         <div class="product__card-price">
-          <a href="../product-description/index.html"><p>&#x20a1 ${product[i].price}</p><a href="/product-description/index.html"></a>
-          <button class="btn__icon js-add__drawer">
+          <p>&#x20a1 ${product[i].price}</p>
+          <button data-id="${product[i].id}"  class="btn__icon js-add__drawer">
             <span class="header__icon--user" aria-hidden="true">
               <svg width="19" height="24" viewBox="0 0 19 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -42,7 +42,7 @@ function loadProducts(p) {
           </button>
         </div>
         <a href="../product-description/index.html"><h3>${product[i].name}</h3></a>
-        <a href="../product-description/index.html"><p>${product[i].description}</p></a>
+        <p>${product[i].description}</p>
       </div>
     </div>
     `;

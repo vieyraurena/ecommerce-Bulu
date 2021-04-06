@@ -18,6 +18,7 @@
   padding: 0px;
   position: relative;
   width: $wrapper;
+  // z-index: -1;
 
   @media (min-width: 500px) {
     flex-direction: column;
@@ -92,3 +93,7 @@
   text-align: center;
   margin-bottom: 100px;
 }
+
+// .js-add__drawer{
+//   z-index: 999;
+// }
