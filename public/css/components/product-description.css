@@ -52,7 +52,6 @@
     button:active {
       background-color: #a73001; }
   .card-description__cart-button {
-    display: block;
     margin-bottom: 20px;
     margin-left: -10px; }
   .card-description__comments--background {
@@ -76,6 +75,7 @@
   body {
     width: 100%; }
   .card-description {
+    display: flex;
     margin: 0 auto;
     width: 90%; }
   .card-description__product-description {
@@ -93,6 +93,7 @@
     height: auto;
     width: 22%; }
   #js-openImage {
+    display: inline-block;
     margin-right: 1px;
     width: 45%; }
   #js-openImage img {

@@ -67,7 +67,6 @@
     }
   }
   .card-description__cart-button{
-    display: block;
     margin-bottom: 20px;
     margin-left: -10px;
   }
@@ -98,6 +97,7 @@
     width: 100%;
   }
   .card-description{
+    display: flex;
     margin: 0 auto;
     width: 90%;
 
@@ -122,6 +122,7 @@
     width: 22%;
   }
   #js-openImage{
+    display: inline-block;
     margin-right: 1px;
     width: 45%;
   }
