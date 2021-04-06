@@ -6,9 +6,8 @@
   position: relative;
 
   @media (min-width:400px) {
-
     background-image: url(../../img/background-desktop.svg);
-
+    // background-size: contain;
   }
 
   /*Button for send the e-mail*/
@@ -56,7 +55,7 @@
   /* Form's label*/
   .footer__label {
     font-family: $main-font;
-    font-size: $large-size-movil;
+    font-size: $medium-size-movil;
     line-height: $line-height-small-movil;
   }
 
@@ -106,10 +105,10 @@
 
   /*Breakpoint*/
   @media (min-width:970px) {
-    .wrapper {
-      width: 1080px;
-      margin: 0 auto;
-    }
+    // .wrapper {
+    //   width: 1080px;
+    //   margin: 0 auto;
+    // }
 
     .footer__btn-offers {
       font-size: $main-p-size-desk;
@@ -117,6 +116,7 @@
     }
 
     .footer__label {
+      font-size: $medium-h3-size-desk;
       text-align: center;
       display: block;
       margin-bottom: 35px;

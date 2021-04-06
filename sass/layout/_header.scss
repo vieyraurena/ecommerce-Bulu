@@ -124,15 +124,15 @@
   @media (min-width: 1024px) {
     display: block;
     margin: 0 auto;
-    max-width: 1080px;
+    width: 1080px;
 
     .header__list--items {
       display: flex;
+      justify-content: space-around;
       padding-top: 6rem;
 
       li {
-        justify-content: space-between;
-        padding: 1rem 5rem;
+        padding-top: 1rem;
       }
 
       a:hover, a:active {
@@ -146,7 +146,7 @@
 // SEARCH
 .search {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   margin-top: 105px;
 
   @media (min-width: 1080px) {
@@ -155,7 +155,7 @@
 }
 
 .search__form {
-  margin-bottom: 2rem;
+  margin-bottom: $margin-large;
 
   @media (min-width: 1080px) {
     margin-bottom: 20px;
@@ -171,13 +171,19 @@
   border-radius: $size;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding: 1.5rem 2rem;
-  width: 85%;
-  padding-right: 45%;
+  width: 250px;
+  // width: 100%;
+  // padding-right: 45%;
 
   @media (min-width: 1080px) {
     background-position: 98%;
-    padding-right: 200px;
+    margin-bottom: $margin-large;
+    // padding-right: 200px;
   }
+}
+
+.indicator__link--border {
+  border-bottom: 2px solid #C54210;
 }
 
 // Indicator

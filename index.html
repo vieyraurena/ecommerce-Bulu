@@ -85,9 +85,8 @@
   </div>
 
   <!--HERE START DESKTOP HEADER-->
-  <div class="white">
+  <div class="white wrapper">
     <div class="header__list">
-      <div class="header__list--indicator js-header__list--indicator"></div>
 
       <ul class="header__list--items">
         <li class="header__list--li">
@@ -125,7 +124,7 @@
 
       <!--header del drawer-->
       <div class="drawer__header">
-        <h2>Mini-Cart</h2>
+        <h2>Bolsita de compras</h2>
         <button class="drawer__header--button btn__icon js-drawer__header--button">&times;</button>
       </div>
 
@@ -172,7 +171,7 @@
 
   <!--HERE START SEARCH-->
 
-  <div class="search">
+  <div class="search wrapper">
     <form class="search__form" action="">
       <input class="search__form--input" type="text">
     </form>
@@ -186,7 +185,7 @@
   <!--HERE START INDICATOR STAY-->
   <div class="wrapper">
     <div class="indicator">
-      <a class="indicator__link" href="#">Inicio</a>
+      <a class="indicator__link indicator__link--border" href="#">Inicio</a>
       <span class="indicator__arrow">
         <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -243,6 +242,52 @@
         praesentium!
       </p>
     </div>
+
+    <!-- Slider container -->
+    <h2>Nuestros Productos</h2>
+    <div class="slider">
+      <div class="js-slider__div-container">
+        <div id="image-1" class="slider__cards slider__images--animation" >
+
+        </div>
+        <div id="image-2" class="slider__cards slider__images--animation" >
+
+        </div>
+        <div id="image-3" class="slider__cards slider__images--animation" >
+
+        </div>
+        <div id="image-4" class="slider__cards slider__images--animation " >
+
+        </div>
+        <div id="image-5" class="slider__cards  slider__cards-mobile slider__images--animation" >
+
+        </div>
+        <div id="image-6" class="slider__cards slider__cards-mobile slider__images--animation" >
+
+        </div>
+        <div id="image-7" class="slider__cards slider__cards-mobile slider__images--animation" >
+
+        </div>
+        <div id="image-8" class="slider__cards slider__cards-mobile  slider__images--animation" >
+
+        </div>
+
+        <button id="back"class="slider__btn-back">&#10094;</button>
+        <button id="advance" class="slider__btn-advance">&#10095;</button>
+      </div>
+    </div>
+
+    <!-- circles -->
+    <div class="slider__circles-indicators">
+        <span id="slider__indicador-1" class="slider__circles-indicators-items"></span>
+        <span id="slider__indicador-2" class="slider__circles-indicators-items"></span>
+        <span id="slider__indicador-3" class="slider__circles-indicators-items"></span>
+        <span id="slider__indicador-4" class="slider__circles-indicators-items"></span>
+        <span id="slider__indicador-5" class="slider__circles-indicators-items slider__circles-desktop"></span>
+        <span id="slider__indicador-6" class="slider__circles-indicators-items slider__circles-desktop"></span>
+        <span id="slider__indicador-7" class="slider__circles-indicators-items slider__circles-desktop"></span>
+        <span id="slider__indicador-8" class="slider__circles-indicators-items slider__circles-desktop"></span>
+    </div>
   </div>
 
   <!--Footer is the container of the rest of elements-->
@@ -293,9 +338,11 @@
       </div>
     </div>
   </div>
-  <script src="../js/indicators.js"></script>
-  <script src="../js/form.js"></script>
-  <script src="../js/drawer.js"></script>
+
+  <script src="./js/indicators.js"></script>
+  <script src="./js/form.js"></script>
+  <script src="./js/drawer.js"></script>
+  <script src="./js/slider-correction.js"></script>
 </body>
 
 </html>

@@ -13,20 +13,35 @@
 .indicator {
   align-items: center;
   display: flex;
-  margin-bottom: $margin-medium;
+  margin-bottom: $margin-large;
 
   @media (min-width: 700px) {
-    margin-bottom: $margin-large;
+    margin-bottom: $margin-large + 1;
+    a {
+      font-size: $small-size-desk;
+    }
   }
 }
 
 .indicator__link {
   text-transform: capitalize;
-  padding-right: $size;
+  margin-right: $size;
+  color: $main-color;
+
+  &:active {
+    border-bottom: 2px solid #C54210;
+  }
+
+  @media (min-width: 700px) {
+    &:hover {
+      border-bottom: 2px solid #C54210;
+    }
+  }
 }
 
 .indicator__arrow {
   svg {
+    margin-right: $size;
     width: 70%;
   }
 }
@@ -82,8 +97,9 @@
 }
 
 .benefics {
+  margin-bottom: $margin-medium;
+
   @media (min-width: 700px) {
     margin-bottom: $margin-large + 3;
   }
 }
-
