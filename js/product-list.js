@@ -25,11 +25,11 @@ function loadProducts(p) {
     contentData += `
     <div data-id="${product[i].id}" class="product__card">
       <div class="product__card-img">
-        <img src="${product[i].avatar}" alt="Imagen del producto ${product[i].name}" border="0">
+        <img src="${product[i].avatar}">
       </div>
       <div data-id="${product[i].id}" class="product__card-data">
         <div class="product__card-price">
-          <p>&#x20a1 ${product[i].price}</p>
+         <p>&#x20a1 ${product[i].price}</p>
           <button data-id="${product[i].id}"  class="btn__icon js-add__drawer">
             <span class="header__icon--user" aria-hidden="true">
               <svg width="19" height="24" viewBox="0 0 19 24" fill="none" xmlns="http://www.w3.org/2000/svg">

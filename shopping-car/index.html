@@ -39,7 +39,7 @@
           <a href="../sobre-nosotros/">
             <li>Sobre Nosotros</li>
           </a>
-          <a href="index.html">
+          <a href="../product-list/">
             <li>Productos</li>
           </a>
           <a href="../preguntas-frecuentes/">
@@ -93,7 +93,7 @@
         <a href="../sobre-nosotros/">
           <li>Sobre Nosotros</li>
         </a>
-        <a href="/product-list/">
+        <a href="../product-list/">
           <li>Productos</li>
         </a>
         <a href="../preguntas-frecuentes/">
@@ -134,7 +134,7 @@
 
       <!-- send ancore for redirect to check-out-->
       <div class="drawer__btn--close flex">
-        <a class="btn__ancore" href="../shopping-car/">Comprar</a>
+        <a class="btn__ancore" href="/shopping-car/">Comprar</a>
       </div>
 
     </div>
@@ -177,26 +177,27 @@
   </div>
 
 
+  <!--HERE START SHOPPING CART-->
 
-  <!--Product list-->
+  <div class="shopping">
+    <h1>Carro de compras</h1>
+    <!--HERE START USER-->
+    <div class="shopping__user js-shopping__user">
+    </div>
 
-  <div class="product">
-    <div class="product__title">
-      <h1>Productos</h1>
-    </div>
-    <div class="product__filter">
-      <span class="filter__text">Filtrar precio por :</span>
-      <select id="filter" onchange="filter()" name="filter" class="filter__text filter__select">
-        <option value="none" class="filter__text">Ninguno</option>
-        <option value="high" class="filter__text">Alto</option>
-        <option value="low" class="filter__text">Bajo</option>
-      </select>
-    </div>
-    <!--append products -->
-    <div class="product__list js-list">
+    <h2 class="shoppig__title-h2">Productos a pagar:</h2>
+    <!--HERE START PRODUCT LIST-->
+    <div class="shopping__product">
+      <div class="shopping__product-list js-shopsing__product-list">
+      </div>
+      <div class="shopping__product-sum js-shopping__product-sum">
+        <h3>Total de su carrito</h3>
+        <div class="js-shopping__product-sum__total">
 
+        </div>
+      </div>
     </div>
-    <div id="pagination" class="product__pagination"></div>
+
   </div>
 
 
@@ -251,8 +252,8 @@
   </div>
 
   <script src="../js/form.js"></script>
-  <script src="../js/product-list.js"></script>
   <script src="../js/drawer.js"></script>
+  <script src="../js/shopping-cart.js"></script>
 </body>
 
 </html>
