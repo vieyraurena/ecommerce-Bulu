@@ -50,9 +50,10 @@
   display: flex;
   overflow-x: scroll;
   margin-bottom: $margin-large + 1;
+  padding-bottom: $size;
 
   @media (min-width: 700px) {
-    margin-bottom: $margin-large + 3;
+    margin-bottom: $margin-large + 10;
     overflow-x: hidden;
   }
 }
@@ -60,6 +61,7 @@
 .recepe__container {
   background-color: $secondary-background;
   border-radius: $size;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-right: $size;
   min-width: calculateWidthMobile(240px);
 
@@ -100,6 +102,37 @@
   margin-bottom: $margin-medium;
 
   @media (min-width: 700px) {
-    margin-bottom: $margin-large + 3;
+    margin-bottom: $margin-large + 10;
+  }
+}
+
+.banckground {
+  background-color: $third-background;
+  margin-bottom: $margin-large + 4;
+
+  @media (min-width: 960px) {
+    margin-bottom: $margin-large + 10;
+  }
+}
+
+.usproducts  {
+  align-items: center;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: $margin-medium 0rem;
+
+  @media (min-width: 960px) {
+    flex-direction: row;
+  }
+}
+
+.usproducts__title {
+  padding-top: $margin-medium;
+}
+
+.usproducts__content {
+  @media (min-width: 960px) {
+    padding: 0rem 4rem 4rem 0rem;
+    width: 50%;
   }
 }

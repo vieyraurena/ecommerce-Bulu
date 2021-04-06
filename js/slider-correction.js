@@ -11,51 +11,83 @@ const containerImages8 = document.getElementById('image-8');
 function addImages(images) {
   for (let i = 0; i < images.length; i++) {
     const content1 = `
-    <img class="slider__images" src="${images[2].avatar}"alt="Se muestra una botella de miel a base de flores de café , totalmente natural y lista para disfrutar">
-    <img class="slider__images image-desktop" src="${images[13].avatar}"alt="Se muestra una botella en envase de vidrio de miel 100% natural y lista para disfrutar">
+    <img data-id= "${images[2].id}" class="slider__images" src="${images[2].avatar}"alt="Se muestra una botella de miel a base de flores de café , totalmente natural y lista para disfrutar">
+    <a href="../product-description/index.html"><h3>${images[2].name}</h3></a>
+    <p>¢${images[2].price}</p>
+    <img data-id= "${images[13].id}" class="slider__images image-desktop" src="${images[13].avatar}"alt="Se muestra una botella en envase de vidrio de miel 100% natural y lista para disfrutar">
+    <a href="../product-description/index.html" class="slider__title-card"><h3>${images[13].name}</h3></a>
+    <p class="slider__text-card">¢${images[13].price}</p>
     `;
     containerImages1.innerHTML = content1;
     const content2 = `
     <img class="slider__images" src="${images[4].avatar}"
     alt="Se muestra un producto nunca antes visto,  miel a base de flores de café, totalmente natural y listo para disfrutar">
-    <img class="slider__images image-desktop" src="${images[15].avatar}"alt="Se muestra un producto elaborado 100% con miel, totalmente natural y listo para disfrutar">
+    <a href="../product-description/index.html" ><h3>${images[4].name}</h3></a>
+    <p>¢${images[4].price}</p>
+    <img class="slider__images image-desktop" src="${images[14].avatar}"alt="Se muestra un producto elaborado 100% con miel, totalmente natural y listo para disfrutar">
+    <a href="../product-description/index.html" class="slider__title-card"><h3>${images[14].name}</h3></a>
+    <p class="slider__text-card">¢${images[14].price}</p>
     `;
     containerImages2.innerHTML = content2;
     const content3 = `
     <img class="slider__images" src="${images[6].avatar}"
     alt="Se muestra una deliciosa botella de miel en su prentación de 355g , totalmente natural y lista para disfrutar">
-    <img class="slider__images image-desktop" src="${images[17].avatar}"alt="Se muestra un super alimento, la miel cremosa con múltiples beneficios para tu salud, muy cremosita y lista para disfrutar">
+    <a href="../product-description/index.html" ><h3>${images[6].name}</h3></a>
+    <p>¢${images[6].price}</p>
+    <img class="slider__images image-desktop" src="${images[30].avatar}"alt="Se muestra un super alimento, una botella de polen 100% natural recomendada para subir las defensas, con sus múltiples colores y un gran sabor">
+    <a href="../product-description/index.html" class="slider__title-card"><h3>${images[30].name}</h3></a>
+    <p class="slider__text-card">¢${images[30].price}</p>
     `;
     containerImages3.innerHTML = content3;
     const content4 = `
     <img class="slider__images" src="${images[19].avatar}"
     alt="Se muestra un super alimento, la miel cremosa con múltiples beneficios para tu salud, muy cremosita y lista para disfrutar">
-    <img class="slider__images image-desktop" src="${images[9].avatar}"alt="Se muestra una deliciosa botella de miel en su prentación de 355g , totalmente natural y lista para disfrutar">
+    <a href="../product-description/index.html" ><h3>${images[19].name}</h3></a>
+    <p>¢${images[19].price}</p>
+    <img class="slider__images image-desktop" src="${images[14].avatar}"alt="Se muestra una deliciosa botella de miel en su prentación de 355g , totalmente natural y lista para disfrutar">
+    <a href="../product-description/index.html" class="slider__title-card"><h3>${images[14].name}</h3></a>
+    <p class="slider__text-card">¢${images[14].price}</p>
     `;
     containerImages4.innerHTML = content4;
     const content5 = `
     <img class="slider__images images-mobile" src="${images[10].avatar}"
-    alt="Se muestra  un producto derivado de las flores de café, totalmente natural y listo para disfrutar">
-    <img class="slider__images image-desktop" src="${images[21].avatar}"alt="Se muestran un producto que no te puedes perder, es el jarabe de propoleo, totalmente natural y listo para disfrutar">
+    alt="Se muestra  un producto derivado de lamiel del bosque 100% virgen, totalmente natural y listo para disfrutar">
+    <a href="../product-description/index.html" ><h3>${images[10].name}</h3></a>
+    <p>¢${images[10].price}</p>
+    <img class="slider__images image-desktop" src="${images[28].avatar}"alt="Se muestran un producto que no te puedes perder, es polen, totalmente natural y listo para disfrutar">
+    <a href="../product-description/index.html" class="slider__title-card"><h3>${images[28].name}</h3></a>
+    <p class="slider__text-card">¢${images[28].price}</p>
 
     `;
     containerImages5.innerHTML = content5;
     const content6 = `
     <img class="slider__images images-mobile" src="${images[12].avatar}"
-    alt="Se muestra una botella en envase de vidrio de miel 100% natural y lista para disfrutar">
+    alt="Se muestra una botella en envase de vidrio de miel con flores de café 100% natural y lista para disfrutar">
+    <a href="../product-description/index.html"><h3>${images[12].name}</h3></a>
+    <p>¢${images[12].price}</p>
     <img class="slider__images image-desktop" src="${images[31].avatar}"alt="Se muestra un producto que no puede faltarte en día a día te traemos polen 100% natural  y listo para disfrutar">
+    <a href="../product-description/index.html" class="slider__title-card"><h3>${images[31].name}</h3></a>
+    <p class="slider__text-card">¢${images[31].price}</p>
     `;
     containerImages6.innerHTML = content6;
     const content7 = `
-    <img class="slider__images images-mobile" src="${images[14].avatar}"
-    alt="Se muestra una botella de miel a base de flores de café , totalmente natural y lista para disfrutar">
-    <img class="slider__images image-desktop" src="${images[27].avatar}"alt="Se muestra un  producto derivados de la miel la famosa tintura de propoleo, totalmente natural y listo para disfrutar">
+    <img class="slider__images images-mobile" src="${images[1].avatar}"
+    alt="Se muestra una botella de miel, totalmente natural y lista para disfrutar">
+    <a href="../product-description/index.html"><h3>${images[1].name}</h3></a>
+    <p>¢${images[1].price}</p>
+    <img class="slider__images image-desktop" src="${images[14].avatar}"alt="Se muestra un  producto derivados de la miel con flores de café, totalmente natural y listo para disfrutar">
+    <a href="../product-description/index.html" class="slider__title-card"><h3>${images[14].name}</h3></a>
+    <p class="slider__text-card">¢${images[14].price}</p>
     `;
     containerImages7.innerHTML = content7;
     const content8 = `
-    <img class="slider__images images-mobile" src="${images[29].avatar}"
-    alt="Se muestra un producto que no puede faltarte en día a día te traemos polen 100% natural  y listo para disfrutar">
-    <img class="slider__images image-desktop" src="${images[17].avatar}"alt="Se muestra un super alimento, la miel cremosa con múltiples beneficios para tu salud, muy cremosita y lista para disfrutar">
+    <img class="slider__images images-mobile" src="${images[34].avatar}"
+    alt="Se muestra un producto que no puede faltarte en día a día te traemos cera de abeja 100% natural  y listo para disfrutar">
+    <a href="../product-description/index.html"><h3>${images[34].name}</h3></a>
+    <p>¢${images[34].price}</p>
+    <img class="slider__images image-desktop" src="${images[29].avatar}"alt="Se muestra un super alimento,el polen con  múltiples beneficios para tu salud, muy cremosita y lista para disfrutar">
+    <a href="../product-description/index.html" class="slider__title-card"><h3>${images[29].name}</h3></a>
+    <p class="slider__text-card">¢${images[29].price}</p>
     `;
     containerImages8.innerHTML = content8;
   }
@@ -65,7 +97,6 @@ fetch(apiUrl)
   .then((response) => response.json())
   .then((data) => {
     addImages(data);
-    // console.log(data);
   });
 
 let slideIndex = 0;
@@ -103,3 +134,13 @@ document.querySelectorAll('.slider__circles-indicators-items').forEach((element)
     appearSlides(slideIndex = bulletsIndex);
   });
 });
+
+function guardarLocalStorage() {
+  document.addEventListener('click', (event) => {
+    const elementoClicleado = event.target;
+    const idClicleado = elementoClicleado.getAttribute('data-id');
+    localStorage.setItem('click', idClicleado);
+  });
+}
+// eslint-disable-next-line eol-last
+guardarLocalStorage();
