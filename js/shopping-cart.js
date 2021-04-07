@@ -42,13 +42,15 @@ function loadProductsCart(p) {
   for (let i = 0; i < productsList.length; i += 1) {
     productData += `
       <div data-id="${productsList[i].id}" class="shopping__product-list__data">
-        <button class="btn__icon js__shopping--delete">×</button>
         <div class="shopping__product-list__data-img">
           <img src="${productsList[i].avatar}">
         </div>
-        <div class="shopping__product-list__data-price">
-        <h3>${productsList[i].title}</h3>
-        <p>${productsList[i].price}</p>
+        <div class="shopping__product-list__content">
+          <div class="shopping__product-list__data-price">
+            <h3>${productsList[i].title}</h3>
+            <p>${productsList[i].price}</p>
+          </div>
+          <button class="btn__icon js__shopping--delete">×</button>
         </div>
       </div>
     `;
