@@ -118,12 +118,12 @@ fetch(api, {
     loadProducts(products);
   });
 
-function guardar_localStorage(){
+function guardarLocalStorage() {
   document.addEventListener('click', (event) => {
-  const elementoClicleado = (((event.target).parentNode).parentNode).parentNode;
-  const idClicleado = elementoClicleado.getAttribute('data-id');
-  console.log(idClicleado);
-  localStorage.setItem("click", idClicleado);
+    const elementoClicleado = (((event.target).parentNode).parentNode).parentNode;
+    const idClicleado = elementoClicleado.getAttribute('data-id');
+    console.log(idClicleado);
+    localStorage.setItem('click', idClicleado);
   });
 }
-guardar_localStorage();
+guardarLocalStorage();
