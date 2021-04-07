@@ -1,0 +1,138 @@
+.image__container {
+  margin-bottom: $margin-medium;
+  img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  @media (min-width: 700px) {
+    margin-bottom: $margin-large;
+  }
+}
+
+.indicator {
+  align-items: center;
+  display: flex;
+  margin-bottom: $margin-large;
+
+  @media (min-width: 700px) {
+    margin-bottom: $margin-large + 1;
+    a {
+      font-size: $small-size-desk;
+    }
+  }
+}
+
+.indicator__link {
+  text-transform: capitalize;
+  margin-right: $size;
+  color: $main-color;
+
+  &:active {
+    border-bottom: 2px solid #C54210;
+  }
+
+  @media (min-width: 700px) {
+    &:hover {
+      border-bottom: 2px solid #C54210;
+    }
+  }
+}
+
+.indicator__arrow {
+  svg {
+    margin-right: $size;
+    width: 70%;
+  }
+}
+
+.recepes {
+  display: flex;
+  overflow-x: scroll;
+  margin-bottom: $margin-large + 1;
+  padding-bottom: $size;
+
+  @media (min-width: 700px) {
+    margin-bottom: $margin-large + 10;
+    overflow-x: hidden;
+  }
+}
+
+.recepe__container {
+  background-color: $secondary-background;
+  border-radius: $size;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-right: $size;
+  min-width: calculateWidthMobile(240px);
+
+  @media (min-width: 700px) {
+    min-width: 30%;
+    margin: 0 auto;
+  }
+}
+
+.recepe__img {
+  img {
+    border-top-left-radius: $size;
+    border-top-right-radius: $size;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.recepe__content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0rem $size + 2 0rem;
+  position: relative;
+
+  h3 {
+    margin-top: 0;
+  }
+
+  a {
+    position: absolute;
+    right: $main-size-movil;
+    bottom: $main-size-movil;
+  }
+}
+
+.benefics {
+  margin-bottom: $margin-medium;
+
+  @media (min-width: 700px) {
+    margin-bottom: $margin-large + 10;
+  }
+}
+
+.banckground {
+  background-color: $third-background;
+  margin-bottom: $margin-large + 4;
+
+  @media (min-width: 960px) {
+    margin-bottom: $margin-large + 10;
+  }
+}
+
+.usproducts  {
+  align-items: center;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: $margin-medium 0rem;
+
+  @media (min-width: 960px) {
+    flex-direction: row;
+  }
+}
+
+.usproducts__title {
+  padding-top: $margin-medium;
+}
+
+.usproducts__content {
+  @media (min-width: 960px) {
+    padding: 0rem 4rem 4rem 0rem;
+    width: 50%;
+  }
+}

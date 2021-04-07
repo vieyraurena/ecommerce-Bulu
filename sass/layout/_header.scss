@@ -3,10 +3,10 @@
   background-color: $fourth-color;
   display: flex;
   justify-content: space-between;
-  left: 0;
-  padding: $medium-size-movil $maxim-size-movil + 1;
+  // left: 0;
+  padding: $medium-size-movil 0.5rem;
   position: fixed;
-  right: 0;
+  // right: 0;
   top: 0;
   width: 100%;
   z-index: 1011;
@@ -14,7 +14,7 @@
 
 .header__logo {
   order: 2;
-  width: calculateWidthMobile(280px);
+  width: calculateWidthMobile(200px);
 
   svg {
     max-width: 100%;
@@ -48,15 +48,20 @@
 
 .header__icons {
   order: 3;
+  display: flex;
+  width: 25%;
 
-  .header__icons--btns {
-    height: 50px;
-    width: calculateWidthMobile(150px);
-  }
+  // .header__icons--btns {
+  //   height: 50px;
+  // }
 
   svg {
     max-width: 100%;
     width: 100%;
+  }
+
+  @media (min-width: 1080px) {
+    width: 10%;
   }
 }
 
@@ -98,7 +103,7 @@
 }
 
 .white {
-  padding: 0.3rem;
+  padding: 1rem;
   z-index: 1010;
 
   @media (min-width: 1080px) {
@@ -113,21 +118,25 @@
 .header__list {
   display: none;
   margin-bottom: 4rem;
+  position: relative;
   z-index: 1010;
 
   @media (min-width: 1024px) {
     display: block;
     margin: 0 auto;
-    max-width: 1080px;
+    width: 1080px;
 
     .header__list--items {
       display: flex;
-      padding: 6rem 0rem 0rem 0rem;
-
+      justify-content: space-around;
+      padding-top: 6rem;
 
       li {
-        justify-content: space-between;
-        padding: 1rem 5rem;
+        padding-top: 1rem;
+      }
+
+      a:hover, a:active {
+        border-bottom: 2px solid #C54210;
       }
     }
 
@@ -137,19 +146,19 @@
 // SEARCH
 .search {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   margin-top: 105px;
 
   @media (min-width: 1080px) {
-    margin-top: 180px;
+    margin-top: 170px;
   }
 }
 
 .search__form {
-  margin-bottom: 2rem;
+  margin-bottom: $margin-large;
 
   @media (min-width: 1080px) {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 }
 
@@ -160,19 +169,24 @@
   background-position: 90%;
   border: none;
   border-radius: $size;
-  padding: 1.5rem 2rem;
-  width: 85%;
-  padding-right: 45%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 1.2rem 2rem;
+  width: 250px;
+  // width: 100%;
+  // padding-right: 45%;
 
   @media (min-width: 1080px) {
     background-position: 98%;
-    padding-right: 200px;
+    margin-bottom: $margin-large;
+    // padding-right: 200px;
   }
 }
 
-// COVER PAGE
-.coverpage {
-  img {
-    width: 100%;
-  }
+.indicator__link--border {
+  border-bottom: 2px solid #C54210;
+}
+
+// Indicator
+.js-border {
+  border-bottom: 2px solid #C54210;
 }

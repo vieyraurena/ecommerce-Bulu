@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Productos</title>
+  <title>Carrito de compras</title>
   <link rel="stylesheet" href="../public/css/styles.css">
 </head>
 
@@ -127,9 +127,7 @@
 
       <!--product list. Are loaded with JS-->
       <div class="drawer__container--products js-drawer__container--products drawer__line--button">
-        <ul class="js__drawer--items">
-
-        </ul>
+        <!-- <ul class="js__drawer--items"></ul> -->
       </div>
 
       <!-- send ancore for redirect to check-out-->
@@ -167,40 +165,39 @@
 
     </div>
   </div>
+  <div class="wrapper">
+    <!--HERE START SEARCH-->
 
-  <!--HERE START SEARCH-->
-
-  <div class="search">
-    <form class="search__form" action="">
-      <input class="search__form--input" type="text">
-    </form>
-  </div>
-
-
-  <!--HERE START SHOPPING CART-->
-
-  <div class="shopping">
-    <h1>Carro de compras</h1>
-    <!--HERE START USER-->
-    <div class="shopping__user js-shopping__user">
+    <div class="search">
+      <form class="search__form" action="">
+        <input class="search__form--input" type="text">
+      </form>
     </div>
 
-    <h2 class="shoppig__title-h2">Productos a pagar:</h2>
-    <!--HERE START PRODUCT LIST-->
-    <div class="shopping__product">
-      <div class="shopping__product-list js-shopsing__product-list">
-      </div>
-      <div class="shopping__product-sum js-shopping__product-sum">
-        <h3>Total de su carrito</h3>
-        <div class="js-shopping__product-sum__total">
 
+    <!--HERE START SHOPPING CART-->
+
+    <div class="shopping">
+      <h1>Carro de compras</h1>
+      <!--HERE START USER-->
+      <div class="shopping__user js-shopping__user">
+      </div>
+
+      <h2 class="shoppig__title-h2">Productos a pagar:</h2>
+      <!--HERE START PRODUCT LIST-->
+      <div class="shopping__product">
+        <div class="shopping__product-list js-shopsing__product-list">
+        </div>
+        <div class="shopping__product-sum js-shopping__product-sum">
+          <h2>Total de su carrito</h2>
+          <div class="js-shopping__product-sum__total shopping__product-sum__total">
+          </div>
         </div>
       </div>
+
     </div>
 
   </div>
-
-
 
   <!--Footer is the container of the rest of elements-->
   <div class="footer">

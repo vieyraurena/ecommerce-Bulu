@@ -2,21 +2,17 @@
 $wrapper: 300px;
 
 //new variable
-$desktop-wrapper: 100%;
+$desktop-wrapper: 1080px;
 
 // Typography
 $main-font: 'poppins';
 $secondary-font: 'ABeeZee';
 $complement-font: 'Arial, Helvetica, sans-serif';
 
-$titles: $main-font,
-$complement-font;
-$paragraf: $secondary-font,
-$complement-font;
-$links:$main-font,
-$complement-font;
-$bottons:$main-font,
-$complement-font;
+$titles: $secondary-font,$complement-font;
+$paragraf: $main-font,$complement-font;
+$links:$main-font,$complement-font;
+$bottons:$main-font,$complement-font;
 
 //=======================================//
 
@@ -65,6 +61,7 @@ $padding-small: $size;
 //=======================================//
 
 // Margin bottom
+$margin-medium: $size * 3;
 $margin-large: $size * 4;
 
 
@@ -78,7 +75,7 @@ $botton-logIn: $fourth-color;
 
 
 //=================Font-Size Desktop======================
-$small-size-desk: $size * 1.4;
+$small-size-desk: $size * 1.45;
 $main-p-size-desk: $size * 1.6;
 $medium-h3-size-desk: $size * 2.4;
 $large-h2-size-desk: $size * 2.8;

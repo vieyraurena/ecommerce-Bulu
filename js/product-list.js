@@ -25,7 +25,7 @@ function loadProducts(p) {
     contentData += `
     <div data-id="${product[i].id}" class="product__card">
       <div class="product__card-img">
-        <img src="${product[i].avatar}">
+        <a href="../product-description/index.html"> <img src="${product[i].avatar}" alt="Imagen del producto ${product[i].name}" border="0"></a>
       </div>
       <div data-id="${product[i].id}" class="product__card-data">
         <div class="product__card-price">
@@ -41,7 +41,7 @@ function loadProducts(p) {
             <span class="visually-hidden span-size">añadir</span>
           </button>
         </div>
-        <h3>${product[i].name}</h3>
+        <a href="../product-description/index.html"><h3>${product[i].name}</h3></a>
         <p>${product[i].description}</p>
       </div>
     </div>
@@ -117,3 +117,13 @@ fetch(api, {
     createPaginations(products.length);
     loadProducts(products);
   });
+
+function guardarLocalStorage() {
+  document.addEventListener('click', (event) => {
+    const elementoClicleado = (((event.target).parentNode).parentNode).parentNode;
+    const idClicleado = elementoClicleado.getAttribute('data-id');
+    console.log(idClicleado);
+    localStorage.setItem('click', idClicleado);
+  });
+}
+guardarLocalStorage();

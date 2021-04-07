@@ -6,9 +6,8 @@
   position: relative;
 
   @media (min-width:400px) {
-
     background-image: url(../../img/background-desktop.svg);
-
+    background-size: contain;
   }
 
   /*Button for send the e-mail*/
@@ -23,9 +22,10 @@
     border: none;
     border-radius: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding: $padding-small 18.7rem $padding-small 0;
+    padding: $padding-small 0rem;
     margin: 10px 0 20px 0;
     outline: none;
+    width: 100%;
   }
 
   .footer__input:focus {
@@ -34,6 +34,7 @@
 
   .footer__input::placeholder {
     color: $third-color;
+    padding-left: $size;
   }
 
   /*Icon's Búlu*/
@@ -56,8 +57,9 @@
   /* Form's label*/
   .footer__label {
     font-family: $main-font;
-    font-size: $large-size-movil;
+    font-size: $medium-size-movil;
     line-height: $line-height-small-movil;
+    text-align: center;
   }
 
   /*Some options of the principal menu*/
@@ -106,10 +108,10 @@
 
   /*Breakpoint*/
   @media (min-width:970px) {
-    .wrapper {
-      width: 1080px;
-      margin: 0 auto;
-    }
+    // .wrapper {
+    //   width: 1080px;
+    //   margin: 0 auto;
+    // }
 
     .footer__btn-offers {
       font-size: $main-p-size-desk;
@@ -117,7 +119,7 @@
     }
 
     .footer__label {
-      text-align: center;
+      font-size: $medium-h3-size-desk;
       display: block;
       margin-bottom: 35px;
     }
@@ -134,10 +136,11 @@
     }
 
     .footer__input {
-      padding: $padding-small 25.7rem $padding-small 0;
+      // padding: $padding-small 25.7rem $padding-small 0;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      margin-left: 35%;
+      margin-left: 25%;
       margin-bottom: 54px;
+      width: 50%;
     }
 
     .footer__list {
@@ -163,14 +166,14 @@
       font-size: $main-p-size-desk;
     }
 
-    .footer__paragraph-desktop {
-      color: $main-color;
-      position: absolute;
-      font-family: $secondary-font;
-      font-size: $large-h2-size-desk;
-      left: 67%;
-      top: 561px;
-      display: block;
-    }
+    // .footer__paragraph-desktop {
+    //   color: $main-color;
+    //   // position: absolute;
+    //   font-family: $secondary-font;
+    //   font-size: $large-h2-size-desk;
+    //   // left: 67%;
+    //   top: 561px;
+    //   display: block;
+    // }
   }
 }
