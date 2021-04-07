@@ -1117,10 +1117,10 @@ html {
   font-size: 1.6rem;
   text-transform: capitalize; }
 
-#js-hiddenImages {
+#card-description__image-gallery__hidden-image {
   width: 340px; }
 
-#js-hiddenImages img {
+.card-description__image-gallery--hidden-image {
   border: 2px solid #C54210;
   border-radius: 5px;
   filter: grayscale(100%);
@@ -1131,11 +1131,11 @@ html {
   transition: 0.2s;
   width: 20.6%; }
 
-#js-hiddenImages img:hover {
+.card-description__image-gallery--hidden-image:hover {
   filter: grayscale(0%);
   transform: scale(1.1); }
 
-#js-openImage img {
+.card-description__image-gallery--open-image {
   border: 2px solid #C54210;
   border-radius: 8px;
   height: auto;
@@ -1195,15 +1195,15 @@ html {
     margin-bottom: 20px;
     margin-top: 0;
     text-transform: capitalize; }
-  #js-hiddenImages {
+  .card-description__image-gallery__hidden-image {
     width: 500px; }
-  #js-hiddenImages img {
+  .card-description__image-gallery--hidden-image {
     height: 100px;
     width: 22%; }
-  #js-openImage {
+  .card-description__image-gallery__open-image {
     display: inline-block;
     margin-right: 1px; }
-  #js-openImage img {
+  .card-description__image-gallery--open-image {
     height: 400px;
     margin: 0 0;
     margin-bottom: 10px;
