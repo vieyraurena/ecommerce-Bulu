@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 const apiURL = 'https://60410f23f34cf600173c967c.mockapi.io/api/product';
-console.log(apiURL);
+// console.log(apiURL);
 
 // constants drawer
 const bag = document.querySelector('.js-header--bag');

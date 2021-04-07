@@ -12,7 +12,7 @@ h1 {
 h2,
 h3,
 h4 {
-  font-family: $paragraf;
+  font-family: $titles;
   text-transform: capitalize;
 }
 
@@ -42,10 +42,10 @@ h4 {
 p {
   font-family: $paragraf;
   font-size: $small-size-movil;
-  line-height: $line-height-medium-movil;
+  line-height: $line-height-small-movil + 0.5;
 
   @media (min-width: 970px) {
-    font-size: $main-p-size-desk;
+    font-size: $small-size-desk;
   }
 }
 
@@ -62,7 +62,7 @@ a {
   @media (min-width: 970px) {
     font-size: $main-p-size-desk;
 
-    &:hover {
+    &:hover, a:active {
       color: $links-hover-color;
     }
   }
