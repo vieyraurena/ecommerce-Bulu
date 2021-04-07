@@ -3,12 +3,14 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descripción de productos</title>
   <link rel="stylesheet" href="../public/css/styles.css">
-  <title>Proyecto</title>
 </head>
 
 <body>
+
   <!--HERE START MOBILE HEADER-->
   <div class="header">
     <div class="header__logo">
@@ -119,18 +121,20 @@
 
       <!--header del drawer-->
       <div class="drawer__header">
-        <h2>Mini-Cart</h2>
+        <h2>Bolsita</h2>
         <button class="drawer__header--button btn__icon js-drawer__header--button">&times;</button>
       </div>
 
       <!--product list. Are loaded with JS-->
       <div class="drawer__container--products js-drawer__container--products drawer__line--button">
+        <ul class="js__drawer--items">
 
+        </ul>
       </div>
 
       <!-- send ancore for redirect to check-out-->
       <div class="drawer__btn--close flex">
-        <a class="btn__ancore" href="">Comprar</a>
+        <a class="btn__ancore" href="/shopping-car/">Comprar</a>
       </div>
 
     </div>
@@ -164,104 +168,108 @@
     </div>
   </div>
 
-  <!--HERE START SEARCH-->
+  <div class="wrapper">
+    <!--HERE START SEARCH-->
 
-  <div class="search">
-    <form class="search__form" action="">
-      <input class="search__form--input" type="text">
-    </form>
-  </div>
-  <div class="card-description">
-    <h2 class="card-description__mobile-title"></h2>
-    <!-- IMAGE GALLERY -->
-    <div class="card-description__image-gallery">
-      <!-- OPEN IMAGE -->
-      <div class="card-description__image-gallery__open-image" id="js-openImage">
-        <img class="card-description__image-gallery--open-image">
+    <div class="search">
+      <form class="search__form" action="">
+        <input class="search__form--input" type="text">
+      </form>
+    </div>
+    <div class="card-description">
+      <h2 class="card-description__mobile-title"></h2>
+      <!-- IMAGE GALLERY -->
+      <div class="card-description__image-gallery">
+        <!-- OPEN IMAGE -->
+        <div class="card-description__image-gallery__open-image" id="js-openImage">
+          <img class="card-description__image-gallery--open-image">
+        </div>
+        <!-- HIDDEN IMAGES -->
+        <div class="card-description__image-gallery__hidden-image" id="js-hiddenImages">
+          <img class="card-description__image-gallery--hidden-image">
+          <img class="card-description__image-gallery--hidden-image">
+          <img class="card-description__image-gallery--hidden-image">
+          <img class="card-description__image-gallery--hidden-image">
+        </div>
       </div>
-      <!-- HIDDEN IMAGES -->
-      <div class="card-description__image-gallery__hidden-image" id="js-hiddenImages">
-        <img class="card-description__image-gallery--hidden-image">
-        <img class="card-description__image-gallery--hidden-image">
-        <img class="card-description__image-gallery--hidden-image">
-        <img class="card-description__image-gallery--hidden-image">
+      <!-- PRODUCT DESCRIPTION -->
+      <div class="card-description__product-description">
+        <h2 class="card-description__desktop-title"></h2>
+        <p class="card-description__product-price"></p>
+        <p class="card-description__product-reference"></p>
+        <span class="card-description__dropdown-buttons"><button class="btn card-description_btn">Tamaño</button>
+          <button class="btn card-description_btn">Cantidad</button></span>
+        <span class="card-description__cart-button"><button class="btn card-description_btn">AGREGAR A LA BOLSITA DE
+            COMPRAS</button></span>
       </div>
     </div>
-    <!-- PRODUCT DESCRIPTION -->
-    <div class="card-description__product-description">
-      <h2 class="card-description__desktop-title"></h2>
-      <p class="card-description__product-price"></p>
-      <p class="card-description__product-reference"></p>
-      <span class="card-description__dropdown-buttons"><button class="btn card-description_btn">Tamaño</button> <button
-          class="btn card-description_btn">Cantidad</button></span>
-      <span class="card-description__cart-button"><button class="btn card-description_btn">AGREGAR A LA BOLSITA DE
-          COMPRAS</button></span>
-    </div>
-  </div>
 
-  <!-- ACORDEON -->
-  <div class="acordeon">
-    <div class="acordeon__content">
-      <h1 class="acordeon__content--title">Comentarios <b>+</b></h1>
-      <div class="acordeon__content--hiddenInformation">
-        <div class="card-description__comments--background">
-          <p class="card-description__comments__username"><b>Courtney Henry</b></p>
-          <p class="card-description__comments__user-comment">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Nobis saepe est a necessitatibus error praesentium reiciendis dolores accusantium velit et consequuntur at
-            ut sequi possimus adipisci nihil in, repellat modi.</p>
-          <p class="date">20/20/20</p>
+    <!-- ACORDEON -->
+    <div class="acordeon">
+      <div class="acordeon__content">
+        <h1 class="acordeon__content--title">Comentarios <b>+</b></h1>
+        <div class="acordeon__content--hiddenInformation">
+          <div class="card-description__comments--background">
+            <p class="card-description__comments__username"><b>Courtney Henry</b></p>
+            <p class="card-description__comments__user-comment">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Nobis saepe est a necessitatibus error praesentium reiciendis dolores accusantium velit et consequuntur at
+              ut sequi possimus adipisci nihil in, repellat modi.</p>
+            <p class="date">20/20/20</p>
+          </div>
+        </div>
+      </div>
+      <div class="acordeon__content">
+        <h1 class="acordeon__content--title">Tipos de Recetas <b>+</b></h1>
+        <div class="acordeon__content--hiddenInformation">
+          <h3>Hola soy el 2do Contenido</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure voluptate libero asperiores facere fuga
+            doloribus odio mollitia possimus atque reprehenderit, architecto ab maxime incidunt aut porro perspiciatis?
+            Quidem, ea molestiae?</p>
+        </div>
+      </div>
+      <div class="acordeon__content">
+        <h1 class="acordeon__content--title">Tercero <b>+</b></h1>
+        <div class="acordeon__content--hiddenInformation">
+          <h3>Hola soy el 3er Contenido</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure voluptate libero asperiores facere fuga
+            doloribus odio mollitia possimus atque reprehenderit, architecto ab maxime incidunt aut porro perspiciatis?
+            Quidem, ea molestiae?</p>
         </div>
       </div>
     </div>
-    <div class="acordeon__content">
-      <h1 class="acordeon__content--title">Tipos de Recetas <b>+</b></h1>
-      <div class="acordeon__content--hiddenInformation">
-        <h3>Hola soy el 2do Contenido</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure voluptate libero asperiores facere fuga
-          doloribus odio mollitia possimus atque reprehenderit, architecto ab maxime incidunt aut porro perspiciatis?
-          Quidem, ea molestiae?</p>
-      </div>
-    </div>
-    <div class="acordeon__content">
-      <h1 class="acordeon__content--title">Tercero <b>+</b></h1>
-      <div class="acordeon__content--hiddenInformation">
-        <h3>Hola soy el 3er Contenido</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure voluptate libero asperiores facere fuga
-          doloribus odio mollitia possimus atque reprehenderit, architecto ab maxime incidunt aut porro perspiciatis?
-          Quidem, ea molestiae?</p>
-      </div>
-    </div>
-  </div>
-  <div class="tabs">
-    <ul class="tabs__tablist">
-      <li><a href="#tab-1" class="tabs__tablist--title">Comentarios</a></li>
-      <li><a href="#tab-2" class="tabs__tablist--title">Tipos de Recetas</a></li>
-      <li><a href="#tab-3" class="tabs__tablist--title">Tercero</a></li>
-    </ul>
-    <div class="tabs__content">
-      <div id="tab-1" class="tabs__content--hiddenInformation">
-        <div class="card-description__comments--background">
-          <p class="card-description__comments__username"><b>Courtney Henry</b></p>
-          <p class="card-description__comments__user-comment">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Nobis saepe est a necessitatibus error praesentium reiciendis dolores accusantium velit et consequuntur at
-            ut sequi possimus adipisci nihil in, repellat modi.</p>
-          <p class="date">20/20/20</p>
+    <div class="tabs">
+      <ul class="tabs__tablist">
+        <li><a href="#tab-1" class="tabs__tablist--title">Comentarios</a></li>
+        <li><a href="#tab-2" class="tabs__tablist--title">Tipos de Recetas</a></li>
+        <li><a href="#tab-3" class="tabs__tablist--title">Tercero</a></li>
+      </ul>
+      <div class="tabs__content">
+        <div id="tab-1" class="tabs__content--hiddenInformation">
+          <div class="card-description__comments--background">
+            <p class="card-description__comments__username"><b>Courtney Henry</b></p>
+            <p class="card-description__comments__user-comment">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Nobis saepe est a necessitatibus error praesentium reiciendis dolores accusantium velit et consequuntur at
+              ut sequi possimus adipisci nihil in, repellat modi.</p>
+            <p class="date">20/20/20</p>
+          </div>
+        </div>
+        <div id="tab-2" class="tabs__content--hiddenInformation">
+          <h1>Hola soy el 2do Contenido</h1>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque dolorum quia, esse ab rem quo id
+            corrupti neque fuga qui earum beatae. Rem accusamus tempora ex natus est. Sed, unde.</p>
+          <p>Vieyra Ureña</p>
+        </div>
+        <div id="tab-3" class="tabs__content--hiddenInformation">
+          <h1>Hola soy el 3er Contenido</h1>
+          <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, beatae qui a aliquid numquam
+            consequuntur ratione ipsam dicta omnis nesciunt veritatis ullam! Facere, velit? In minus excepturi odit
+            saepe
+            doloremque!</P>
+          <p>Karen Mendez</p>
         </div>
       </div>
-      <div id="tab-2" class="tabs__content--hiddenInformation">
-        <h1>Hola soy el 2do Contenido</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque dolorum quia, esse ab rem quo id
-          corrupti neque fuga qui earum beatae. Rem accusamus tempora ex natus est. Sed, unde.</p>
-        <p>Vieyra Ureña</p>
-      </div>
-      <div id="tab-3" class="tabs__content--hiddenInformation">
-        <h1>Hola soy el 3er Contenido</h1>
-        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, beatae qui a aliquid numquam
-          consequuntur ratione ipsam dicta omnis nesciunt veritatis ullam! Facere, velit? In minus excepturi odit saepe
-          doloremque!</P>
-        <p>Karen Mendez</p>
-      </div>
     </div>
+
   </div>
   <!--Footer is the container of the rest of elements-->
   <div class="footer">

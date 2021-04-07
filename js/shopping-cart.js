@@ -5,6 +5,7 @@ const Apiuser = 'https://60410f23f34cf600173c967c.mockapi.io/api/users';
 const divUser = document.querySelector('.js-shopping__user');
 const divShoppingList = document.querySelector('.js-shopsing__product-list');
 const divShoppingSum = document.querySelector('.js-shopping__product-sum__total');
+const deleteItemProduct = document.querySelector('.js-shopsing__product-list');
 let products = [];
 
 function productSum(p) {
@@ -17,7 +18,7 @@ function productSum(p) {
     sum += parseInt(price);
   }
   total += `
-  <p> ${sum}</p>
+  <h3> &#x20a1 ${sum}</h3>
   `;
   console.log(sum);
   divShoppingSum.innerHTML = total;
@@ -41,7 +42,7 @@ function loadProductsCart(p) {
   for (let i = 0; i < productsList.length; i += 1) {
     productData += `
       <div data-id="${productsList[i].id}" class="shopping__product-list__data">
-        <button class="btn__icon js__drawer--delete">×</button>
+        <button class="btn__icon js__shopping--delete">×</button>
         <div class="shopping__product-list__data-img">
           <img src="${productsList[i].avatar}">
         </div>
@@ -78,3 +79,30 @@ fetch(Apiuser, {
   .then((u) => {
     loadUser(u);
   });
+
+const deleteProductApi = (id) => {
+  fetch(`${Apiproduct}/${id}`, {
+    method: 'DELETE',
+  })
+    .then((response) => {
+      if (response.ok) {
+        console.log('delete');
+        const eliminado = getListElement(id);
+        eliminado.remove();
+      } else {
+        throw new Error(response.status);
+      }
+    })
+    .catch((err) => {
+      console.log(`Ocurrió un error de tipo ${err}`);
+    });
+};
+console.log(deleteItemProduct);
+
+deleteItemProduct.addEventListener('click', (event) => {
+  const id = event.target.parentElement.dataset.id;
+  console.log(id);
+  if (event.target.tagName === 'BUTTON') {
+    deleteProductApi(id);
+  }
+});
