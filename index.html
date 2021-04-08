@@ -55,8 +55,8 @@
 
     <!--I applyed accessible buttons-->
     <div class="header__icons">
-      <button class="header__icons--btns btn__icon js-header--login">
-        <span class="header__icon--user" aria-hidden="true">
+      <button class="header__icons--btns btn__icon js-header--login" aria-hidden="true" aria-label="registrarse">
+        <span class="header__icon--user" >
           <svg width="38" height="45" viewBox="0 0 38 45" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M19 19.2222C21.3932 19.2222 23.3333 17.2012 23.3333 14.7083C23.3333 12.2153 21.3932 10.1944 19 10.1944C16.6068 10.1944 14.6667 12.2153 14.6667 14.7083C14.6667 17.2012 16.6068 19.2222 19 19.2222Z"
@@ -68,7 +68,7 @@
         </span>
         <span class="visually-hidden">registrarse</span>
       </button>
-      <button class="header__icons--btns btn__icon js-header--bag">
+      <button class="header__icons--btns btn__icon js-header--bag" aria-label="bolsa de compras">
         <span class="header__icon--user" aria-hidden="true">
           <svg width="37" height="45" viewBox="0 0 37 45" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -182,7 +182,7 @@
 
   <!--HERE START COVER-->
   <div class="image__container">
-    <img src="img/coverpage.svg" alt="Productos de miel">
+    <img src="img/coverpage.svg" alt="Deliciosa y saludable miel 100% natural en envases de vidrio, con tapa dorada, puestos sobre la mesa listos para ser deleitados">
   </div>
 
   <!--HERE START INDICATOR STAY-->
@@ -203,7 +203,7 @@
     <div class="recepes">
       <div class="recepe__container">
         <div class="recepe__img">
-          <img src="img//energetico.svg" alt="">
+          <img src="img//energetico.svg" alt="receta de productos energéticos hechos a base de miel 100% natural">
         </div>
         <div class="recepe__content">
           <h3>Energético</h3>
@@ -213,7 +213,7 @@
 
       <div class="recepe__container">
         <div class="recepe__img">
-          <img src="img//energetico.svg" alt="">
+          <img src="img//energetico.svg" alt="receta de productos nutricionales que te llenarán de enrgía y vitalidad ">
         </div>
         <div class="recepe__content">
           <h3>Nutricional</h3>
@@ -223,7 +223,7 @@
 
       <div class="recepe__container">
         <div class="recepe__img">
-          <img src="img//energetico.svg" alt="">
+          <img src="img//energetico.svg" alt="receta de productos para el cuidado diario de tu piel con el poderoso ingrdiente estrella, la miel 100% natural de Bulu">
         </div>
         <div class="recepe__content">
           <h3>Corporal</h3>
@@ -293,10 +293,17 @@
 
           </div>
 
-          <button id="back" class="slider__btn-back">&#10094;</button>
-          <button id="advance" class="slider__btn-advance">&#10095;</button>
-        </div>
+          <button aria-hidden="true" aria-label="retroceder" aria-describedby="description-back" id="back" class="slider__btn-back">&#10094;
 
+          </button>
+          <button aria-hidden="true" aria-label="avanzar" aria-describedby="description-advance" id="advance" class="slider__btn-advance">&#10095;</button>
+        </div>
+        <div id="description-back" class="visually-hidden">
+          Retrocede para ver las últimas imágenes de nuestros productos
+        </div>
+        <div id="description-advance" class="visually-hidden">
+          Avanza para ver las siguientes imágenes de nuestros productos
+        </div>
         <!-- circles -->
         <div class="slider__circles-indicators">
           <span id="slider__indicador-1" class="slider__circles-indicators-items"></span>
@@ -336,10 +343,10 @@
         <img class="footer__icon-bulu" src="../img/BÙLU-img.png" alt="">
         <ul class="footer__list">
           <!--In this case, the href will be connected with each section correspondent-->
-          <li class="footer__list-nav"><a href="#"></a>Productos</li>
-          <li class="footer__list-nav"><a href="#"></a>Sobre nosotros</li>
-          <li class="footer__list-nav"><a href="#"></a>Blog</li>
-          <li class="footer__list-nav"><a href="#"></a>Preguntas frecuentes</li>
+          <li class="footer__list-nav"><a href="#">Productos</a></li>
+          <li class="footer__list-nav"><a href="#">Sobre nosotros</a></li>
+          <li class="footer__list-nav"><a href="#">Blog</a></li>
+          <li class="footer__list-nav"><a href="#">Preguntas frecuentes</a></li>
         </ul>
       </div>
       <div class="footer__social-media">
