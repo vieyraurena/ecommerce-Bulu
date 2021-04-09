@@ -5,48 +5,48 @@ const acordeon = document.querySelectorAll('.acordeon__content--title');
 // ACTUAL ACORDEON
 //
 
-const acordeonFunction = function() {
+const acordeonFunction = (event) => {
   const elemento = event.currentTarget;
-  let info = elemento.nextElementSibling;
-  if (info.style.display === "block") {
-    info.style.display = "none";
+  const info = elemento.nextElementSibling;
+
+  if (info.style.display === 'block') {
+    info.style.display = 'none';
   } else {
-    info.style.display = "block";
+    info.style.display = 'block';
   }
-}
-acordeon.forEach(element => {
-  element.addEventListener('click', acordeonFunction)
+};
+acordeon.forEach((element) => {
+  element.addEventListener('click', acordeonFunction);
 });
 
 // TABS
-
 const tabs = document.querySelectorAll('.tabs__tablist--title');
 const content = document.querySelectorAll('.tabs__content--hiddenInformation');
 
 //
 // ACTUAL TABS
 //
-const tabsFunction = function() {
+const tabsFunction = (event) => {
   event.preventDefault();
   const id = event.currentTarget.getAttribute('href').substring(1);
-  content.forEach(element => {
+  content.forEach((element) => {
     element.classList.add('js-content-hidden');
     if (element.getAttribute('id') === id) {
       element.classList.remove('js-content-hidden');
     }
   });
-  tabs.forEach(element =>{
+  tabs.forEach((element) => {
     element.classList.remove('js-active');
-  })
+  });
   event.currentTarget.classList.add('js-active');
-}
+};
 
-content.forEach(element => {
+content.forEach((element) => {
   element.classList.add('js-content-hidden');
 });
 content[0].classList.remove('js-content-hidden');
 tabs[0].classList.add('js-active');
 
-tabs.forEach(element => {
+tabs.forEach((element) => {
   element.addEventListener('click', tabsFunction);
 });

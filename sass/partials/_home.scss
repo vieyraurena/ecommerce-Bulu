@@ -1,8 +1,9 @@
 .image__container {
   margin-bottom: $margin-medium;
+
   img {
-    width: 100%;
     max-width: 100%;
+    width: 100%;
   }
 
   @media (min-width: 700px) {
@@ -17,6 +18,7 @@
 
   @media (min-width: 700px) {
     margin-bottom: $margin-large + 1;
+
     a {
       font-size: $small-size-desk;
     }
@@ -24,9 +26,9 @@
 }
 
 .indicator__link {
-  text-transform: capitalize;
-  margin-right: $size;
   color: $main-color;
+  margin-right: $size;
+  text-transform: capitalize;
 
   &:active {
     border-bottom: 2px solid #C54210;
@@ -48,8 +50,8 @@
 
 .recepes {
   display: flex;
-  overflow-x: scroll;
   margin-bottom: $margin-large + 1;
+  overflow-x: scroll;
   padding-bottom: $size;
 
   @media (min-width: 700px) {
@@ -92,9 +94,9 @@
   }
 
   a {
+    bottom: $main-size-movil;
     position: absolute;
     right: $main-size-movil;
-    bottom: $main-size-movil;
   }
 }
 

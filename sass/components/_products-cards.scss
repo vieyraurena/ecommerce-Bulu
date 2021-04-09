@@ -1,11 +1,3 @@
-// .product {
-//   // margin: 0 5% 0 5%;
-
-//   @media (min-width: 300px) {
-//     margin-top: 50px;
-//   }
-// }
-
 .product__card {
   align-items: flex-start;
   background-color: $secondary-background;
@@ -49,10 +41,10 @@
     width: 110px;
 
     @media (min-width: 500px) {
+      border-radius: $large-size-movil $large-size-movil 0px 0px;
       display: inline;
       width: 200px;
       height: 250px;
-      border-radius: $large-size-movil $large-size-movil 0px 0px;
     }
   }
 }
@@ -60,14 +52,14 @@
 .product__card-price {
   button {
     position: absolute;
-    top: $paddin-right-left;
     right: $large-size-movil;
+    top: $paddin-right-left;
   }
 
   p {
-    font-weight: bold;
-    font-size: $large-size-movil;
     color: $secondary-color;
+    font-size: $large-size-movil;
+    font-weight: bold;
     margin-top: $line-height-small-movil;
 
     @media (min-width: 500px) {
@@ -85,8 +77,8 @@
 
   @media (min-width: 500px) {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
 
   }
@@ -96,7 +88,3 @@
   text-align: center;
   margin-bottom: 100px;
 }
-
-// .js-add__drawer{
-//   z-index: 999;
-// }

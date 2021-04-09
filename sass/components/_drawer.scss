@@ -59,10 +59,10 @@
 }
 
 .drawer__container--items {
+  align-items: center;
   border-bottom: 0.2rem solid $main-background;
   display: flex;
   flex-direction: row;
-  align-items: center;
 
   button {
     font-size: $medium-h3-size-desk;
@@ -93,7 +93,6 @@
 
   @media (min-width: 960px) {
     margin-right: 5rem;
-
   }
 }
 

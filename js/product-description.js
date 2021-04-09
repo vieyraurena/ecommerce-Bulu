@@ -3,8 +3,19 @@ const bigImg = document.getElementById('js-openImage');
 const subImg = document.querySelectorAll('.card-description__image-gallery--hidden-image');
 const idPresionado = localStorage.getItem('click');
 
+// CONTENT WRAPPERS
+const productUrl = 'https://60410f23f34cf600173c967c.mockapi.io/api/products';
+const productMobileTitle = document.querySelector('.card-description__mobile-title');
+const productDesktopTitle = document.querySelector('.card-description__desktop-title');
+const openImage = document.querySelector('.card-description__image-gallery--open-image');
+const productPrice = document.querySelector('.card-description__product-price');
+const productDescription = document.querySelector('.card-description__product-reference');
+// const userAvatar = document.querySelector('.card-description__comments__avatar');
+// const userName = document.querySelector('.card-description__comments__username');
+
 const id = idPresionado - 2;
 
+// Galery
 for (let i = 0; i < subImg.length; i++) {
   subImg[i].addEventListener('click', (event) => {
     const src = event.currentTarget.getAttribute('src');
@@ -18,17 +29,6 @@ for (let i = 0; i < subImg.length; i++) {
     }
   });
 }
-
-// CONTENT WRAPPERS
-
-const productUrl = 'https://60410f23f34cf600173c967c.mockapi.io/api/products';
-const productMobileTitle = document.querySelector('.card-description__mobile-title');
-const productDesktopTitle = document.querySelector('.card-description__desktop-title');
-const openImage = document.querySelector('.card-description__image-gallery--open-image');
-const productPrice = document.querySelector('.card-description__product-price');
-const productDescription = document.querySelector('.card-description__product-reference');
-const userAvatar = document.querySelector('.card-description__comments__avatar');
-const userName = document.querySelector('.card-description__comments__username');
 
 function introducirProducto(data) {
   productMobileTitle.innerText = data[id].name;

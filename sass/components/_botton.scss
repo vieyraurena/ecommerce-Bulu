@@ -41,8 +41,8 @@
 }
 
 .visually-hidden {
-  visibility: hidden;
   font-size: 1px;
+  visibility: hidden;
 }
 
 
@@ -64,8 +64,8 @@
   }
 
   &:hover {
-    color: $fourth-color;
     background-color: $links-hover-color;
+    color: $fourth-color;
   }
 }
 
@@ -74,7 +74,6 @@
 .btn__secondary {
   background-color: transparent;
   border: 2px solid $secondary-color;
-  ;
   border-radius: 1rem solid $secondary-color;
   font-size: $small-size-movil;
   font-weight: bold;

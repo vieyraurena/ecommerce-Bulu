@@ -12,19 +12,19 @@
 
   /*Button for send the e-mail*/
   .footer__btn-offers {
-    margin-left: 30%;
     margin-bottom: 93px;
+    margin-left: 30%;
   }
 
   /*Form's input*/
   .footer__input {
-    display: block;
     border: none;
     border-radius: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding: $padding-small 0rem;
+    display: block;
     margin: 10px 0 20px 0;
     outline: none;
+    padding: $padding-small 0rem;
     width: 100%;
   }
 
@@ -39,8 +39,8 @@
 
   /*Icon's Búlu*/
   .footer__icon-bulu {
-    position: absolute;
     margin-left: 12%;
+    position: absolute;
     top: 450px;
   }
 
@@ -57,8 +57,8 @@
   /* Form's label*/
   .footer__label {
     font-family: $main-font;
-    font-size: $medium-size-movil;
     line-height: $line-height-small-movil;
+    font-size: $medium-size-movil;
     text-align: center;
   }
 
@@ -84,12 +84,12 @@
 
   /*Paragraph's help*/
   .footer__paragraph-help {
+    background-color: #E7E0E0;
     display: inline-block;
     border-radius: 20px;
     padding: $padding-small $paddin-right-left;
     margin-left: 40%;
     margin-bottom: 393px;
-    background-color: #E7E0E0;
   }
 
 
@@ -99,20 +99,13 @@
 
   /*Section about social media of Búlu*/
   .footer__social-media {
+    margin-left: 60%;
     position: absolute;
     top: 458px;
-    margin-left: 60%;
   }
-
-
 
   /*Breakpoint*/
   @media (min-width:970px) {
-    // .wrapper {
-    //   width: 1080px;
-    //   margin: 0 auto;
-    // }
-
     .footer__btn-offers {
       font-size: $main-p-size-desk;
       margin-left: 45%;
@@ -125,21 +118,21 @@
     }
 
     .footer__icon-bulu {
-      position: absolute;
       margin-left: 43%;
+      position: absolute;
       top: 585px;
     }
 
     .footer__icon-message {
-      width: 100px;
       margin-left: 80%;
+      width: 100px;
     }
 
     .footer__input {
       // padding: $padding-small 25.7rem $padding-small 0;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      margin-left: 25%;
       margin-bottom: 54px;
+      margin-left: 25%;
       width: 50%;
     }
 
@@ -150,10 +143,10 @@
 
     .footer__list-media {
       display: flex;
-      position: absolute;
-      top: 160px;
       left: 20%;
+      position: absolute;
       right: -280px;
+      top: 160px;
     }
 
     .footer__list-social+.footer__list-social {

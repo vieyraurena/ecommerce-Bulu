@@ -1,15 +1,12 @@
 /* eslint-disable no-use-before-define */
 /* eslint-disable no-console */
 const apiURL = 'https://60410f23f34cf600173c967c.mockapi.io/api/product';
-// console.log(apiURL);
 
 // constants drawer
 const bag = document.querySelector('.js-header--bag');
 const btn = document.querySelector('.js-drawer__header--button');
 const drawer = document.querySelector('.js-drawer');
 const innerUlHtml = document.querySelector('.js-drawer__container--products');
-
-// console.log({ drawerItems });
 
 // constants nav
 const collapNav = document.querySelector('.js-header__nav--hamburger');
@@ -20,7 +17,7 @@ const collap = document.querySelector('.header__collapsible');
 
 const closeDrawer = () => {
   drawer.style.right = '-100%';
-  // aqui lo de limpiar el drawer
+  // cleans Drawer
   document.querySelector.drawerItems.remove();
 };
 
@@ -54,12 +51,12 @@ function createDrawerList(productList) {
   const drawerItems = document.querySelector('.js__drawer--items');
   for (let i = 0; i < productList.length; i += 1) {
     drawerItems.innerHTML += createInfo(productList[i]);
-    console.log(productList[i]);
+    // console.log(productList[i]);
   }
 
   drawerItems.addEventListener('click', (event) => {
     const id = event.target.parentElement.dataset.id;
-    console.log(id);
+    // console.log(id);
     if (event.target.tagName === 'BUTTON') {
       deleteProduct(id);
     }
@@ -76,11 +73,12 @@ const callDrawer = () => {
     },
   }).then((res) => res.json())
     .catch((error) => console.error('Error:', error))
-    .then((p) => {
-      console.log(p);
+    // change "p" for "products"
+    .then((products) => {
+      // console.log(products);
       const innerList = '<ul class="js__drawer--items"></ul>';
       innerUlHtml.innerHTML = innerList;
-      createDrawerList(p);
+      createDrawerList(products);
     });
 };
 
@@ -92,7 +90,7 @@ const deleteProduct = (id) => {
   })
     .then((response) => {
       if (response.ok) {
-        console.log('delete');
+        // console.log('delete');
         const liEliminado = getListElement(id);
         liEliminado.remove();
       } else {
@@ -106,12 +104,14 @@ const deleteProduct = (id) => {
 
 const addProductDrawer = (idP, titleP, imageP, priceP) => {
   const product = {
-    id: idP,
+    // I add idProducts because this is the id to card
+    idPrducts: idP,
     avatar: imageP,
     title: titleP,
     price: priceP,
     cantidad: 1,
   };
+  // console.log(product);
 
   fetch(`${apiURL}`, {
     method: 'POST',
@@ -125,13 +125,15 @@ const addProductDrawer = (idP, titleP, imageP, priceP) => {
       console.log(data);
       // drawerItems.innerHTML += createInfo(data);
     });
+
+  alert('¡Se agregó satisfactoriamente el producto a la bolsita!');
 };
 
 document.addEventListener('click', (event) => {
   if (event.target.matches('.js-add__drawer')) {
     // The id is is obtened
     const idP = event.target.dataset.id;
-    console.log(idP);
+    // console.log(idP);
     // The id is is obtened
     const productId = event.target.parentElement;
     // The image is is obtened
@@ -141,7 +143,8 @@ document.addEventListener('click', (event) => {
     // The price is is obtened
     const priceP = productId.querySelector('p').textContent;
 
-    console.log(addProductDrawer(idP, titleP, imageP, priceP));
+    addProductDrawer(idP, titleP, imageP, priceP);
+    // console.log(addProductDrawer(idP, titleP, imageP, priceP));
   }
 });
 

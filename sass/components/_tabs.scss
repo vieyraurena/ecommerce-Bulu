@@ -1,48 +1,15 @@
-html{font-size: 10px;}
-
-/* VARIABLES */
-
-/* ============================================= */
-
-// COLOR
-
-$fourth-color:#FFFFFF;
-$main-color: #352B2B;
-$secondary-color: #C54210;
-$third-color: #1EA422;
-$wrapper: 340px;
-
-// Typography
-
-$complement-font: 'Arial, Helvetica, sans-serif';
-$main-font: 'poppins';
-$secondary-font: 'ABeeZee';
-
-$paragraf: $main-font, $complement-font;
-$titles: $main-font, $complement-font;
-$titles-color: $main-color;
-
-$size: 1rem;
-
-// FONT-SIZE
-
-$main-size-movil: $size * 1.6;
-$small-size-movil: $size * 1.2;
-$medium-size-movil: $size * 1.8;
-$large-size-movil: $size * 2;
-$maxim-size-movil: $size * 2.5;
-
-/* ============================================= */
-.acordeon{
+.acordeon {
   display: none;
 }
+
 @media (max-width: 500px){
   /* ACORDEON */
-  .acordeon{
-    margin-top: 30px;
+  .acordeon {
     margin-bottom: 30px;
+    margin-top: 30px;
   }
-  .acordeon__content--title{
+
+  .acordeon__content--title {
     background-color: $secondary-color;
     border-radius: 0.2rem;
     color: $fourth-color;
@@ -59,27 +26,30 @@ $maxim-size-movil: $size * 2.5;
       margin-right: 5%;
     }
   }
-  .acordeon__content--hidden-information{
+
+  .acordeon__content--hidden-information {
     background-color: $fourth-color;
     display: none;
-    font-size: $small-size-movil;
-    font-family: $paragraf;
     margin-bottom: 10px;
     padding-left: 10%;
     padding-right: 10%;
   }
-  .acordeon{
+
+  .acordeon {
     display: block;
   }
+
   /*Esta sección genera conflictos al estar global*/
   /*body{
     margin: 0 auto;
     width: $wrapper;
   }*/
-  .tabs{
+
+  .tabs {
     display: none;
   }
 }
+
 
 @media (min-width:500px){
   /*TABS*/
@@ -87,6 +57,7 @@ $maxim-size-movil: $size * 2.5;
   /*body{
     margin: 0 auto;
   }*/
+
   .tabs {
     margin: 60px;
     max-width: 800px;
@@ -108,23 +79,21 @@ $maxim-size-movil: $size * 2.5;
     border-radius: 5px 5px 0 0;
     color: $fourth-color;
     display: block;
-    font-size: $medium-size-movil;
-    font-weight: bold;
+    // font-weight: bold;
     padding: 10px 20px;
     text-decoration: none;
   }
 
   .tabs__content {
-    font-family: $paragraf;
-    font-size: $small-size-movil;
     padding-top: 50px;
     width: 1200px;
   }
+
   /* Estado (clases asignadas por Javascript) */
   .js-active {
     background-color:$main-background;
     border-bottom: 1px solid $main-background;
-    color: $titles-color;
+    color: $main-color;
   }
   .js-content-hidden {
     display: none;

@@ -17,8 +17,8 @@ h4 {
 }
 
 h2 {
-  font-size: $large-size-movil;
   color: $main-color;
+  font-size: $large-size-movil;
 
   @media (min-width: 970px) {
     font-size: $large-h2-size-desk;
@@ -41,8 +41,8 @@ h4 {
 
 p {
   font-family: $paragraf;
-  font-size: $small-size-movil;
   line-height: $line-height-small-movil + 0.5;
+  font-size: $small-size-movil;
 
   @media (min-width: 970px) {
     font-size: $small-size-desk;
@@ -50,10 +50,10 @@ p {
 }
 
 a {
-  font-family: $paragraf;
-  text-decoration: none;
   color: $secondary-color;
+  font-family: $paragraf;
   font-size: $small-size-movil;
+  text-decoration: none;
 
   // &:focus {
   //   border: $secondary-color solid 3px;

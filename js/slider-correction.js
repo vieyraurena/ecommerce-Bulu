@@ -102,6 +102,7 @@ fetch(apiUrl)
 let slideIndex = 0;
 const backButton = document.querySelector('.slider__btn-back');
 const advanceButton = document.querySelector('.slider__btn-advance');
+
 // This function will show the slides
 function appearSlides(numberSlide) {
   const slides = document.querySelectorAll('.slider__cards');

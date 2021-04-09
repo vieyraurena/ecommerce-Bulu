@@ -9,7 +9,7 @@ const deleteItemProduct = document.querySelector('.js-shopsing__product-list');
 let products = [];
 
 function productSum(p) {
-  console.log(p);
+  // console.log(p);
   let sum = 0;
   let total = '';
   for (let i = 0; i < p.length; i += 1) {
@@ -20,7 +20,7 @@ function productSum(p) {
   total += `
   <h3> &#x20a1 ${sum}</h3>
   `;
-  console.log(sum);
+  // console.log(sum);
   divShoppingSum.innerHTML = total;
 }
 
@@ -45,7 +45,7 @@ function loadProductsCart(p) {
         <div class="shopping__product-list__data-img">
           <img src="${productsList[i].avatar}">
         </div>
-        <div class="shopping__product-list__content">
+        <div data-id="${productsList[i].id}" class="shopping__product-list__content">
           <div class="shopping__product-list__data-price">
             <h3>${productsList[i].title}</h3>
             <p>${productsList[i].price}</p>
@@ -88,8 +88,8 @@ const deleteProductApi = (id) => {
   })
     .then((response) => {
       if (response.ok) {
-        console.log('delete');
-        const eliminado = getListElement(id);
+        // console.log('delete');
+        const eliminado = document.querySelector(`[data-id='${id}']`);
         eliminado.remove();
       } else {
         throw new Error(response.status);
@@ -99,11 +99,11 @@ const deleteProductApi = (id) => {
       console.log(`Ocurrió un error de tipo ${err}`);
     });
 };
-console.log(deleteItemProduct);
+// console.log(deleteItemProduct);
 
 deleteItemProduct.addEventListener('click', (event) => {
-  const id = event.target.parentElement.dataset.id;
-  console.log(id);
+  const id = event.target.parentElement.parentElement.dataset.id;
+  // console.log(id);
   if (event.target.tagName === 'BUTTON') {
     deleteProductApi(id);
   }
