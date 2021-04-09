@@ -91,6 +91,7 @@ const deleteProductApi = (id) => {
         // console.log('delete');
         const eliminado = document.querySelector(`[data-id='${id}']`);
         eliminado.remove();
+        window.location.reload();
       } else {
         throw new Error(response.status);
       }
