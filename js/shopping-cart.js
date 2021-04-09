@@ -45,7 +45,7 @@ function loadProductsCart(p) {
         <div class="shopping__product-list__data-img">
           <img src="${productsList[i].avatar}">
         </div>
-        <div class="shopping__product-list__content">
+        <div data-id="${productsList[i].id}" class="shopping__product-list__content">
           <div class="shopping__product-list__data-price">
             <h3>${productsList[i].title}</h3>
             <p>${productsList[i].price}</p>
@@ -102,7 +102,7 @@ const deleteProductApi = (id) => {
 console.log(deleteItemProduct);
 
 deleteItemProduct.addEventListener('click', (event) => {
-  const id = event.target.parentElement.dataset.id;
+  const id = event.target.parentElement.parentElement.dataset.id;
   console.log(id);
   if (event.target.tagName === 'BUTTON') {
     deleteProductApi(id);
