@@ -2,8 +2,9 @@
 
 const acordeon = document.querySelectorAll('.acordeon__content--title');
 const acordeonContent = document.querySelectorAll('.acordeon__content--hiddenInformation');
-acordeonContent.forEach(element => {
-  element.style.display = "none";
+
+acordeonContent.forEach((element) => {
+  element.style.display = 'none';
 });
 //
 // ACTUAL ACORDEON
