@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-const bigImg = document.getElementById('js-openImage');
+const bigImg = document.querySelector('.card-description__image-gallery--open-image');
 const subImg = document.querySelectorAll('.card-description__image-gallery--hidden-image');
 const idPresionado = localStorage.getItem('click');
 
