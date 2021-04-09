@@ -416,8 +416,7 @@ ul {
       border-bottom: 2px solid #C54210; } }
 
 .indicator__arrow svg {
-  margin-right: 1rem;
-  width: 70%; }
+  margin-right: 1rem; }
 
 .recepes {
   display: flex;
@@ -1166,7 +1165,7 @@ ul {
     text-decoration: none; }
   .tabs__content {
     padding-top: 50px;
-    width: 1000px; }
+    width: 100px; }
   /* Estado (clases asignadas por Javascript) */
   .js-active {
     background-color: #F7F3F0;
