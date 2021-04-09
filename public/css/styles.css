@@ -1147,7 +1147,7 @@ ul {
   }*/
   .tabs {
     margin: 60px;
-    max-width: 800px; }
+    max-width: 600px; }
   .tabs__tablist {
     color: #FFFFFF;
     display: flex;
@@ -1166,7 +1166,7 @@ ul {
     text-decoration: none; }
   .tabs__content {
     padding-top: 50px;
-    width: 1200px; }
+    width: 1000px; }
   /* Estado (clases asignadas por Javascript) */
   .js-active {
     background-color: #F7F3F0;
